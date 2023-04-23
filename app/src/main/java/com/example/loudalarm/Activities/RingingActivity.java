@@ -71,11 +71,12 @@ public class RingingActivity extends AppCompatActivity {
 
         binding.offAlarm.setOnClickListener(off -> {
             stopPlayRingtone(mediaPlayer); // остановка музыки
-            switch (getRandom(1, 2)) { // рандомно выбирается игра
+            int r = getRandom(0, 20);
+            switch (r%2) { // рандомно выбирается игра
                 case 1:
                     startActivity(new Intent(this, MathTrainerActivity.class));
                     break;
-                case 2:
+                case 0:
                     startActivity(new Intent(this, BotGameActivity.class));
                     break;
             }

@@ -2,6 +2,8 @@ package com.example.loudalarm.Games.BotGame;
 
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.media.Ringtone;
+import android.media.RingtoneManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.KeyEvent;
@@ -25,6 +27,11 @@ import com.example.loudalarm.Activities.MainActivity;
 import com.example.loudalarm.App;
 import com.example.loudalarm.R;
 
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class BotGameActivity extends AppCompatActivity
         implements Game.ResultsCallback, ButtonClass.MyOnClickListener, View.OnTouchListener {
     private static final int MATRIX_SIZE = 10;// можете ставить от 2 до 20))
@@ -36,7 +43,10 @@ public class BotGameActivity extends AppCompatActivity
     private ButtonClass[][] mButtons;
 
     private Game game;
-
+    Ringtone musicPlay;
+    long timeOfPass = System.nanoTime();
+    long stopTime;
+    AtomicInteger howManyPassed = new AtomicInteger(0);
     @Override
     public void onBackPressed() {
 
@@ -49,6 +59,8 @@ public class BotGameActivity extends AppCompatActivity
         setContentView(R.layout.activity_bot_game);
 
         mGridLayout = findViewById(R.id.my_grid);
+
+
         TextView text = findViewById(R.id.winns);
         text.setText("Выигрыши: " + COUNT);
         mGridLayout.setColumnCount(MATRIX_SIZE);
@@ -107,6 +119,25 @@ public class BotGameActivity extends AppCompatActivity
                     })
                     .create().show();
         }
+
+        musicPlay = RingtoneManager.getRingtone(this, RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE));
+
+        AtomicBoolean isMusicPlay = new AtomicBoolean(false);
+        AtomicBoolean d = new AtomicBoolean(true);
+
+        Executors.newSingleThreadScheduledExecutor().scheduleAtFixedRate(() -> {
+            if (System.nanoTime() - timeOfPass >= 20 * 1_000_000_000L) {
+                if (!isMusicPlay.get() && d.get()) {
+                    musicPlay.play();
+                    isMusicPlay.set(true);
+                    d.set(false);
+                } else if ((howManyPassed.get()) > 3) {
+                    musicPlay.stop();
+                    isMusicPlay.set(false);
+                    d.set(true);
+                }
+            }
+        }, 0, 1, TimeUnit.SECONDS);
     }//onCreate
 
     private void setButtonsSize() {
@@ -147,6 +178,8 @@ public class BotGameActivity extends AppCompatActivity
     @Override
     public void OnTouchDigit(ButtonClass v) {
         game.OnUserTouchDigit(v.getIdY(), v.getIdX());
+        int g = howManyPassed.get() + 1;
+        howManyPassed.set(g);
     }
 
     //Game.ResultsCallback интерфейс

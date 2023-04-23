@@ -63,7 +63,7 @@ public class MathTrainerActivity extends AppCompatActivity  implements View.OnTo
         binding.text1.setOnClickListener(click);
         binding.text2.setOnClickListener(click);
 
-        musicPlay = RingtoneManager.getRingtone(this, RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALL));
+        musicPlay = RingtoneManager.getRingtone(this, RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE));
 
         AtomicBoolean isMusicPlay = new AtomicBoolean(false);
         AtomicBoolean d = new AtomicBoolean(true);
