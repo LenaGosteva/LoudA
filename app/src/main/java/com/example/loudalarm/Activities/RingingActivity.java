@@ -10,6 +10,9 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,7 +28,7 @@ import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class RingingActivity extends AppCompatActivity {
+public class RingingActivity extends AppCompatActivity  {
 
     private ActivityRingingBinding binding;
 
@@ -41,7 +44,7 @@ public class RingingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         this.setTheme(App.getThemes()[App.getIndexOfTheme()]);
-        setVolumeControlStream(AudioManager.STREAM_ALARM);
+        setVolumeControlStream(AudioManager.STREAM_DTMF);
         super.onCreate(savedInstanceState);
         binding = ActivityRingingBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -120,5 +123,23 @@ public class RingingActivity extends AppCompatActivity {
         }catch (Exception e){
 
         };
+    }
+
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN)
+        {
+            return false;
+        }
+        if (keyCode == KeyEvent.KEYCODE_VOLUME_UP)
+        {
+            return false;
+        }
+        if (keyCode == KeyEvent.KEYCODE_HOME)
+        {
+            return false;
+        }
+        return true;
     }
 }

@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         this.setTheme(App.getThemes()[App.getDatabaseSP().getIndexOfTheme()]);
         super.onCreate(savedInstanceState);
+        
         setContentView(R.layout.activity_main);
         new Thread(() -> {
             alarmDatabaseDAO = App.getDatabase().alarmDAO();

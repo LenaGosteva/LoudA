@@ -174,7 +174,7 @@ public class MathTrainerActivity extends AppCompatActivity  implements View.OnTo
         return false;
     }
     @Override
-    public boolean onKeyLongPress(int keyCode, KeyEvent event) {
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN)
         {
             return false;
