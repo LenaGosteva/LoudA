@@ -1,8 +1,10 @@
 package com.example.loudalarm.Games.MathTrainerGame;
 
 import android.annotation.SuppressLint;
+import android.app.AlarmManager;
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.media.AudioManager;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.os.Bundle;
@@ -36,6 +38,7 @@ public class MathTrainerActivity extends AppCompatActivity  implements View.OnTo
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         this.setTheme(App.getThemes()[App.getIndexOfTheme()]);
+        setVolumeControlStream(AudioManager.STREAM_DTMF);
         super.onCreate(savedInstanceState);
         binding = ActivityMathTrainerBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

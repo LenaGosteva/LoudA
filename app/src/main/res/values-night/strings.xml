@@ -41,7 +41,8 @@
     <string name="text_change_theme">Таким станет фон приложения)))\n\nДля его установки потребуется перезапуск</string>
 
 
-    <string name="description_for_game_MathTrainer"></string>
+    <string name="description_for_game_MathTrainer">Реши математический пример! \nВсе, что нужно - немного арифметики и внимания)</string>
+
 
 
     <!--    TicTAcToe-->

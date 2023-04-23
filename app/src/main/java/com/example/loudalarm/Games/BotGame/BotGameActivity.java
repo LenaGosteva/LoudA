@@ -2,6 +2,7 @@ package com.example.loudalarm.Games.BotGame;
 
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.media.AudioManager;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.os.Bundle;
@@ -55,6 +56,7 @@ public class BotGameActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         this.setTheme(App.getThemes()[App.getIndexOfTheme()]);
+        setVolumeControlStream(AudioManager.STREAM_DTMF);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bot_game);
 
@@ -81,7 +83,6 @@ public class BotGameActivity extends AppCompatActivity
 
                 mBut.setAlpha(1);
                 mBut.setClickable(false);
-
                 mBut.setBackgroundResource(R.drawable.bg_grey);
 
                 mButtons[yPos][xPos] = mBut;
