@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_200">#FBFAFB</color>
+    <color name="primary_500">#FCDAD2E4</color>
+    <color name="primary_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="main_text_and_icons_color">#D3CFCF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_navigation_panel_color">#77509F9E</color>
+    <color name="toggle_up_color">#9E509F9E</color>
+    <color name="toggle_down_color">#AE285F5E</color>
+    <color name="true_button">#8B527F54</color>
+    <color name="false_button">#97BB2F5F</color>
+    <color name="accent">#024645</color>
+    <color name="null_color">#00FFFFFF</color>
+    <color name="put_off">#8BE0DDDD</color>
+    <color name="put_on">@color/main_text_and_icons_color</color>
+    <color name="switch_on">#509F9E</color>
+
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="bgGrey">#C4C4C4</color>
+    <color name="bgRed">#FC5C70</color>
+    <color name="bgBlue">#4A90E2</color>
+    <color name="lightGreyBg">#DFDFDF</color>
+</resources>

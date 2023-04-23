@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">LoudAlarm</string>
+    <string name="title_home">Главная</string>
+    <string name="title_settings">Настройки</string>
+    <string name="title_add">Будильник</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+
+    <string name="FAQ_for_game">1. Нельзя выйти из игры менее, чем через 2 минуты после начала; \n2. После 20 секунд бездействия включается музыка и не выключается до прохождения двух уровней;</string>
+
+    <string name="skip">Пропустить</string>
+    <string name="HelloDescription">LoudAlarm - необычный будильник, поэтому давайте узнаем, что же он скрывает!</string>
+
+
+    <!--Headings-->
+    <string name="Goal">Какова наша цель?</string>
+    <string name="Why">Почему LoudAlarm поможет?</string>
+    <string name="Game">Игра MathTrainer</string>
+    <string name="Go">Вперёд!</string>
+
+    <!--Descriptions-->
+    <string name="GoalDescription">Разбудить Вас! Если Вы попали к нам - Вам очень нужно проснуться, и Вы целеустремленная личность!</string>
+    <string name="WhyDescription">Наш будильник нельзя отложить, только выключить, попав в математическую игру MathTrainer!</string>
+    <string name="GameDescription">Пробудит Ваш мозг, не давая спать громкой музыкой, пока не завершите уровень!</string>
+    <string name="GoDescription">Научитесь просыпаться!</string>
+    <string name="Hello">Привет!</string>
+    <string name="text_change_theme">Таким станет фон приложения)))\n\nДля его установки потребуется перезапуск</string>
+    <string name="description_for_game_Bot">Обыграй бота! \nДля выбора клетки с различным количеством очков попеременно Вам и боту дается доступ к одной строке или столбцу, на которой Вы можете выбрать одну клетку, суммируя значения очков
+    \nИгра идет, пока есть возможность ходов</string>
+    <string name="description_for_game_MathTrainer">Реши математический пример! \nВсе, что нужно - немного арифметики и внимания)</string>
+
+
+    <!--    TicTAcToe-->
+    <string name="starLabel">Easy Level</string>
+    <string name="MediumLabel">Medium Level</string>
+    <string name="HardLabel">Impossible Level</string>
+    <string name="continueLabel">Continue</string>
+    <string name="exitLabel">Exit Game</string>
+    <string name="menuLabel">Menu</string>
+
+    <string name="aiFirstLabel">Computer</string>
+    <string name="userFirstLabel">Player</string>
+    <string name="whosFirstLabel">Who is first?</string>
+    <string name="youLabel">Player</string>
+    <string name="aiLabel">Computer</string>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Games.BotGame.BotGameActivity">
+
+    <TextView
+        android:id="@+id/winns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:textColor="@color/main_text_and_icons_color"
+        android:textSize="20dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <View
+            android:id="@+id/center"
+            android:layout_width="10dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true" />
+
+        <RelativeLayout
+            android:id="@+id/rel_in_games_up00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/center">
+
+
+            <LinearLayout
+                android:id="@+id/linear_in_1000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/line.....1000"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/main_text_and_icons_color" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_in_games000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/upper_scoreboard"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/sides"
+
+                        android:gravity="center_vertical|center_horizontal"
+                        android:paddingLeft="@dimen/label_padding_sides"
+                        android:paddingRight="@dimen/label_padding_sides"
+                        android:text="Бот: 0"
+                        android:textColor="@color/main_text_and_icons_color"
+                        android:textSize="@dimen/label_text_size" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line2000"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/linear_in_1000"
+                android:background="@color/main_text_and_icons_color" />
+        </RelativeLayout>
+
+
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/my_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rel_in_games_up00"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/sides"
+            android:layout_marginTop="@dimen/up_bottom"
+            android:layout_marginRight="@dimen/sides"
+            android:layout_marginBottom="@dimen/up_bottom"
+            android:foregroundGravity="center" />
+
+        <RelativeLayout
+            android:id="@+id/rel_in_games_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_grid"
+            android:layout_toRightOf="@id/center">
+
+
+            <LinearLayout
+                android:id="@+id/linear_in_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/line.....1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/linear_in_1"
+                    android:background="@color/main_text_and_icons_color" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_in_games"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line.....1">
+
+                    <TextView
+                        android:id="@+id/lower_scoreboard"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/label_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:paddingLeft="@dimen/label_padding_sides"
+                        android:paddingRight="@dimen/label_padding_sides"
+                        android:text="Вы: 0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/label_text_size" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/linear_in_1"
+                android:background="@color/main_text_and_icons_color" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
