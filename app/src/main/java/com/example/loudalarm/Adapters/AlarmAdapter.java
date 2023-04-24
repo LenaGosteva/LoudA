@@ -99,11 +99,10 @@ public class AlarmAdapter extends RecyclerView.Adapter<AlarmAdapter.AlarmViewHol
                 controller.deleteIntent();
             }
 
-//            new Thread(() -> {
-//                alarmDAO.update(list.get(position));
-//                notifyItemChanged(position);
-//            }).start();
-            alarmDAO.update(list.get(position));
+            new Thread(() -> {
+                alarmDAO.update(list.get(position));
+                notifyItemChanged(position);
+            }).start();
             notifyItemChanged(position);
 
         });

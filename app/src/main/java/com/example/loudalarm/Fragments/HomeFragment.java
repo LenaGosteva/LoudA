@@ -101,8 +101,8 @@ public class HomeFragment extends Fragment {
                 alarms = alarmDatabaseDAO.getAll();
                 adapter.list = alarms;
                 adapter.listOfDeleted.clear();
-                adapter.notifyDataSetChanged();
             }).start();
+            adapter.notifyDataSetChanged();
 
             binding.deleteAny.setVisibility(View.GONE);
             binding.putOn.setVisibility(View.GONE);
