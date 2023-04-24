@@ -43,7 +43,7 @@ public class RingingActivity extends AppCompatActivity  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        this.setTheme(App.getThemes()[App.getIndexOfTheme()]);
+        this.setTheme(App.getThemes()[App.getDatabaseSP().getIndexOfTheme()]);
         setVolumeControlStream(AudioManager.STREAM_DTMF);
         super.onCreate(savedInstanceState);
         binding = ActivityRingingBinding.inflate(getLayoutInflater());
@@ -80,7 +80,7 @@ public class RingingActivity extends AppCompatActivity  {
                     startActivity(new Intent(this, MathTrainerActivity.class));
                     break;
                 case 0:
-                    startActivity(new Intent(this, BotGameActivity.class));
+                    startActivity(new Intent(this, MathTrainerActivity.class));
                     break;
             }
             finish();

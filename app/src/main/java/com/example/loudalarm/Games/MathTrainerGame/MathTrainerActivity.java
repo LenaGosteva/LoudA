@@ -33,11 +33,10 @@ public class MathTrainerActivity extends AppCompatActivity  implements View.OnTo
     boolean isAnswerTrue = false;
     long timeOfPass = System.nanoTime();
     long stopTime;
-    long startTime = System.nanoTime();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        this.setTheme(App.getThemes()[App.getIndexOfTheme()]);
+        this.setTheme(App.getThemes()[App.getDatabaseSP().getIndexOfTheme()]);
         setVolumeControlStream(AudioManager.STREAM_DTMF);
         super.onCreate(savedInstanceState);
         binding = ActivityMathTrainerBinding.inflate(getLayoutInflater());
@@ -92,10 +91,9 @@ public class MathTrainerActivity extends AppCompatActivity  implements View.OnTo
             timeOfPass = System.nanoTime();
 
             stopTime = System.nanoTime();
-            long deltaTime = stopTime - startTime;
             if (isAnswerTrue) {
                 set_next_normal();
-                if (deltaTime < 120_000_000_000L || how_many_true_generations < 30) {
+                if (how_many_true_generations < 20) {
                     generation_of_task();
                 } else {
                     new AlertDialog.Builder(this)

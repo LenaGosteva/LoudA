@@ -35,9 +35,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class BotGameActivity extends AppCompatActivity
         implements Game.ResultsCallback, ButtonClass.MyOnClickListener, View.OnTouchListener {
-    private static final int MATRIX_SIZE = 10;// можете ставить от 2 до 20))
+    private static final int MATRIX_SIZE = 6;// можете ставить от 2 до 20))
     private static int COUNT = 0;
-    long startTime = System.nanoTime();
     GridLayout mGridLayout;
     //ui
     private TextView mUpText, mLowText;
@@ -52,10 +51,10 @@ public class BotGameActivity extends AppCompatActivity
     public void onBackPressed() {
 
     }
-
+    private static int GAMES = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        this.setTheme(App.getThemes()[App.getIndexOfTheme()]);
+        this.setTheme(App.getThemes()[App.getDatabaseSP().getIndexOfTheme()]);
         setVolumeControlStream(AudioManager.STREAM_DTMF);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bot_game);
@@ -65,6 +64,11 @@ public class BotGameActivity extends AppCompatActivity
 
         TextView text = findViewById(R.id.winns);
         text.setText("Выигрыши: " + COUNT);
+
+
+
+        TextView g = findViewById(R.id.games);
+        g.setText("Игры: " + GAMES);
         mGridLayout.setColumnCount(MATRIX_SIZE);
         mGridLayout.setRowCount(MATRIX_SIZE);
         mButtons = new ButtonClass[MATRIX_SIZE][MATRIX_SIZE];//5 строк и 5 рядов
@@ -108,7 +112,7 @@ public class BotGameActivity extends AppCompatActivity
         game.startGame(); //и запускаем ее
 
 
-        if (COUNT > 2 || System.nanoTime() - startTime > 120_000_000_000L) {
+        if (GAMES > 2) {
             new AlertDialog.Builder(this)
                     .setMessage("Вы можете выйти из игры. Хотите?")
                     .setPositiveButton("ДА", (dialog, id) -> {
@@ -126,19 +130,7 @@ public class BotGameActivity extends AppCompatActivity
         AtomicBoolean isMusicPlay = new AtomicBoolean(false);
         AtomicBoolean d = new AtomicBoolean(true);
 
-        Executors.newSingleThreadScheduledExecutor().scheduleAtFixedRate(() -> {
-            if (System.nanoTime() - timeOfPass >= 20 * 1_000_000_000L) {
-                if (!isMusicPlay.get() && d.get()) {
-                    musicPlay.play();
-                    isMusicPlay.set(true);
-                    d.set(false);
-                } else if ((howManyPassed.get()) > 3) {
-                    musicPlay.stop();
-                    isMusicPlay.set(false);
-                    d.set(true);
-                }
-            }
-        }, 0, 1, TimeUnit.SECONDS);
+
     }//onCreate
 
     private void setButtonsSize() {
@@ -232,9 +224,8 @@ public class BotGameActivity extends AppCompatActivity
         new Handler().postDelayed(this::recreate, 1500);
     }
 
-    @Override
     public void recreate() {
-//COUNT+=1;
+        GAMES+=1;
         super.recreate();
     }
 

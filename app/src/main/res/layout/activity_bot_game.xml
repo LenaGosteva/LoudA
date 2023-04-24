@@ -12,9 +12,17 @@
         android:layout_alignParentRight="true"
         android:layout_margin="20dp"
         android:textColor="@color/main_text_and_icons_color"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/games"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@color/main_text_and_icons_color"
         android:textSize="20dp" />
-
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -90,16 +90,6 @@ public class SettingsFragment extends Fragment {
 
             } else if (requestCode == SAVE_URI) {
                 uriOfMusic = intent.getData();
-                Log.e("URI_IN_SETTINGS", uriOfMusic + "");
-                try {
-                    MediaPlayer mediaPlayer = new MediaPlayer();
-                    mediaPlayer.setDataSource(getActivity(), uriOfMusic);
-                    mediaPlayer.prepareAsync();
-                    mediaPlayer.setOnPreparedListener(mp -> mediaPlayer.start());
-
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
                 binding.nameOfCheckedMusic.setText(uriOfMusic + "");
                 App.setDefaultMusicUri(uriOfMusic);
             }
