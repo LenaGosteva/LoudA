@@ -88,11 +88,12 @@ public class HomeFragment extends Fragment {
 
         binding.putOn.setOnClickListener(put_on -> {
             for (AlarmEntity alarm : adapter.listOfDeleted) {
-                AlarmController controller = new AlarmController(alarm);
                 if (!alarm.on) {
-                    controller.setFull();
+                    new AlarmController(alarm).setFull();
                 }
                 alarm.setOn(true);
+                adapter.setUp(adapter.holderPB);
+adapter.notifyDataSetChanged();
             }
             Toast.makeText(getContext(), "Выбранные будильники включены", Toast.LENGTH_SHORT).show();
 

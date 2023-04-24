@@ -80,7 +80,7 @@ public class RingingActivity extends AppCompatActivity  {
                     startActivity(new Intent(this, MathTrainerActivity.class));
                     break;
                 case 0:
-                    startActivity(new Intent(this, MathTrainerActivity.class));
+                    startActivity(new Intent(this, BotGameActivity.class));
                     break;
             }
             finish();
@@ -122,7 +122,7 @@ public class RingingActivity extends AppCompatActivity  {
             ringtone.stop();
         }catch (Exception e){
 
-        };
+        }
     }
 
 
@@ -136,10 +136,6 @@ public class RingingActivity extends AppCompatActivity  {
         {
             return false;
         }
-        if (keyCode == KeyEvent.KEYCODE_HOME)
-        {
-            return false;
-        }
-        return true;
+        return keyCode != KeyEvent.KEYCODE_HOME;
     }
 }

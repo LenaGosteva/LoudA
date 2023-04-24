@@ -43,7 +43,7 @@ public class AddFragment extends Fragment {
     public AudioManager audioManager;
     private AlarmDAO alarmDAO;
     public AlarmManager alarmManager;
-    private AlarmEntity alarm;
+    private final AlarmEntity alarm;
     private List<AlarmEntity> alarms = new ArrayList<>();
     private MaterialTimePicker materialTimePicker;
     private Calendar calendar;
@@ -69,10 +69,12 @@ public class AddFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         binding = FragmentAddBinding.bind(view);
         binding.alarmButton.setText(alarm.time_on_clock_in_hours_and_minutes);
+        binding.today.setVisibility(View.VISIBLE);
 
         calendar = Calendar.getInstance();
         calendar.set(Calendar.HOUR_OF_DAY, alarm.hours);
         calendar.set(Calendar.MINUTE, alarm.minutes);
+
 
 
         binding.volumeControl.setProgress(alarm.vol);
@@ -275,9 +277,12 @@ public class AddFragment extends Fragment {
 
         if (alarm.sunday || alarm.saturday || alarm.friday || alarm.thursday || alarm.wednesday || alarm.tuesday || alarm.monday) {
             binding.setOnToday.setVisibility(View.GONE);
+            binding.today.setVisibility(View.GONE);
             alarm.today = false;
         } else {
             binding.setOnToday.setVisibility(View.VISIBLE);
+            binding.today.setVisibility(View.VISIBLE);
+
         }
     }
 

@@ -268,11 +268,7 @@ public class BotGameActivity extends AppCompatActivity
         {
             return false;
         }
-        if (keyCode == KeyEvent.KEYCODE_HOME)
-        {
-            return false;
-        }
-        return true;
+        return keyCode != KeyEvent.KEYCODE_HOME;
     }
 }
         

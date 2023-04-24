@@ -30,10 +30,12 @@ public class MathTrainerActivity extends AppCompatActivity  implements View.OnTo
     private static int how_many_true_generations = 0;
     Ringtone musicPlay;
     ActivityMathTrainerBinding binding;
-    boolean isAnswerTrue = false;
+    boolean isAnswerTrue = false, music = true;
     long timeOfPass = System.nanoTime();
     long stopTime;
-
+AtomicBoolean isMusicPlay = new AtomicBoolean(false);
+    AtomicBoolean d = new AtomicBoolean(true);
+    AtomicInteger howManyPassed = new AtomicInteger();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         this.setTheme(App.getThemes()[App.getDatabaseSP().getIndexOfTheme()]);
@@ -66,13 +68,10 @@ public class MathTrainerActivity extends AppCompatActivity  implements View.OnTo
         binding.text2.setOnClickListener(click);
 
         musicPlay = RingtoneManager.getRingtone(this, RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE));
-
-        AtomicBoolean isMusicPlay = new AtomicBoolean(false);
-        AtomicBoolean d = new AtomicBoolean(true);
-        AtomicInteger howManyPassed = new AtomicInteger();
+        ;
         Executors.newSingleThreadScheduledExecutor().scheduleAtFixedRate(() -> {
                 if (System.nanoTime() - timeOfPass >= 20 * 1_000_000_000L) {
-                    if (!isMusicPlay.get() && d.get()) {
+                    if (!isMusicPlay.get() && d.get()&& music) {
                         musicPlay.play();
                         isMusicPlay.set(true);
                         howManyPassed.set(how_many_true_generations);
@@ -93,13 +92,14 @@ public class MathTrainerActivity extends AppCompatActivity  implements View.OnTo
             stopTime = System.nanoTime();
             if (isAnswerTrue) {
                 set_next_normal();
-                if (how_many_true_generations < 20) {
+                if (how_many_true_generations < 5) {
                     generation_of_task();
                 } else {
                     new AlertDialog.Builder(this)
                             .setMessage("Вы можете выйти из игры. Хотите?")
                             .setPositiveButton("ДА", (dialog, id) -> {
                                 startActivity(new Intent(this, MainActivity.class));
+                                music = false;
                                 finish();
                             })
                             .setNegativeButton("НЕТ", (dialog, id) -> {
@@ -181,11 +181,7 @@ public class MathTrainerActivity extends AppCompatActivity  implements View.OnTo
         {
             return false;
         }
-        if (keyCode == KeyEvent.KEYCODE_HOME)
-        {
-            return false;
-        }
-        return true;
+        return keyCode != KeyEvent.KEYCODE_HOME;
     }
     private void set_next_true() {
         findViewById(R.id.line0).setBackgroundColor(getResources().getColor(R.color.true_button));

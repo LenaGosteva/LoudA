@@ -37,10 +37,11 @@ public class AlarmAdapter extends RecyclerView.Adapter<AlarmAdapter.AlarmViewHol
 
     public final Activity activity;
     private final FragmentManager fragmentManager;
-    private AlarmDAO alarmDAO;
+    private final AlarmDAO alarmDAO;
+    public  AlarmViewHolder holderPB;
 
     // todo fragmentHomeBinding
-    private FragmentHomeBinding binding;
+    private final FragmentHomeBinding binding;
 
     public AlarmAdapter(FragmentManager fragmentManager, List<AlarmEntity> news, Activity activity, AlarmDAO alarmDAO, FragmentHomeBinding binding) {
         this.fragmentManager = fragmentManager;
@@ -64,7 +65,7 @@ public class AlarmAdapter extends RecyclerView.Adapter<AlarmAdapter.AlarmViewHol
 
         // todo правим баг
         holder.itemView.setLongClickable(true);
-
+        holderPB = holder;
         // todo сортируем в порядке времени
         list.sort(Comparator.comparingLong(o -> o.time));
 
@@ -101,7 +102,6 @@ public class AlarmAdapter extends RecyclerView.Adapter<AlarmAdapter.AlarmViewHol
 
             new Thread(() -> {
                 alarmDAO.update(list.get(position));
-                notifyItemChanged(position);
             }).start();
             notifyItemChanged(position);
 
@@ -188,9 +188,13 @@ public class AlarmAdapter extends RecyclerView.Adapter<AlarmAdapter.AlarmViewHol
     }
 
     public class AlarmViewHolder extends RecyclerView.ViewHolder {
-        private TextView time, days, message;
-        private Switch on_off;
-        private LinearLayout checked_layout, switch_layout, info_layout;
+        private final TextView time;
+        private final TextView days;
+        private final TextView message;
+        private final Switch on_off;
+        private final LinearLayout checked_layout;
+        private final LinearLayout switch_layout;
+        private final LinearLayout info_layout;
 
         public AlarmViewHolder(View itemView) {
             super(itemView);
