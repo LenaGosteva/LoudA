@@ -68,7 +68,7 @@ AtomicBoolean isMusicPlay = new AtomicBoolean(false);
         binding.text2.setOnClickListener(click);
 
         musicPlay = RingtoneManager.getRingtone(this, RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE));
-        ;
+
         Executors.newSingleThreadScheduledExecutor().scheduleAtFixedRate(() -> {
                 if (System.nanoTime() - timeOfPass >= 20 * 1_000_000_000L) {
                     if (!isMusicPlay.get() && d.get()&& music) {
@@ -76,13 +76,11 @@ AtomicBoolean isMusicPlay = new AtomicBoolean(false);
                         isMusicPlay.set(true);
                         howManyPassed.set(how_many_true_generations);
                         d.set(false);
-                    } else if ((how_many_true_generations - howManyPassed.get()) > 2) {
-                        musicPlay.stop();
-                        isMusicPlay.set(false);
-                        d.set(true);
-
-
                     }
+                }else if ((how_many_true_generations - howManyPassed.get()) > 2 && isMusicPlay.get()) {
+                    musicPlay.stop();
+                    isMusicPlay.set(false);
+                    d.set(true);
                 }
         }, 0, 1, TimeUnit.SECONDS);
 
@@ -92,7 +90,7 @@ AtomicBoolean isMusicPlay = new AtomicBoolean(false);
             stopTime = System.nanoTime();
             if (isAnswerTrue) {
                 set_next_normal();
-                if (how_many_true_generations < 5) {
+                if (how_many_true_generations < 10) {
                     generation_of_task();
                 } else {
                     new AlertDialog.Builder(this)
@@ -226,13 +224,10 @@ AtomicBoolean isMusicPlay = new AtomicBoolean(false);
                         block(findViewById(R.id.text1), findViewById(R.id.text), findViewById(R.id.text2));
                         isAnswerTrue = true;
                     } else {
-//                        set_next_false();
-
                         new AlertDialog.Builder(MathTrainerActivity.this)
                                 .setMessage("Упс! Кажется, неверно(( ")
                                 .setNeutralButton("OK", (dialog, id) -> {
                                     dialog.dismiss();
-                                    how_many_true_generations = 0;
                                     generation_of_task();
                                 })
                                 .create().show();

@@ -44,9 +44,12 @@ public class BotGameActivity extends AppCompatActivity
 
     private Game game;
     Ringtone musicPlay;
-    long timeOfPass = System.nanoTime();
-    long stopTime;
+    long time_pass = System.nanoTime();
+    long time_start = System.nanoTime();
+    boolean music = true;
     AtomicInteger howManyPassed = new AtomicInteger(0);
+    AtomicBoolean isMusicPlay = new AtomicBoolean(false);
+    AtomicBoolean d = new AtomicBoolean(true);
     @Override
     public void onBackPressed() {
 
@@ -65,7 +68,10 @@ public class BotGameActivity extends AppCompatActivity
         TextView text = findViewById(R.id.winns);
         text.setText("Выигрыши: " + COUNT);
 
-
+        mGridLayout.setOnClickListener(cl->{
+            howManyPassed.set(howManyPassed.get()+1);
+            time_pass = System.nanoTime();
+        });
 
         TextView g = findViewById(R.id.games);
         g.setText("Игры: " + GAMES);
@@ -120,15 +126,26 @@ public class BotGameActivity extends AppCompatActivity
                         finish();
                     })
                     .setNegativeButton("НЕТ", (dialog, id) -> {
+                        music = false;
                         dialog.dismiss();
                     })
                     .create().show();
         }
 
         musicPlay = RingtoneManager.getRingtone(this, RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE));
-
-        AtomicBoolean isMusicPlay = new AtomicBoolean(false);
-        AtomicBoolean d = new AtomicBoolean(true);
+        Executors.newSingleThreadScheduledExecutor().scheduleAtFixedRate(() -> {
+            if (time_pass - time_start > 10L *1000_000_000) {
+                if (!isMusicPlay.get() && d.get()&& music) {
+                    musicPlay.play();
+                    isMusicPlay.set(true);
+                    d.set(false);
+                }
+            }else if (isMusicPlay.get()) {
+                musicPlay.stop();
+                isMusicPlay.set(false);
+                d.set(true);
+            }
+        }, 0, 1, TimeUnit.SECONDS);
 
 
     }//onCreate

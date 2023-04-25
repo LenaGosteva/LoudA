@@ -85,13 +85,12 @@ public class AlarmController implements AlarmIntentsControllable {
 
     @Override
     public void setRepeatingAlarm(int number_of_week) {
-        long period = 7 * 24 * 60 * 60 * 1000L;
         Calendar add_calendar = Calendar.getInstance();
         add_calendar.set(Calendar.HOUR_OF_DAY, alarm.hours);
         add_calendar.set(Calendar.MINUTE, alarm.minutes);
         add_calendar.set(Calendar.DAY_OF_WEEK, number_of_week);
         Date date = new Date(add_calendar.getTimeInMillis());
-        App.getAlarmManager().setInexactRepeating(AlarmManager.RTC_WAKEUP, add_calendar.getTimeInMillis(), period, getAlarmActionPendingIntent());
+        App.getAlarmManager().setInexactRepeating(AlarmManager.RTC_WAKEUP, add_calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY*7, getAlarmActionPendingIntent());
 
     }
 
