@@ -1,7 +1,5 @@
 package com.example.loudalarm.Activities;
 
-import static com.example.loudalarm.App.ID_IDENTIFICATION;
-
 import android.content.Context;
 import android.content.Intent;
 import android.media.AudioAttributes;
@@ -11,9 +9,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.view.MotionEvent;
-import android.view.View;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -93,7 +88,7 @@ public class RingingActivity extends AppCompatActivity  {
     }
 
     private void startPlayMusic(AlarmEntity alarm) {
-        if (!alarm.music.startsWith("content://media")) alarm.setMusic("content://media" + alarm.music); // устанавливаем музыку
+//        if (!alarm.music.startsWith("content://")) alarm.setMusic("content://" + alarm.music); // устанавливаем музыку
         Uri ringtoneUri = Uri.parse(alarm.music); // сохраняем uri
         Log.e("URI_IN_RINGING", alarm.music); // логируем
         try {
@@ -102,7 +97,6 @@ public class RingingActivity extends AppCompatActivity  {
             mediaPlayer.setAudioAttributes(new AudioAttributes.Builder()
                             .setLegacyStreamType(AudioManager.STREAM_MUSIC)
                     .build());
-
             mediaPlayer.start();
         }catch (Exception e){
 

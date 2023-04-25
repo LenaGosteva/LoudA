@@ -79,7 +79,7 @@ public class AlarmController implements AlarmIntentsControllable {
         Log.e("URI_IN_CONTROLLER", alarm.music);
         Log.d("ID_IN_PENDING", id + "");
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-        return PendingIntent.getActivity(getInstance().getApplicationContext(), id, intent, PendingIntent.FLAG_IMMUTABLE);
+        return PendingIntent.getActivity(getInstance().getApplicationContext(), id, intent, PendingIntent.FLAG_UPDATE_CURRENT);
     }
 
 
