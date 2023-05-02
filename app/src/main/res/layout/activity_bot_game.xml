@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Games.BotGame.BotGameActivity">
-
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:id="@+id/info_bot"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/info"/>
     <TextView
         android:id="@+id/winns"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_margin="20dp"
+        android:layout_below="@+id/info_bot"
         android:textColor="@color/main_text_and_icons_color"
         android:textSize="20dp"/>
 
@@ -19,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="60dp"
+        android:layout_below="@+id/winns"
         android:layout_marginHorizontal="20dp"
         android:textColor="@color/main_text_and_icons_color"
         android:textSize="20dp" />

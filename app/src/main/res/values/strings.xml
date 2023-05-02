@@ -56,4 +56,19 @@
     <string name="whosFirstLabel">Who is first?</string>
     <string name="youLabel">Player</string>
     <string name="aiLabel">Computer</string>
+    <string name="info_for_game_Bot">Первый ход (Ваш): выберите любую ячейку из выделенных цветом; \nОчки суммируются с Вашим счетом.
+    \n\nВторой ход (бота): бот выбирает любую ячейку из выделенных цветом; \nОчки суммируются с его счетом.
+    \n\nДалее повторяются первый и второй ходы, пока не закончатся доступные ячейки; \nВыигрывает тот, у кго больше очков</string>
+    <!-- Strings related to login -->
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

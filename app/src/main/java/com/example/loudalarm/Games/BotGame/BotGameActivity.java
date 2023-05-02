@@ -17,6 +17,7 @@ import android.view.animation.AnimationSet;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.GridLayout;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -62,7 +63,29 @@ public class BotGameActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bot_game);
 
+
+
+        if (App.getDatabaseSP().getBotFirstInfo()){
+            new AlertDialog.Builder(this).setTitle("Правила")
+                    .setIcon(this.getResources().getDrawable(R.drawable.info))
+                    .setMessage(this.getResources().getString(R.string.info_for_game_Bot))
+                    .setPositiveButton("Понятно", (dialog, id) -> {
+                        dialog.dismiss();
+                    }).create().show();
+            App.getDatabaseSP().saveBotFirstInfo(false);
+        }
         mGridLayout = findViewById(R.id.my_grid);
+
+        ImageButton info = findViewById(R.id.info_bot);
+
+        info.setOnClickListener(in ->{
+            new AlertDialog.Builder(this).setTitle("Правила")
+                    .setIcon(this.getResources().getDrawable(R.drawable.info))
+                    .setMessage(this.getResources().getString(R.string.info_for_game_Bot))
+                    .setPositiveButton("Понятно", (dialog, id) -> {
+                        dialog.dismiss();
+                    }).create().show();
+        });
 
 
         TextView text = findViewById(R.id.winns);

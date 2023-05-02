@@ -21,6 +21,7 @@ public class App extends Application {
     public static String ID_IDENTIFICATION = "id";
     public static String URI_SP_NAME = "uri";
     public static String INSTANCE_SP_NAME = "instanse";
+    public static String BOT_SP_NAME = "bot";
     public static String THEME_SP_NAME = "theme";
     public static List<String> names_of_themes = new ArrayList<>();
     public static int SAVE_URI = 1234;
@@ -88,7 +89,7 @@ public class App extends Application {
         databaseSP.saveNumberOfInstance(true);
         names_of_themes.add("Dark theme №1");
         names_of_themes.add("Dark theme №2");
-        names_of_themes.add("Light theme №1");
+        names_of_themes.add("Dark theme №3");
         names_of_themes.add("Light theme №2");
         names_of_themes.add("Light theme №3");
         names_of_themes.add("Violet theme №1");

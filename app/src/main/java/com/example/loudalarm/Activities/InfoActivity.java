@@ -78,7 +78,7 @@ public class InfoActivity extends AppCompatActivity {
         });
 
         binding.skipButton.setOnClickListener(v -> {
-            Intent intent = new Intent(InfoActivity.this, MainActivity.class);
+            Intent intent = new Intent(InfoActivity.this, LoginActivity.class);
             startActivity(intent);
             finish();
         });

@@ -1,5 +1,6 @@
 package com.example.loudalarm.Sp;
 
+import static com.example.loudalarm.App.BOT_SP_NAME;
 import static com.example.loudalarm.App.INSTANCE_SP_NAME;
 import static com.example.loudalarm.App.THEME_SP_NAME;
 import static com.example.loudalarm.App.URI_SP_NAME;
@@ -15,8 +16,6 @@ public class DatabaseSP implements SPDatabase {
     public DatabaseSP(Context context) {
         storage = context.getSharedPreferences("storage", Context.MODE_PRIVATE);
     }
-
-
     public void saveUri(Uri uri) {
         SharedPreferences.Editor editor = storage.edit();
         editor.putString(URI_SP_NAME, uri.toString());
@@ -36,7 +35,15 @@ public class DatabaseSP implements SPDatabase {
         editor.putBoolean(INSTANCE_SP_NAME, bool);
         editor.apply();
     }
+    public boolean getBotFirstInfo() {
+        return storage.getBoolean(BOT_SP_NAME, true);
+    }
 
+    public void saveBotFirstInfo(boolean bool) {
+        SharedPreferences.Editor editor = storage.edit();
+        editor.putBoolean(BOT_SP_NAME, bool);
+        editor.apply();
+    }
     @Override
     public int getIndexOfTheme() {
         return storage.getInt(THEME_SP_NAME, 3);

@@ -58,4 +58,7 @@
     <string name="whosFirstLabel">Who is first?</string>
     <string name="youLabel">Player</string>
     <string name="aiLabel">Computer</string>
+    <string name="info_for_game_Bot">Первый ход (Ваш): выберите любую ячейку из выделенных цветом; \nОчки суммируются с Вашим счетом.
+    \n\nВторой ход (бота): бот выбирает любую ячейку из выделенных цветом; \nОчки суммируются с его счетом.
+    \n\nДалее повторяются первый и второй ходы, пока не закончатся доступные ячейки; \nВыигрывает тот, у кго больше очков</string>
 </resources>
