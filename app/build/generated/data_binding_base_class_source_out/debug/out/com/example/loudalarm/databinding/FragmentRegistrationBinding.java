@@ -4,13 +4,13 @@ package com.example.loudalarm.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.loudalarm.R;
-import com.example.loudalarm.View.ActionButton;
 import com.example.loudalarm.View.InputField;
 import com.example.loudalarm.View.NickName;
 import java.lang.NullPointerException;
@@ -22,7 +22,7 @@ public final class FragmentRegistrationBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final ActionButton buttonEnter;
+  public final Button buttonEnter;
 
   @NonNull
   public final InputField inputEmail;
@@ -31,19 +31,26 @@ public final class FragmentRegistrationBinding implements ViewBinding {
   public final InputField inputPassword;
 
   @NonNull
+  public final View line0;
+
+  @NonNull
+  public final View line2;
+
+  @NonNull
   public final NickName nickname;
 
   @NonNull
   public final InputField repeatPassword;
 
-  private FragmentRegistrationBinding(@NonNull LinearLayout rootView,
-      @NonNull ActionButton buttonEnter, @NonNull InputField inputEmail,
-      @NonNull InputField inputPassword, @NonNull NickName nickname,
-      @NonNull InputField repeatPassword) {
+  private FragmentRegistrationBinding(@NonNull LinearLayout rootView, @NonNull Button buttonEnter,
+      @NonNull InputField inputEmail, @NonNull InputField inputPassword, @NonNull View line0,
+      @NonNull View line2, @NonNull NickName nickname, @NonNull InputField repeatPassword) {
     this.rootView = rootView;
     this.buttonEnter = buttonEnter;
     this.inputEmail = inputEmail;
     this.inputPassword = inputPassword;
+    this.line0 = line0;
+    this.line2 = line2;
     this.nickname = nickname;
     this.repeatPassword = repeatPassword;
   }
@@ -76,7 +83,7 @@ public final class FragmentRegistrationBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.button_enter;
-      ActionButton buttonEnter = ViewBindings.findChildViewById(rootView, id);
+      Button buttonEnter = ViewBindings.findChildViewById(rootView, id);
       if (buttonEnter == null) {
         break missingId;
       }
@@ -93,6 +100,18 @@ public final class FragmentRegistrationBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.line0;
+      View line0 = ViewBindings.findChildViewById(rootView, id);
+      if (line0 == null) {
+        break missingId;
+      }
+
+      id = R.id.line2;
+      View line2 = ViewBindings.findChildViewById(rootView, id);
+      if (line2 == null) {
+        break missingId;
+      }
+
       id = R.id.nickname;
       NickName nickname = ViewBindings.findChildViewById(rootView, id);
       if (nickname == null) {
@@ -106,7 +125,7 @@ public final class FragmentRegistrationBinding implements ViewBinding {
       }
 
       return new FragmentRegistrationBinding((LinearLayout) rootView, buttonEnter, inputEmail,
-          inputPassword, nickname, repeatPassword);
+          inputPassword, line0, line2, nickname, repeatPassword);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

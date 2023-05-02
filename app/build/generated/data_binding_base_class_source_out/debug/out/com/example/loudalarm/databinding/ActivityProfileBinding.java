@@ -4,6 +4,7 @@ package com.example.loudalarm.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -12,7 +13,6 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.loudalarm.R;
-import com.example.loudalarm.View.ActionButton;
 import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -29,17 +29,25 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final CircleImageView iconOfProfile;
 
   @NonNull
+  public final View line0;
+
+  @NonNull
+  public final View line2;
+
+  @NonNull
   public final TextView nameOfProfile;
 
   @NonNull
-  public final ActionButton outAuth;
+  public final Button outAuth;
 
   private ActivityProfileBinding(@NonNull FrameLayout rootView, @NonNull ImageButton cancel,
-      @NonNull CircleImageView iconOfProfile, @NonNull TextView nameOfProfile,
-      @NonNull ActionButton outAuth) {
+      @NonNull CircleImageView iconOfProfile, @NonNull View line0, @NonNull View line2,
+      @NonNull TextView nameOfProfile, @NonNull Button outAuth) {
     this.rootView = rootView;
     this.cancel = cancel;
     this.iconOfProfile = iconOfProfile;
+    this.line0 = line0;
+    this.line2 = line2;
     this.nameOfProfile = nameOfProfile;
     this.outAuth = outAuth;
   }
@@ -83,6 +91,18 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.line0;
+      View line0 = ViewBindings.findChildViewById(rootView, id);
+      if (line0 == null) {
+        break missingId;
+      }
+
+      id = R.id.line2;
+      View line2 = ViewBindings.findChildViewById(rootView, id);
+      if (line2 == null) {
+        break missingId;
+      }
+
       id = R.id.name_of_profile;
       TextView nameOfProfile = ViewBindings.findChildViewById(rootView, id);
       if (nameOfProfile == null) {
@@ -90,12 +110,12 @@ public final class ActivityProfileBinding implements ViewBinding {
       }
 
       id = R.id.outAuth;
-      ActionButton outAuth = ViewBindings.findChildViewById(rootView, id);
+      Button outAuth = ViewBindings.findChildViewById(rootView, id);
       if (outAuth == null) {
         break missingId;
       }
 
-      return new ActivityProfileBinding((FrameLayout) rootView, cancel, iconOfProfile,
+      return new ActivityProfileBinding((FrameLayout) rootView, cancel, iconOfProfile, line0, line2,
           nameOfProfile, outAuth);
     }
     String missingId = rootView.getResources().getResourceName(id);

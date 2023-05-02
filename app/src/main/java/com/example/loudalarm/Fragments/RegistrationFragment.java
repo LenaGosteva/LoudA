@@ -1,26 +1,20 @@
 package com.example.loudalarm.Fragments;
 
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import com.example.loudalarm.Activities.InfoActivity;
-import com.example.loudalarm.Activities.MainActivity;
 import com.example.loudalarm.App;
 import com.example.loudalarm.AuthController.AuthController;
-import com.example.loudalarm.R;
-import com.example.loudalarm.databinding.FragmentAddBinding;
 import com.example.loudalarm.databinding.FragmentRegistrationBinding;
-import com.example.loudalarm.databinding.FragmentSettingsBinding;
 
 
 public class RegistrationFragment extends Fragment {
@@ -46,9 +40,8 @@ public class RegistrationFragment extends Fragment {
                 if(task.isSuccessful()){
                     startActivity(new Intent(App.getInstance(), InfoActivity.class));
                 }else{
-                    Toast.makeText(App.getInstance(), "LKa", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(App.getInstance(), "Jq", Toast.LENGTH_SHORT).show();
                 }
-
                 });
         });
     }

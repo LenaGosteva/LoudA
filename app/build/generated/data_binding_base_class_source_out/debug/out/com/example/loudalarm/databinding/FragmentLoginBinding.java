@@ -4,6 +4,7 @@ package com.example.loudalarm.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -11,7 +12,6 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.loudalarm.R;
-import com.example.loudalarm.View.ActionButton;
 import com.example.loudalarm.View.InputField;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -22,7 +22,7 @@ public final class FragmentLoginBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final ActionButton buttonEnter;
+  public final Button buttonEnter;
 
   @NonNull
   public final InputField inputEmail;
@@ -31,15 +31,23 @@ public final class FragmentLoginBinding implements ViewBinding {
   public final InputField inputPassword;
 
   @NonNull
+  public final View line0;
+
+  @NonNull
+  public final View line2;
+
+  @NonNull
   public final TextView textForgotPassword;
 
-  private FragmentLoginBinding(@NonNull LinearLayout rootView, @NonNull ActionButton buttonEnter,
-      @NonNull InputField inputEmail, @NonNull InputField inputPassword,
-      @NonNull TextView textForgotPassword) {
+  private FragmentLoginBinding(@NonNull LinearLayout rootView, @NonNull Button buttonEnter,
+      @NonNull InputField inputEmail, @NonNull InputField inputPassword, @NonNull View line0,
+      @NonNull View line2, @NonNull TextView textForgotPassword) {
     this.rootView = rootView;
     this.buttonEnter = buttonEnter;
     this.inputEmail = inputEmail;
     this.inputPassword = inputPassword;
+    this.line0 = line0;
+    this.line2 = line2;
     this.textForgotPassword = textForgotPassword;
   }
 
@@ -71,7 +79,7 @@ public final class FragmentLoginBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.button_enter;
-      ActionButton buttonEnter = ViewBindings.findChildViewById(rootView, id);
+      Button buttonEnter = ViewBindings.findChildViewById(rootView, id);
       if (buttonEnter == null) {
         break missingId;
       }
@@ -88,6 +96,18 @@ public final class FragmentLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.line0;
+      View line0 = ViewBindings.findChildViewById(rootView, id);
+      if (line0 == null) {
+        break missingId;
+      }
+
+      id = R.id.line2;
+      View line2 = ViewBindings.findChildViewById(rootView, id);
+      if (line2 == null) {
+        break missingId;
+      }
+
       id = R.id.text_forgot_password;
       TextView textForgotPassword = ViewBindings.findChildViewById(rootView, id);
       if (textForgotPassword == null) {
@@ -95,7 +115,7 @@ public final class FragmentLoginBinding implements ViewBinding {
       }
 
       return new FragmentLoginBinding((LinearLayout) rootView, buttonEnter, inputEmail,
-          inputPassword, textForgotPassword);
+          inputPassword, line0, line2, textForgotPassword);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

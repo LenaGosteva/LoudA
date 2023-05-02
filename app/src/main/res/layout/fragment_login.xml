@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:padding="30dp"
     tools:context="Fragments.LoginFragment">
+
     <com.example.loudalarm.View.InputField
         android:id="@+id/input_email"
         android:layout_width="match_parent"
@@ -39,11 +40,41 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <com.example.loudalarm.View.ActionButton
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:id="@+id/button_enter"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:textAllCaps="true"
-        android:text="Войти" />
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:clickable="true"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textColor="@color/main_text_and_icons_color"
+        android:textSize="18sp">
+
+        <View
+            android:id="@+id/line0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/main_text_and_icons_color"
+            android:fontFamily="sans-serif" />
+
+        <Button
+            android:id="@+id/button_enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line0"
+            android:layout_centerInParent="true"
+            android:background="@color/null_color"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Войти"
+            android:textAllCaps="true" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/button_enter"
+            android:background="@color/main_text_and_icons_color"
+            android:fontFamily="sans-serif" />
+    </RelativeLayout>
 </LinearLayout>

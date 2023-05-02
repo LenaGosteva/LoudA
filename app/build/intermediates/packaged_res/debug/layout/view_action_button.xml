@@ -18,7 +18,7 @@
             android:layout_height="1dp"
             android:background="@color/main_text_and_icons_color" />
 
-    <android.widget.Button
+    <Button
         android:id="@+id/action"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
