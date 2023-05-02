@@ -11,6 +11,7 @@ import androidx.room.Room;
 
 import com.example.loudalarm.Room.Database;
 import com.example.loudalarm.Sp.DatabaseSP;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +19,7 @@ import java.util.List;
 
 public class App extends Application {
 
+    FirebaseAuth auth;
     public static String ID_IDENTIFICATION = "id";
     public static String URI_SP_NAME = "uri";
     public static String INSTANCE_SP_NAME = "instanse";
@@ -85,6 +87,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         instance = this;
+        auth = FirebaseAuth.getInstance();
         databaseSP = new DatabaseSP(instance);
         databaseSP.saveNumberOfInstance(true);
         names_of_themes.add("Dark theme №1");
