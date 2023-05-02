@@ -8,6 +8,7 @@ import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.loudalarm.App;
+import com.example.loudalarm.AuthController.AuthController;
 import com.example.loudalarm.R;
 
 public class SplashActivity extends AppCompatActivity {
@@ -21,13 +22,13 @@ public class SplashActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
-
+        AuthController authController = new AuthController();
         new Handler().postDelayed(() -> {
             if (App.getDatabaseSP().getNumberOfInstance()) {
                 App.databaseSP.saveNumberOfInstance(false);
                 startActivity(new Intent(getBaseContext(), InfoActivity.class));
-            } else {
-                startActivity(new Intent(SplashActivity.this, MainActivity.class));
+            } else if(!authController.isAuth()){
+                startActivity(new Intent(SplashActivity.this, LoginActivity.class));
             }
             finish();
         }, 700);

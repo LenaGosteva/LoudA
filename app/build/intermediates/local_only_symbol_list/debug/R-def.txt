@@ -113,8 +113,6 @@ id alarm_button
 id all_info
 id backBtn
 id button_enter
-id button_first
-id button_second
 id cancel
 id center
 id changeButton
@@ -172,7 +170,6 @@ id name_of_changed_theme
 id name_of_game
 id name_of_profile
 id nav_graph
-id nav_host_fragment_content_profile
 id nav_view
 id navigation_add
 id navigation_home
@@ -182,6 +179,7 @@ id nextbtn
 id nickname
 id note
 id offAlarm
+id outAuth
 id pager
 id problem
 id profile
@@ -216,8 +214,6 @@ id textMessage
 id textTitle
 id text_forgot_password
 id text_info
-id textview_first
-id textview_second
 id thuesday
 id time
 id title
@@ -238,13 +234,10 @@ layout activity_profile
 layout activity_ringing
 layout activity_splash
 layout activity_theme
-layout content_profile
 layout fragment_add
-layout fragment_first
 layout fragment_home
 layout fragment_login
 layout fragment_registration
-layout fragment_second
 layout fragment_settings
 layout item
 layout item_for_list_of_games
@@ -282,10 +275,16 @@ string attachment_summary_off
 string attachment_summary_on
 string attachment_title
 string continueLabel
+string default_web_client_id
 string description_for_game_Bot
 string description_for_game_MathTrainer
 string exitLabel
 string first_fragment_label
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hello_blank_fragment
 string hello_first_fragment
 string hello_second_fragment
@@ -297,6 +296,7 @@ string menuLabel
 string messages_header
 string next
 string previous
+string project_id
 string prompt_email
 string prompt_password
 string reply_title

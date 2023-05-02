@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.loudalarm.app-mergeDebugResources-3:/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "outputFile": "com.example.loudalarm.app-mergeDebugResources-4:/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Lyudmila\\.gradle\\caches\\transforms-3\\3a5c08406d9cc0a70faddb64fa96e66e\\transformed\\preference-1.2.0\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+                    "source": "C:\\Users\\Lyudmila\\.gradle\\caches\\transforms-3\\f6c2b1779e31e6bb801188f71424f6e2\\transformed\\preference-1.2.0\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

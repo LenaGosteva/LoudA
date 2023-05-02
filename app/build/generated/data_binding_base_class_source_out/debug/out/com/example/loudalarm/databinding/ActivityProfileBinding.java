@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.loudalarm.R;
+import com.example.loudalarm.View.ActionButton;
 import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -30,12 +31,17 @@ public final class ActivityProfileBinding implements ViewBinding {
   @NonNull
   public final TextView nameOfProfile;
 
+  @NonNull
+  public final ActionButton outAuth;
+
   private ActivityProfileBinding(@NonNull FrameLayout rootView, @NonNull ImageButton cancel,
-      @NonNull CircleImageView iconOfProfile, @NonNull TextView nameOfProfile) {
+      @NonNull CircleImageView iconOfProfile, @NonNull TextView nameOfProfile,
+      @NonNull ActionButton outAuth) {
     this.rootView = rootView;
     this.cancel = cancel;
     this.iconOfProfile = iconOfProfile;
     this.nameOfProfile = nameOfProfile;
+    this.outAuth = outAuth;
   }
 
   @Override
@@ -83,8 +89,14 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.outAuth;
+      ActionButton outAuth = ViewBindings.findChildViewById(rootView, id);
+      if (outAuth == null) {
+        break missingId;
+      }
+
       return new ActivityProfileBinding((FrameLayout) rootView, cancel, iconOfProfile,
-          nameOfProfile);
+          nameOfProfile, outAuth);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
