@@ -116,8 +116,8 @@
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\activity_theme.xml"
     },
     {
-        "merged": "com.example.loudalarm.app-merged_res-6:/layout_fragment_login.xml.flat",
-        "source": "com.example.loudalarm.app-main-8:/layout/fragment_login.xml"
+        "merged": "com.example.loudalarm.app-merged_res-6:/layout_fragment_home.xml.flat",
+        "source": "com.example.loudalarm.app-main-8:/layout/fragment_home.xml"
     },
     {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-6:\\drawable_ic_launcher_foreground.xml.flat",
@@ -238,10 +238,6 @@
     {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-6:\\layout_activity_profile.xml.flat",
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\activity_profile.xml"
-    },
-    {
-        "merged": "com.example.loudalarm.app-merged_res-6:/layout_fragment_registration.xml.flat",
-        "source": "com.example.loudalarm.app-main-8:/layout/fragment_registration.xml"
     },
     {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-6:\\drawable_account_circle.xml.flat",
@@ -374,10 +370,6 @@
     {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-6:\\drawable_bg_grey.xml.flat",
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\drawable\\bg_grey.xml"
-    },
-    {
-        "merged": "com.example.loudalarm.app-merged_res-6:/layout_activity_profile.xml.flat",
-        "source": "com.example.loudalarm.app-main-8:/layout/activity_profile.xml"
     },
     {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-6:\\drawable_icon_switch_track_down.xml.flat",

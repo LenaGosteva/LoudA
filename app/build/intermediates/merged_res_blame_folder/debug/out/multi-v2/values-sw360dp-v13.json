@@ -4,7 +4,7 @@
             "outputFile": "com.example.loudalarm.app-mergeDebugResources-4:/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Lyudmila\\.gradle\\caches\\transforms-3\\f6c2b1779e31e6bb801188f71424f6e2\\transformed\\preference-1.2.0\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+                    "source": "C:\\Users\\Lyudmila\\.gradle\\caches\\transforms-3\\03eec0b0ee6bcff14a87f360b5db0698\\transformed\\preference-1.2.0\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

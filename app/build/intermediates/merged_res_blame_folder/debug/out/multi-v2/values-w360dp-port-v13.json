@@ -4,7 +4,7 @@
             "outputFile": "com.example.loudalarm.app-mergeDebugResources-4:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Lyudmila\\.gradle\\caches\\transforms-3\\04a5990f7a338a795d8c214467a87ac4\\transformed\\material-1.8.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
+                    "source": "C:\\Users\\Lyudmila\\.gradle\\caches\\transforms-3\\f9c28eb245f4c8bc1c8af3a3eff5b023\\transformed\\material-1.8.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

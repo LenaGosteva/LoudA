@@ -4,7 +4,7 @@
             "outputFile": "com.example.loudalarm.app-mergeDebugResources-4:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Lyudmila\\.gradle\\caches\\transforms-3\\5f6014a17dc3b022095c0005cb976186\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Lyudmila\\.gradle\\caches\\transforms-3\\2a6b8d47231ddcb1817ffe241541665b\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Lyudmila\\.gradle\\caches\\transforms-3\\0b9ffa147e64dd7176562002c9b90a42\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Lyudmila\\.gradle\\caches\\transforms-3\\7fc5a28e9b3439055681e2452656b3d1\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

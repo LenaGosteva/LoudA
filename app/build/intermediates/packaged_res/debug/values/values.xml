@@ -69,17 +69,17 @@
     </string>
     <string name="attachment_title">Download incoming attachments</string>
     <string name="continueLabel">Continue</string>
-    <string name="default_web_client_id" translatable="false">968437438900-s84f6duf2kg1ppcbgelb4rtik0icouk9.apps.googleusercontent.com</string>
+    <string name="default_web_client_id" translatable="false">640309405314-u3dkvplufi08mb2plasvfjcbl69i550h.apps.googleusercontent.com</string>
     <string name="description_for_game_Bot">Обыграй бота! \nДля выбора клетки с различным количеством очков попеременно Вам и боту дается доступ к одной строке или столбцу, на которой Вы можете выбрать одну клетку, суммируя значения очков
     \nИгра идет, пока есть возможность ходов</string>
     <string name="description_for_game_MathTrainer">Реши математический пример! \nВсе, что нужно - немного арифметики и внимания)</string>
     <string name="exitLabel">Exit Game</string>
     <string name="first_fragment_label">First Fragment</string>
-    <string name="gcm_defaultSenderId" translatable="false">968437438900</string>
-    <string name="google_api_key" translatable="false">AIzaSyD0Ebc4hk6QoX8CR3S2VzOsYbTjBQbZYH4</string>
-    <string name="google_app_id" translatable="false">1:968437438900:android:1dd9c7d0975450f291fae1</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD0Ebc4hk6QoX8CR3S2VzOsYbTjBQbZYH4</string>
-    <string name="google_storage_bucket" translatable="false">loudalarm-c1c79.appspot.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">640309405314</string>
+    <string name="google_api_key" translatable="false">AIzaSyAPwrxBzt99y0hzoWUpPCZuwIuPxficuTg</string>
+    <string name="google_app_id" translatable="false">1:640309405314:android:7f7e54d817cfca75ac369b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAPwrxBzt99y0hzoWUpPCZuwIuPxficuTg</string>
+    <string name="google_storage_bucket" translatable="false">loudalarm-aed8c.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
@@ -93,7 +93,7 @@
     <string name="messages_header">Messages</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-    <string name="project_id" translatable="false">loudalarm-c1c79</string>
+    <string name="project_id" translatable="false">loudalarm-aed8c</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="reply_title">Default reply action</string>

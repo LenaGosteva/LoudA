@@ -37,12 +37,13 @@ public class RegistrationFragment extends Fragment {
             String password = binding.inputPassword.getInputText();
             String nickname = binding.nickname.getInputText();
             authController.registerUser(email, password, task->{
-                if(task.isSuccessful()){
+                if (task.isSuccessful()) {
                     startActivity(new Intent(App.getInstance(), InfoActivity.class));
-                }else{
+                }
+                if (task.isComplete()) {
                     Toast.makeText(App.getInstance(), "Jq", Toast.LENGTH_SHORT).show();
                 }
-                });
+            });
         });
     }
 
