@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="Fragments.RegistrationFragment">
+    <com.example.loudalarm.View.InputField
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="textEmailAddress"
+        app:title="Email address" />
+
+    <com.example.loudalarm.View.InputField
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        app:title="Password" />
+
+    <com.example.loudalarm.View.InputField
+        android:id="@+id/repeat_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        app:title="Repeat Password" />
+
+    <com.example.loudalarm.View.NickName
+        android:id="@+id/nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        app:title="NickName" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.example.loudalarm.View.ActionButton
+
+        android:layout_width="match_parent"
+        android:id="@+id/button_enter"
+        android:textAllCaps="true"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:text="Зарегистрироваться" />
+</LinearLayout>

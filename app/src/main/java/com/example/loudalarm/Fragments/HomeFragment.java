@@ -1,5 +1,6 @@
 package com.example.loudalarm.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.ItemTouchHelper;
 
+import com.example.loudalarm.Activities.ProfileActivity;
 import com.example.loudalarm.Adapters.AlarmAdapter;
 import com.example.loudalarm.AlarmIntentsController.AlarmController;
 import com.example.loudalarm.App;
@@ -108,7 +110,7 @@ adapter.notifyDataSetChanged();
             binding.deleteAny.setVisibility(View.GONE);
             binding.putOn.setVisibility(View.GONE);
         });
-
+        LayoutInflater inflater = requireActivity().getLayoutInflater();
 
         binding.deleteAny.setOnClickListener(delete -> {
 
@@ -127,7 +129,12 @@ adapter.notifyDataSetChanged();
             binding.putOn.setVisibility(View.GONE);
 
         });
+        binding.profile.setOnClickListener(pr->{
+            Intent intent = new Intent(App.getInstance(), ProfileActivity.class);
+            startActivity(intent);
+        });
     }
+
 
     @Override
     public void onDestroyView() {

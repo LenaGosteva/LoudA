@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="60dp"
+    android:animateLayoutChanges="true"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context=".Fragments.AddFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:id="@+id/create_new_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/icon_save_new_alarm" />
+
+        <android.widget.Button
+
+            android:id="@+id/alarm_button"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/null_color"
+            android:fontFamily="sans-serif"
+            android:hint="12:56"
+            android:textColor="@color/main_text_and_icons_color"
+            android:textColorHint="@color/main_text_and_icons_color"
+            android:textFontWeight="100"
+            android:textSize="90dp"
+            android:translationZ="10dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/main_text_and_icons_color">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/today"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:fontFamily="sans-serif-thin"
+                    android:gravity="center_vertical"
+                    android:text="УСТАНОВИТЬ НА СЕГОДНЯ"
+                    android:textColor="@color/main_text_and_icons_color" />
+
+                <Switch
+                    android:id="@+id/setOnToday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:minHeight="64dp"
+                    android:track="@drawable/icon_switch_track_up" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="ПОВТОР ПО ДНЯМ НЕДЕЛИ"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:id="@+id/mtrl_calendar_days_of_week"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:textColor="@color/main_text_and_icons_color">
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    android:id="@+id/monday"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/toggle"
+                    android:textOff="M"
+                    android:textOn="M"
+                    android:textSize="13sp"
+                    android:translationZ="5dp" />
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    android:id="@+id/tuesday"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/toggle"
+                    android:textOff="Tu"
+                    android:textOn="Tu"
+                    android:textSize="13sp"
+                    android:translationZ="5dp" />
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    android:id="@+id/wednesday"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/toggle"
+                    android:textOff="W"
+                    android:textOn="W"
+                    android:textSize="13sp"
+                    android:translationZ="5dp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    android:id="@+id/thuesday"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/toggle"
+                    android:textOff="Th"
+                    android:textOn="Th"
+                    android:textSize="13sp"
+                    android:translationZ="5dp" />
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    android:id="@+id/friday"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/toggle"
+                    android:textOff="F"
+                    android:textOn="F"
+                    android:textSize="13sp"
+                    android:translationZ="5dp" />
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    android:id="@+id/saturday"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/toggle"
+                    android:textOff="Sa"
+                    android:textOn="Sa"
+                    android:textSize="13sp"
+                    android:translationZ="5dp" />
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    android:id="@+id/sunday"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/toggle"
+                    android:textOff="Su"
+                    android:textOn="Su"
+                    android:textSize="13sp"
+                    android:translationZ="5dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel0"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/title">
+
+                <View
+                    android:id="@+id/line0"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/main_text_and_icons_color" />
+
+                <LinearLayout
+                    android:id="@+id/linear_in_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/icon_note" />
+
+                    <RelativeLayout
+                        android:id="@+id/rel_in_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line0"
+                        android:layout_alignParentStart="false"
+                        android:layout_marginVertical="10dp">
+
+
+                        <android.widget.Button
+                            android:id="@+id/note"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@color/null_color"
+                            android:fontFamily="sans-serif-thin"
+                            android:gravity="center_vertical"
+                            android:text="Заметка"
+                            android:textAllCaps="true"
+                            android:textFontWeight="300"
+                            android:textSize="15dp" />
+
+                        <EditText
+                            android:id="@+id/textMessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/note"
+                            android:background="@color/null_color"
+                            android:inputType="textShortMessage"
+                            android:textColor="@color/main_text_and_icons_color"
+                            android:textColorHint="@color/main_text_and_icons_color" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line02"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/linear_in_0"
+                    android:background="@color/main_text_and_icons_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/title">
+
+                <LinearLayout
+                    android:id="@+id/linear_in_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/icon_melody" />
+
+                    <RelativeLayout
+                        android:id="@+id/rel_in_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line0"
+                        android:layout_alignParentStart="false"
+                        android:layout_marginVertical="10dp">
+
+
+                        <android.widget.Button
+                            android:id="@+id/ringtone"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@color/null_color"
+                            android:fontFamily="sans-serif-thin"
+                            android:gravity="center_vertical"
+                            android:text="Мелодия"
+                            android:textAllCaps="true"
+                            android:textFontWeight="300"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/nameOfCheckedMusic"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/ringtone"
+                            android:layout_marginBottom="3dp"
+                            android:gravity="center_vertical"
+                            android:text="path of music"
+                            android:textSize="15dp"
+                            tools:hint="dfghjnbhjkkjhg" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/linear_in_1"
+                    android:background="@color/main_text_and_icons_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title">
+
+                <LinearLayout
+                    android:id="@+id/linear_in_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/icon_sound" />
+
+                    <RelativeLayout
+                        android:id="@+id/rel_in_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line0"
+                        android:layout_alignParentStart="false"
+                        android:layout_marginVertical="10dp">
+
+
+                        <android.widget.Button
+                            android:id="@+id/loud"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@color/null_color"
+                            android:fontFamily="sans-serif-thin"
+                            android:gravity="center_vertical"
+                            android:text="Громкость"
+                            android:textAllCaps="true"
+                            android:textFontWeight="300"
+                            android:textSize="15dp" />
+
+                        <SeekBar
+                            android:id="@+id/volumeControl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/loud"
+                            android:max="100"
+                            android:min="0" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/linear_in_2"
+                    android:background="@color/main_text_and_icons_color" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-thin"
+                    android:gravity="center_vertical"
+                    android:text="ВИБРАЦИЯ"
+                    android:textColor="@color/main_text_and_icons_color"
+                    android:textSize="15dp" />
+
+                <Switch
+                    android:id="@+id/vibration"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:minHeight="64dp"
+                    android:track="@drawable/icon_switch_track_up" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-thin"
+                    android:gravity="center_vertical"
+                    android:text="ПОСТЕПЕННО УВЕЛИЧИВАТЬ ГРОМКОСТЬ"
+                    android:textColor="@color/main_text_and_icons_color"
+                    android:textSize="15dp" />
+
+                <Switch
+                    android:id="@+id/moreLoud"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:minHeight="64dp"
+                    android:track="@drawable/icon_switch_track_up" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

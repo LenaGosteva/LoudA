@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.loudalarm.app-mergeDebugResources-3:/values-w1240dp-v13/values-w1240dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Projects\\LoudAlarm\\app\\src\\main\\res\\values-w1240dp\\ids.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "36",
+                        "endOffsets": "89"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "157",
+                        "endColumns": "35",
+                        "endOffsets": "188"
+                    }
+                },
+                {
+                    "source": "C:\\Projects\\LoudAlarm\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
+                    "from": {
+                        "startLines": "1,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "16,75",
+                        "endColumns": "58,42",
+                        "endOffsets": "70,113"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,114",
+                        "endColumns": "58,42",
+                        "endOffsets": "109,152"
+                    }
+                }
+            ]
+        }
+    ]
+}

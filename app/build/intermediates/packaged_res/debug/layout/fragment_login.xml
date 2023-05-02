@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context="Fragments.LoginFragment">
+    <com.example.loudalarm.View.InputField
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:inputType="textEmailAddress"
+        app:title="Email address" />
+
+    <com.example.loudalarm.View.InputField
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:inputType="textPassword"
+        app:title="Password" />
+
+    <TextView
+        android:id="@+id/text_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="10dp"
+        android:text="Забыл пароль?"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/main_text_and_icons_color" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.example.loudalarm.View.ActionButton
+        android:layout_width="match_parent"
+        android:id="@+id/button_enter"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:text="Войти" />
+</LinearLayout>

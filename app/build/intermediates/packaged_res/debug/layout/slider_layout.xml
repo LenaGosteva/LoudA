@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:foregroundGravity="center"
+    android:gravity="center"
+    android:paddingBottom="50dp"
+    android:paddingHorizontal="20dp"
+    app:flow_horizontalAlign="center">
+
+    <ImageView
+        android:id="@+id/titleImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/layoutTitle"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/alarm" />
+
+    <LinearLayout
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/line0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/main_text_and_icons_color" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/Hello"
+            android:textAlignment="center"
+            android:textColor="@color/main_text_and_icons_color"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textTitle"
+            android:layout_marginTop="20dp"
+            android:text="@string/HelloDescription"
+            android:textAlignment="center"
+            android:textColor="@color/main_text_and_icons_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/main_text_and_icons_color" />
+    </LinearLayout>
+</RelativeLayout>

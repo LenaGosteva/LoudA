@@ -1,0 +1,414 @@
+[
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_view_nickname.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\view_nickname.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_activity_bot_game.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\activity_bot_game.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_bg_red.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\bg_red.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_melody.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_melody.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_background_1.jpg.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\background_1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_game_2.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_game_2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_kitty.png.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\kitty.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_delete.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_delete.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_change_theme.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_change_theme.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_done_all.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_done_all.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_save.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_save.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_bg_blue.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\bg_blue.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_alarm_image.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\alarm_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\xml_root_preferences.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\xml\\root_preferences.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_switch_thumb.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_switch_thumb.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_activity_math_trainer.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\activity_math_trainer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_bg_grey.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\bg_grey.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_item.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_toggle_up.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\toggle_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_content_profile.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\content_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_why_2.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_why_2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_buttons_true.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\buttons_true.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_background.png.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_switch_track_up.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_switch_track_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_buttons.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\buttons.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_view_action_button.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\view_action_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_activity_info.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\activity_info.xml"
+    },
+    {
+        "merged": "com.example.loudalarm.app-merged_res-5:/layout_activity_profile.xml.flat",
+        "source": "com.example.loudalarm.app-main-7:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_main.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_slider_layout.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\slider_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_fragment_first.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\fragment_first.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_toggle.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\toggle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_background_light.png.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\background_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_view_input_field.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\view_input_field.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_go_2.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_go_2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_sound.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_sound.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_enter_tab_layout_bg.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\enter_tab_layout_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_arrow_next.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\arrow_next.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_background_light_2.png.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\background_light_2.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_goal.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_goal.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_arrow_back.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\arrow_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_circle.png.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\circle.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_next_plan.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\next_plan.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_bottom_navigation.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\bottom_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_fragment_second.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\fragment_second.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_goal_2.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_goal_2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_put_on.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_put_on.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_note.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_note.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\menu_menu_for_change_all_alarms.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\menu\\menu_for_change_all_alarms.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_switch_track_down.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_switch_track_down.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_fragment_login.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_fragment_settings.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_alarm.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\alarm.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\font_comfortaa_light.ttf.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\font\\comfortaa_light.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\font_coming_soon.ttf.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\font\\coming_soon.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_buttons_false.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\buttons_false.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_go.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_go.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_info.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\info.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_circle_profile.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\circle_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_add.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_account_circle.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\account_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_theme_slider_layout.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\theme_slider_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_fragment_registration.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\fragment_registration.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_activity_theme.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\activity_theme.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_toggle_down.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\toggle_down.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_game.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_game.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_item_for_list_of_games.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\item_for_list_of_games.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_cross.png.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\cross.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_view_alert_dialog.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\view_alert_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_settings.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_save_new_alarm.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_save_new_alarm.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_fragment_add.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\fragment_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\layout_activity_ringing.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\layout\\activity_ringing.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_background_light_3.png.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\background_light_3.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_home.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_icon_why.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\icon_why.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_background_violet_dark.png.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\background_violet_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_cancel.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\cancel.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-5:\\drawable_splash.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-7:\\drawable\\splash.xml"
+    }
+]
