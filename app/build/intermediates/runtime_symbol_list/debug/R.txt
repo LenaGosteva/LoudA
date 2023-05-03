@@ -2956,6 +2956,7 @@ int drawable icon_add 0x7f0800c1
 int drawable icon_change_theme 0x7f0800c2
 int drawable icon_delete 0x7f0800c3
 int drawable icon_done_all 0x7f0800c4
+int drawable icon_edit 0x7f08012b
 int drawable icon_game 0x7f0800c5
 int drawable icon_game_2 0x7f0800c6
 int drawable icon_go 0x7f0800c7
@@ -3179,6 +3180,7 @@ int id browser_actions_menu_items 0x7f0a0073
 int id browser_actions_menu_view 0x7f0a0074
 int id buttonPanel 0x7f0a0075
 int id button_enter 0x7f0a0076
+int id button_icon 0x7f0a027d
 int id cache_measures 0x7f0a0077
 int id callMeasure 0x7f0a0078
 int id cancel 0x7f0a0079
@@ -3261,6 +3263,7 @@ int id easeIn 0x7f0a00c5
 int id easeInOut 0x7f0a00c6
 int id easeOut 0x7f0a00c7
 int id east 0x7f0a00c8
+int id edit_name 0x7f0a027e
 int id edit_query 0x7f0a00c9
 int id elastic 0x7f0a00ca
 int id embed 0x7f0a00cb

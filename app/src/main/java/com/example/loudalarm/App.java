@@ -11,7 +11,6 @@ import androidx.room.Room;
 
 import com.example.loudalarm.Room.Database;
 import com.example.loudalarm.Sp.DatabaseSP;
-import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,11 +20,13 @@ public class App extends Application {
 
     public static String ID_IDENTIFICATION = "id";
     public static String URI_SP_NAME = "uri";
+    public static String ICON_PROFILE = "/chudo-prirody.com/uploads/posts/2021-08/1628835471_25-p-rizhii-kotik-foto-26.jpg";
     public static String INSTANCE_SP_NAME = "instanse";
     public static String BOT_SP_NAME = "bot";
     public static String THEME_SP_NAME = "theme";
     public static List<String> names_of_themes = new ArrayList<>();
     public static int SAVE_URI = 1234;
+    public static int SAVE_IMAGE = 121234;
     public static int SAVE_THEME = 12934;
     public static int indexOfTheme;
     public static int[] themes = {

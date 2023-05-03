@@ -32,10 +32,6 @@
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\activity_info.xml"
     },
     {
-        "merged": "com.example.loudalarm.app-mergeDebugResources-5:/layout/fragment_home.xml",
-        "source": "com.example.loudalarm.app-main-8:/layout/fragment_home.xml"
-    },
-    {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\fragment_settings.xml",
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\fragment_settings.xml"
     },
@@ -78,6 +74,10 @@
     {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\fragment_registration.xml",
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\fragment_registration.xml"
+    },
+    {
+        "merged": "com.example.loudalarm.app-mergeDebugResources-5:/layout/activity_profile.xml",
+        "source": "com.example.loudalarm.app-main-8:/layout/activity_profile.xml"
     },
     {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\fragment_home.xml",

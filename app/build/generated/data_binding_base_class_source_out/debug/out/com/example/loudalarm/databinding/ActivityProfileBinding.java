@@ -23,7 +23,13 @@ public final class ActivityProfileBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
+  public final ImageButton buttonIcon;
+
+  @NonNull
   public final ImageButton cancel;
+
+  @NonNull
+  public final ImageButton editName;
 
   @NonNull
   public final CircleImageView iconOfProfile;
@@ -40,11 +46,14 @@ public final class ActivityProfileBinding implements ViewBinding {
   @NonNull
   public final Button outAuth;
 
-  private ActivityProfileBinding(@NonNull FrameLayout rootView, @NonNull ImageButton cancel,
+  private ActivityProfileBinding(@NonNull FrameLayout rootView, @NonNull ImageButton buttonIcon,
+      @NonNull ImageButton cancel, @NonNull ImageButton editName,
       @NonNull CircleImageView iconOfProfile, @NonNull View line0, @NonNull View line2,
       @NonNull TextView nameOfProfile, @NonNull Button outAuth) {
     this.rootView = rootView;
+    this.buttonIcon = buttonIcon;
     this.cancel = cancel;
+    this.editName = editName;
     this.iconOfProfile = iconOfProfile;
     this.line0 = line0;
     this.line2 = line2;
@@ -79,9 +88,21 @@ public final class ActivityProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.button_icon;
+      ImageButton buttonIcon = ViewBindings.findChildViewById(rootView, id);
+      if (buttonIcon == null) {
+        break missingId;
+      }
+
       id = R.id.cancel;
       ImageButton cancel = ViewBindings.findChildViewById(rootView, id);
       if (cancel == null) {
+        break missingId;
+      }
+
+      id = R.id.edit_name;
+      ImageButton editName = ViewBindings.findChildViewById(rootView, id);
+      if (editName == null) {
         break missingId;
       }
 
@@ -115,8 +136,8 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityProfileBinding((FrameLayout) rootView, cancel, iconOfProfile, line0, line2,
-          nameOfProfile, outAuth);
+      return new ActivityProfileBinding((FrameLayout) rootView, buttonIcon, cancel, editName,
+          iconOfProfile, line0, line2, nameOfProfile, outAuth);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

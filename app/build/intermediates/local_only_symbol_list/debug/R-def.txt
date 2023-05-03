@@ -73,6 +73,7 @@ drawable icon_add
 drawable icon_change_theme
 drawable icon_delete
 drawable icon_done_all
+drawable icon_edit
 drawable icon_game
 drawable icon_game_2
 drawable icon_go
@@ -113,6 +114,7 @@ id alarm_button
 id all_info
 id backBtn
 id button_enter
+id button_icon
 id cancel
 id center
 id changeButton
@@ -125,6 +127,7 @@ id create_new_alarm
 id date
 id days
 id delete_any
+id edit_name
 id fl_content
 id friday
 id games

@@ -2957,6 +2957,7 @@ drawable icon_add
 drawable icon_change_theme
 drawable icon_delete
 drawable icon_done_all
+drawable icon_edit
 drawable icon_game
 drawable icon_game_2
 drawable icon_go
@@ -3180,6 +3181,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id buttonPanel
 id button_enter
+id button_icon
 id cache_measures
 id callMeasure
 id cancel
@@ -3262,6 +3264,7 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id edit_name
 id edit_query
 id elastic
 id embed

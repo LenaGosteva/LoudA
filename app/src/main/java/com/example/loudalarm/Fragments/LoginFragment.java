@@ -2,22 +2,19 @@ package com.example.loudalarm.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.example.loudalarm.Activities.InfoActivity;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
+import com.example.loudalarm.Activities.MainActivity;
 import com.example.loudalarm.App;
 import com.example.loudalarm.AuthController.AuthController;
-import com.example.loudalarm.R;
 import com.example.loudalarm.databinding.FragmentLoginBinding;
-import com.example.loudalarm.databinding.FragmentRegistrationBinding;
 
 public class LoginFragment extends Fragment {
     FragmentLoginBinding binding;
@@ -36,9 +33,9 @@ public class LoginFragment extends Fragment {
             String password = binding.inputPassword.getInputText();
             authController.enterUser(email, password, task->{
                 if(task.isSuccessful()){
-                    startActivity(new Intent(App.getInstance(), InfoActivity.class));
+                    startActivity(new Intent(App.getInstance(), MainActivity.class));
                 }else{
-                    Toast.makeText(App.getInstance(), "LKa", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(App.getInstance(), "...", Toast.LENGTH_SHORT).show();
                 }
 
             });

@@ -27,8 +27,10 @@ public class SplashActivity extends AppCompatActivity {
             if (App.getDatabaseSP().getNumberOfInstance()) {
                 App.databaseSP.saveNumberOfInstance(false);
                 startActivity(new Intent(getBaseContext(), InfoActivity.class));
-            } else if(!authController.isAuth()){
+            } else if (authController.getUser() == null) {
                 startActivity(new Intent(SplashActivity.this, LoginActivity.class));
+            } else {
+                startActivity(new Intent(SplashActivity.this, MainActivity.class));
             }
             finish();
         }, 700);

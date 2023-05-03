@@ -29,28 +29,52 @@
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="30dp"
             android:background="@drawable/circle_profile"
+            android:clickable="true"
             android:src="@drawable/kitty"
             app:cornerRadius="75dp" />
 
+        <ImageButton
+            android:id="@+id/button_icon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/cancel"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/null_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/icon_of_profile"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
         <TextView
             android:id="@+id/name_of_profile"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/icon_of_profile"
+            android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:gravity="center"
+            android:layout_weight="1"
             android:layout_marginTop="30dp"
             android:textColor="@color/main_text_and_icons_color"
             android:textSize="20dp"
             android:text="Linda Grey"
 
             />
-
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            <ImageButton
+                android:layout_width="50dp"
+                android:id="@+id/edit_name"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_edit"/>
+    </LinearLayout>
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="4"
             android:clickable="true"
+            android:layout_alignParentBottom="true"
             android:fontFamily="sans-serif"
             android:gravity="center"
             android:textColor="@color/main_text_and_icons_color"
@@ -72,7 +96,7 @@
                 android:background="@color/null_color"
                 android:fontFamily="sans-serif"
                 android:gravity="center"
-                android:text="Войти"
+                android:text="Выйти"
                 android:textAllCaps="true" />
 
             <View

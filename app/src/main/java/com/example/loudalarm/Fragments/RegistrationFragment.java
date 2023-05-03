@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.loudalarm.Activities.InfoActivity;
+import com.example.loudalarm.Activities.MainActivity;
 import com.example.loudalarm.App;
 import com.example.loudalarm.AuthController.AuthController;
 import com.example.loudalarm.databinding.FragmentRegistrationBinding;
@@ -36,12 +36,12 @@ public class RegistrationFragment extends Fragment {
             String email = binding.inputEmail.getInputText();
             String password = binding.inputPassword.getInputText();
             String nickname = binding.nickname.getInputText();
-            authController.registerUser(email, password, task->{
+            authController.registerUser(email, password, nickname, task -> {
                 if (task.isSuccessful()) {
-                    startActivity(new Intent(App.getInstance(), InfoActivity.class));
+                    startActivity(new Intent(App.getInstance(), MainActivity.class));
                 }
                 if (task.isComplete()) {
-                    Toast.makeText(App.getInstance(), "Jq", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(App.getInstance(), " ", Toast.LENGTH_SHORT).show();
                 }
             });
         });
