@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">640309405314-u3dkvplufi08mb2plasvfjcbl69i550h.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">640309405314</string>
+    <string name="google_api_key" translatable="false">AIzaSyAPwrxBzt99y0hzoWUpPCZuwIuPxficuTg</string>
+    <string name="google_app_id" translatable="false">1:640309405314:android:7f7e54d817cfca75ac369b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAPwrxBzt99y0hzoWUpPCZuwIuPxficuTg</string>
+    <string name="google_storage_bucket" translatable="false">loudalarm-aed8c.appspot.com</string>
+    <string name="project_id" translatable="false">loudalarm-aed8c</string>
+</resources>

@@ -3458,7 +3458,6 @@ int id neverCompleteToEnd 0x7f0a0187
 int id neverCompleteToStart 0x7f0a0188
 int id next 0x7f0a0189
 int id nextbtn 0x7f0a018a
-int id nickname 0x7f0a018b
 int id noScroll 0x7f0a018c
 int id noState 0x7f0a018d
 int id none 0x7f0a018e

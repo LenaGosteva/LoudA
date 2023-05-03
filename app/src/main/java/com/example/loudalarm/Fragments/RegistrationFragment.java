@@ -35,8 +35,7 @@ public class RegistrationFragment extends Fragment {
         binding.buttonEnter.setOnClickListener(enter->{
             String email = binding.inputEmail.getInputText();
             String password = binding.inputPassword.getInputText();
-            String nickname = binding.nickname.getInputText();
-            authController.registerUser(email, password, nickname, task -> {
+            authController.registerUser(email, password, task -> {
                 if (task.isSuccessful()) {
                     startActivity(new Intent(App.getInstance(), MainActivity.class));
                 }

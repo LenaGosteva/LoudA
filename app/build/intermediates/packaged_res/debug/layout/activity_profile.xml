@@ -47,28 +47,31 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/icon_of_profile"
-            android:orientation="horizontal"
-            android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/name_of_profile"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:layout_marginTop="30dp"
-            android:textColor="@color/main_text_and_icons_color"
-            android:textSize="20dp"
-            android:text="Linda Grey"
+            android:orientation="horizontal">
 
-            />
-            <ImageButton
-                android:layout_width="50dp"
-                android:id="@+id/edit_name"
+            <TextView
+                android:id="@+id/name_of_profile"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:src="@drawable/icon_edit"/>
-    </LinearLayout>
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/main_text_and_icons_color"
+                android:textSize="20dp"
+                android:text="Linda Grey"
+
+                />
+
+            <ImageButton
+                android:id="@+id/edit_name"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_edit" />
+        </LinearLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -179,7 +179,6 @@ id navigation_home
 id navigation_settings
 id next
 id nextbtn
-id nickname
 id note
 id offAlarm
 id outAuth

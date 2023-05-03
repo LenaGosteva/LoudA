@@ -67,7 +67,7 @@ public class ProfileActivity extends AppCompatActivity {
                     .setPositiveButton("Изменить",
                             (dialog, which) -> {
                                 controller.updateName(input.getText().toString());
-                                binding.nameOfProfile.setText("Unknown");
+                                binding.nameOfProfile.setText(controller.getUser().getDisplayName());
                                 dialog.cancel();
                             })
                     .setNegativeButton("Закрыть",

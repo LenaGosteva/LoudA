@@ -12,7 +12,6 @@ import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.loudalarm.R;
 import com.example.loudalarm.View.InputField;
-import com.example.loudalarm.View.NickName;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -37,21 +36,17 @@ public final class FragmentRegistrationBinding implements ViewBinding {
   public final View line2;
 
   @NonNull
-  public final NickName nickname;
-
-  @NonNull
   public final InputField repeatPassword;
 
   private FragmentRegistrationBinding(@NonNull LinearLayout rootView, @NonNull Button buttonEnter,
       @NonNull InputField inputEmail, @NonNull InputField inputPassword, @NonNull View line0,
-      @NonNull View line2, @NonNull NickName nickname, @NonNull InputField repeatPassword) {
+      @NonNull View line2, @NonNull InputField repeatPassword) {
     this.rootView = rootView;
     this.buttonEnter = buttonEnter;
     this.inputEmail = inputEmail;
     this.inputPassword = inputPassword;
     this.line0 = line0;
     this.line2 = line2;
-    this.nickname = nickname;
     this.repeatPassword = repeatPassword;
   }
 
@@ -112,12 +107,6 @@ public final class FragmentRegistrationBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.nickname;
-      NickName nickname = ViewBindings.findChildViewById(rootView, id);
-      if (nickname == null) {
-        break missingId;
-      }
-
       id = R.id.repeat_password;
       InputField repeatPassword = ViewBindings.findChildViewById(rootView, id);
       if (repeatPassword == null) {
@@ -125,7 +114,7 @@ public final class FragmentRegistrationBinding implements ViewBinding {
       }
 
       return new FragmentRegistrationBinding((LinearLayout) rootView, buttonEnter, inputEmail,
-          inputPassword, line0, line2, nickname, repeatPassword);
+          inputPassword, line0, line2, repeatPassword);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "640309405314",
+    "project_id": "loudalarm-aed8c",
+    "storage_bucket": "loudalarm-aed8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640309405314:android:7f7e54d817cfca75ac369b",
+        "android_client_info": {
+          "package_name": "com.example.loudalarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640309405314-2cltbu13t2e2i6b190snertu4eu9vl6f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.loudalarm",
+            "certificate_hash": "96f6bcb40407fe63ec1678f85a36db4ff163bef4"
+          }
+        },
+        {
+          "client_id": "640309405314-u3dkvplufi08mb2plasvfjcbl69i550h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPwrxBzt99y0hzoWUpPCZuwIuPxficuTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640309405314-u3dkvplufi08mb2plasvfjcbl69i550h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

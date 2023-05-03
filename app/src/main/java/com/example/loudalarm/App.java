@@ -88,7 +88,7 @@ public class App extends Application {
     public void onCreate() {
         instance = this;
         databaseSP = new DatabaseSP(instance);
-        databaseSP.saveNumberOfInstance(true);
+//        databaseSP.saveNumberOfInstance(true);
         names_of_themes.add("Dark theme №1");
         names_of_themes.add("Dark theme №2");
         names_of_themes.add("Dark theme №3");

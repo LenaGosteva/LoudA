@@ -3459,7 +3459,6 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id next
 id nextbtn
-id nickname
 id noScroll
 id noState
 id none

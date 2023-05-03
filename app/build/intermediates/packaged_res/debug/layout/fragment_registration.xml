@@ -32,20 +32,14 @@
         android:inputType="textPassword"
         app:title="Repeat Password" />
 
-    <com.example.loudalarm.View.NickName
-        android:id="@+id/nickname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:inputType="text"
-        app:title="NickName" />
+
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="4"
@@ -71,6 +65,7 @@
             android:background="@color/null_color"
             android:fontFamily="sans-serif"
             android:gravity="center"
+            android:textColor="@color/main_text_and_icons_color"
             android:text="Зарегистрироваться"
             android:textAllCaps="true" />
 
