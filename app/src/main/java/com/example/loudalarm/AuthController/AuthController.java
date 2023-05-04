@@ -42,6 +42,7 @@ public class AuthController {
         user.updateProfile(new UserProfileChangeRequest.Builder()
                 .setDisplayName(name).build()
         );
+
     }
 
     public void enterUser(String email, String password, OnCompleteListener<AuthResult> listener) {

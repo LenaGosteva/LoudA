@@ -65,7 +65,8 @@
             android:layout_centerInParent="true"
             android:background="@color/null_color"
             android:fontFamily="sans-serif"
-            android:gravity="center"            android:textColor="@color/main_text_and_icons_color"
+            android:gravity="center"
+            android:textColor="@color/main_text_and_icons_color"
 
             android:text="Войти"
             android:textAllCaps="true" />

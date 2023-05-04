@@ -4,6 +4,10 @@
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\view_alert_dialog.xml"
     },
     {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\activity_bot_game.xml",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\activity_bot_game.xml"
+    },
+    {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\activity_main.xml",
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\activity_main.xml"
     },
@@ -24,12 +28,24 @@
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\activity_info.xml"
     },
     {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\item.xml",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\item.xml"
+    },
+    {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\fragment_settings.xml",
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\fragment_settings.xml"
     },
     {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\activity_profile.xml",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\activity_profile.xml"
+    },
+    {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\view_input_field.xml",
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\view_input_field.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\activity_splash.xml"
     },
     {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\activity_theme.xml",
@@ -44,8 +60,16 @@
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\theme_slider_layout.xml"
     },
     {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\activity_ringing.xml",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\activity_ringing.xml"
+    },
+    {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\fragment_login.xml",
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "com.example.loudalarm.app-mergeDebugResources-5:/layout/fragment_login.xml",
+        "source": "com.example.loudalarm.app-main-8:/layout/fragment_login.xml"
     },
     {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\fragment_add.xml",
@@ -60,39 +84,11 @@
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\view_nickname.xml",
-        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\view_nickname.xml"
-    },
-    {
-        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\activity_bot_game.xml",
-        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\activity_bot_game.xml"
-    },
-    {
-        "merged": "com.example.loudalarm.app-mergeDebugResources-5:/layout/fragment_registration.xml",
-        "source": "com.example.loudalarm.app-main-8:/layout/fragment_registration.xml"
-    },
-    {
-        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\item.xml",
-        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\item.xml"
-    },
-    {
-        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\activity_profile.xml",
-        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\activity_profile.xml"
-    },
-    {
-        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\activity_splash.xml",
-        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\activity_splash.xml"
-    },
-    {
-        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\activity_ringing.xml",
-        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\activity_ringing.xml"
-    },
-    {
-        "merged": "com.example.loudalarm.app-mergeDebugResources-5:/layout/fragment_login.xml",
-        "source": "com.example.loudalarm.app-main-8:/layout/fragment_login.xml"
-    },
-    {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\fragment_home.xml",
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\view_nickname.xml",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\view_nickname.xml"
     }
 ]
