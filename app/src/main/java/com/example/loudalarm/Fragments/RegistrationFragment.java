@@ -38,7 +38,6 @@ public class RegistrationFragment extends Fragment {
                 authController.addUserToDb(email, binding.inputName.getInputText(), unused -> {
                     startActivity(new Intent(getContext(), MainActivity.class));
                 });
-
             });
         });
 

@@ -1,4 +1,5 @@
 package com.example.loudalarm.Fragments;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,6 +16,7 @@ import androidx.fragment.app.Fragment;
 import com.example.loudalarm.Activities.MainActivity;
 import com.example.loudalarm.App;
 import com.example.loudalarm.AuthController.AuthController;
+import com.example.loudalarm.Room.AlarmDAO;
 import com.example.loudalarm.databinding.FragmentLoginBinding;
 
 public class LoginFragment extends Fragment {
@@ -25,6 +27,7 @@ public class LoginFragment extends Fragment {
         return binding.getRoot();
     }
 
+    AlarmDAO alarmDatabaseDAO;
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -40,6 +43,7 @@ public class LoginFragment extends Fragment {
                 }
 
             });
+
         });
 
         binding.textForgotPassword.setOnClickListener(pass -> {

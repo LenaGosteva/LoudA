@@ -302,13 +302,7 @@ public final class AlarmDAO_Impl implements AlarmDAO {
       final List<AlarmEntity> _result = new ArrayList<AlarmEntity>(_cursor.getCount());
       while(_cursor.moveToNext()) {
         final AlarmEntity _item;
-        final String _tmpMusic;
-        if (_cursor.isNull(_cursorIndexOfMusic)) {
-          _tmpMusic = null;
-        } else {
-          _tmpMusic = _cursor.getString(_cursorIndexOfMusic);
-        }
-        _item = new AlarmEntity(_tmpMusic);
+        _item = new AlarmEntity();
         _item.id = _cursor.getInt(_cursorIndexOfId);
         final int _tmp;
         _tmp = _cursor.getInt(_cursorIndexOfIsAlarmAdjustVolume);
@@ -357,6 +351,11 @@ public final class AlarmDAO_Impl implements AlarmDAO {
         final int _tmp_10;
         _tmp_10 = _cursor.getInt(_cursorIndexOfSunday);
         _item.sunday = _tmp_10 != 0;
+        if (_cursor.isNull(_cursorIndexOfMusic)) {
+          _item.music = null;
+        } else {
+          _item.music = _cursor.getString(_cursorIndexOfMusic);
+        }
         if (_cursor.isNull(_cursorIndexOfTextMessage)) {
           _item.textMessage = null;
         } else {
@@ -406,13 +405,7 @@ public final class AlarmDAO_Impl implements AlarmDAO {
       final int _cursorIndexOfAlarmCanPlay = CursorUtil.getColumnIndexOrThrow(_cursor, "alarmCanPlay");
       final AlarmEntity _result;
       if(_cursor.moveToFirst()) {
-        final String _tmpMusic;
-        if (_cursor.isNull(_cursorIndexOfMusic)) {
-          _tmpMusic = null;
-        } else {
-          _tmpMusic = _cursor.getString(_cursorIndexOfMusic);
-        }
-        _result = new AlarmEntity(_tmpMusic);
+        _result = new AlarmEntity();
         _result.id = _cursor.getInt(_cursorIndexOfId);
         final int _tmp;
         _tmp = _cursor.getInt(_cursorIndexOfIsAlarmAdjustVolume);
@@ -461,6 +454,11 @@ public final class AlarmDAO_Impl implements AlarmDAO {
         final int _tmp_10;
         _tmp_10 = _cursor.getInt(_cursorIndexOfSunday);
         _result.sunday = _tmp_10 != 0;
+        if (_cursor.isNull(_cursorIndexOfMusic)) {
+          _result.music = null;
+        } else {
+          _result.music = _cursor.getString(_cursorIndexOfMusic);
+        }
         if (_cursor.isNull(_cursorIndexOfTextMessage)) {
           _result.textMessage = null;
         } else {
@@ -585,13 +583,7 @@ public final class AlarmDAO_Impl implements AlarmDAO {
       final int _cursorIndexOfAlarmCanPlay = CursorUtil.getColumnIndexOrThrow(_cursor, "alarmCanPlay");
       final AlarmEntity _result;
       if(_cursor.moveToFirst()) {
-        final String _tmpMusic;
-        if (_cursor.isNull(_cursorIndexOfMusic)) {
-          _tmpMusic = null;
-        } else {
-          _tmpMusic = _cursor.getString(_cursorIndexOfMusic);
-        }
-        _result = new AlarmEntity(_tmpMusic);
+        _result = new AlarmEntity();
         _result.id = _cursor.getInt(_cursorIndexOfId);
         final int _tmp;
         _tmp = _cursor.getInt(_cursorIndexOfIsAlarmAdjustVolume);
@@ -640,6 +632,11 @@ public final class AlarmDAO_Impl implements AlarmDAO {
         final int _tmp_10;
         _tmp_10 = _cursor.getInt(_cursorIndexOfSunday);
         _result.sunday = _tmp_10 != 0;
+        if (_cursor.isNull(_cursorIndexOfMusic)) {
+          _result.music = null;
+        } else {
+          _result.music = _cursor.getString(_cursorIndexOfMusic);
+        }
         if (_cursor.isNull(_cursorIndexOfTextMessage)) {
           _result.textMessage = null;
         } else {

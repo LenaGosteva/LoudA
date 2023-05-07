@@ -140,8 +140,11 @@ public class AlarmAdapter extends RecyclerView.Adapter<AlarmAdapter.AlarmViewHol
         AlarmController controller = new AlarmController(list.get(position));
         controller.deleteIntent();
         new Thread(() -> {
-            alarmDAO.deleteAll(alarmDAO.getAll());
+            alarmDAO.clear();
             alarmDAO.saveAll(list);
+            authController.clearDb();
+            authController.addAlarmsToDb();
+
         }).start();
 
         list.remove(position);

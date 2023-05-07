@@ -16,7 +16,6 @@ import com.example.loudalarm.R;
 import com.example.loudalarm.Room.AlarmDAO;
 import com.example.loudalarm.Room.AlarmEntity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.firebase.database.DataSnapshot;
 
 import java.util.List;
 
@@ -67,32 +66,30 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         authController = new AuthController();
-        new Thread(() -> {
-
-            alarmDatabaseDAO = App.getDatabase().alarmDAO();
-            if (authController.isAuth()) {
-                authController.getAlarmsFromDb(task -> {
-                    if (!task.isSuccessful()) {
-
-                    } else {
-                        for (DataSnapshot e :
-                                task.getResult().getChildren()) {
-                            alarmDatabaseDAO.clear();
-
-                            alarmDatabaseDAO.save(e.getValue(AlarmEntity.class));
-                        }
-
-                    }
-                });
-
-            }
-
-            alarms = alarmDatabaseDAO.getAll();
-            runOnUiThread(() -> {
-                        loadFragment(HomeFragment.newInstance(alarms));
-                    }
-            );
-        }).start();
+//        new Thread(() -> {
+//            alarmDatabaseDAO = App.getDatabase().alarmDAO();
+//            if (authController.isAuth()) {
+//
+//                    authController.getAlarmsFromDb(task -> {
+//                        if (!task.isSuccessful()) {
+//                        } else { new Thread(()->{
+//                            alarmDatabaseDAO.clear();
+//                            for (DataSnapshot e : task.getResult().getChildren()) {
+//                                alarmDatabaseDAO.save(e.getValue(AlarmEntity.class));
+//                                Log.e("rduyfgih", alarmDatabaseDAO.getAll().toArray().length+" ");
+//                            }
+//
+//                        }).start();
+//                    }
+//                    });
+//
+//            }
+//            alarms = alarmDatabaseDAO.getAll();
+//            runOnUiThread(() -> {
+//                        loadFragment(HomeFragment.newInstance(alarms));
+//                    }
+//            );
+//        }).start();
 
         BottomNavigationView navigation = findViewById(R.id.nav_view);
         navigation.setSelectedItemId(R.id.navigation_home);

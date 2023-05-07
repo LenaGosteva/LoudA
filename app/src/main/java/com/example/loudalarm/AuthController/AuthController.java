@@ -58,7 +58,7 @@ public class AuthController {
     }
 
     public void clearDb() {
-        database.child("alarmEntities").child(getUser().getUid()).removeValue();
+        if (isAuth()) database.child("alarmEntities").child(getUser().getUid()).removeValue();
     }
 
     public void registerUser(String email, String password, OnSuccessListener<AuthResult> listener) {
@@ -92,15 +92,17 @@ public class AuthController {
     }
 
     public void updateIcon(Uri uri) {
-        getUser().updateProfile(new UserProfileChangeRequest.Builder()
-                .setPhotoUri(uri).build());
+        if (isAuth())
+            getUser().updateProfile(new UserProfileChangeRequest.Builder()
+                    .setPhotoUri(uri).build());
     }
 
     public void updateName(String name) {
-        getUser().updateProfile(new UserProfileChangeRequest.Builder()
-                .setDisplayName(name)
-                .build()
-        );
+        if (isAuth())
+            getUser().updateProfile(new UserProfileChangeRequest.Builder()
+                    .setDisplayName(name)
+                    .build()
+            );
 
     }
 
