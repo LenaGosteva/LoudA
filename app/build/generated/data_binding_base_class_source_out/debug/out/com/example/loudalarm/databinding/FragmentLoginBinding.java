@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -37,11 +36,11 @@ public final class FragmentLoginBinding implements ViewBinding {
   public final View line2;
 
   @NonNull
-  public final TextView textForgotPassword;
+  public final Button textForgotPassword;
 
   private FragmentLoginBinding(@NonNull LinearLayout rootView, @NonNull Button buttonEnter,
       @NonNull InputField inputEmail, @NonNull InputField inputPassword, @NonNull View line0,
-      @NonNull View line2, @NonNull TextView textForgotPassword) {
+      @NonNull View line2, @NonNull Button textForgotPassword) {
     this.rootView = rootView;
     this.buttonEnter = buttonEnter;
     this.inputEmail = inputEmail;
@@ -109,7 +108,7 @@ public final class FragmentLoginBinding implements ViewBinding {
       }
 
       id = R.id.text_forgot_password;
-      TextView textForgotPassword = ViewBindings.findChildViewById(rootView, id);
+      Button textForgotPassword = ViewBindings.findChildViewById(rootView, id);
       if (textForgotPassword == null) {
         break missingId;
       }

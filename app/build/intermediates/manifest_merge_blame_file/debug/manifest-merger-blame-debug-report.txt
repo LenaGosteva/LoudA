@@ -46,304 +46,371 @@
 22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 22-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:26:5-79
 22-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:26:22-76
-23
-24    <permission
-24-->[androidx.core:core:1.9.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\2a6b8d47231ddcb1817ffe241541665b\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-25        android:name="com.example.loudalarm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-25-->[androidx.core:core:1.9.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\2a6b8d47231ddcb1817ffe241541665b\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-26        android:protectionLevel="signature" />
-26-->[androidx.core:core:1.9.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\2a6b8d47231ddcb1817ffe241541665b\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
-27
-28    <uses-permission android:name="com.example.loudalarm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-28-->[androidx.core:core:1.9.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\2a6b8d47231ddcb1817ffe241541665b\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-28-->[androidx.core:core:1.9.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\2a6b8d47231ddcb1817ffe241541665b\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+23    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+23-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\f872c7949b173fb4013f95957079fad6\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:25:5-79
+23-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\f872c7949b173fb4013f95957079fad6\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:25:22-76
+24    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+24-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\210ed0131bb39c4f09cfa251811561e4\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:26:5-110
+24-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\210ed0131bb39c4f09cfa251811561e4\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:26:22-107
+25
+26    <permission
+26-->[androidx.core:core:1.9.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\2a6b8d47231ddcb1817ffe241541665b\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+27        android:name="com.example.loudalarm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+27-->[androidx.core:core:1.9.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\2a6b8d47231ddcb1817ffe241541665b\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+28        android:protectionLevel="signature" />
+28-->[androidx.core:core:1.9.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\2a6b8d47231ddcb1817ffe241541665b\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 29
-30    <application
-30-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:19:5-79:19
-31        android:name="com.example.loudalarm.App"
-31-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:20:9-28
-32        android:allowBackup="true"
-32-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:21:9-35
-33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-33-->[androidx.core:core:1.9.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\2a6b8d47231ddcb1817ffe241541665b\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-34        android:dataExtractionRules="@xml/data_extraction_rules"
-34-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:22:9-65
-35        android:debuggable="true"
-36        android:extractNativeLibs="false"
-37        android:fullBackupContent="@xml/backup_rules"
-37-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:23:9-54
-38        android:icon="@mipmap/ic_launcher"
-38-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:24:9-43
-39        android:label="@string/app_name"
-39-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:25:9-41
-40        android:supportsRtl="true"
-40-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:26:9-35
-41        android:testOnly="true" >
-42        <activity
-42-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:28:9-32:57
-43            android:name="com.example.loudalarm.Activities.ProfileActivity"
-43-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:29:13-55
-44            android:exported="true"
-44-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:30:13-36
-45            android:screenOrientation="portrait"
-45-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:31:13-49
-46            android:theme="@style/Background_light_3" />
-46-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:32:13-54
-47        <activity
-47-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:33:9-37:57
-48            android:name="com.example.loudalarm.Activities.LoginActivity"
-48-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:34:13-53
-49            android:exported="true"
-49-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:35:13-36
-50            android:screenOrientation="portrait"
-50-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:36:13-49
-51            android:theme="@style/Background_light_3" />
-51-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:37:13-54
-52        <activity
-52-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:38:9-42:57
-53            android:name="com.example.loudalarm.Activities.ThemeActivity"
-53-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:39:13-53
-54            android:exported="false"
-54-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:40:13-37
-55            android:screenOrientation="portrait"
-55-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:41:13-49
-56            android:theme="@style/Background_light_3" />
-56-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:42:13-54
-57        <activity
-57-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:43:9-47:57
-58            android:name="com.example.loudalarm.Games.BotGame.BotGameActivity"
-58-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:44:13-58
-59            android:exported="true"
-59-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:45:13-36
-60            android:screenOrientation="portrait"
-60-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:46:13-49
-61            android:theme="@style/Background_light_3" />
-61-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:47:13-54
-62        <activity
-62-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:48:9-52:57
-63            android:name="com.example.loudalarm.Activities.InfoActivity"
-63-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:49:13-52
-64            android:exported="false"
-64-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:50:13-37
-65            android:screenOrientation="portrait"
-65-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:51:13-49
-66            android:theme="@style/Background_light_3" />
-66-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:52:13-54
-67        <activity
-67-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:53:9-63:20
-68            android:name="com.example.loudalarm.Activities.SplashActivity"
-68-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:54:13-54
-69            android:exported="true"
-69-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:55:13-36
-70            android:screenOrientation="portrait"
-70-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:56:13-49
-71            android:theme="@style/Null" >
-71-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:57:13-40
-72            <intent-filter>
-72-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:58:13-62:29
-73                <action android:name="android.intent.action.MAIN" />
-73-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:59:17-69
-73-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:59:25-66
-74
-75                <category android:name="android.intent.category.LAUNCHER" />
-75-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:61:17-77
-75-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:61:27-74
-76            </intent-filter>
-77        </activity>
-78        <activity
-78-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:64:9-68:57
-79            android:name="com.example.loudalarm.Activities.RingingActivity"
-79-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:65:13-55
-80            android:exported="false"
-80-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:66:13-37
-81            android:screenOrientation="portrait"
-81-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:67:13-49
-82            android:theme="@style/Background_light_3" />
-82-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:68:13-54
-83        <activity
-83-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:69:9-73:57
-84            android:name="com.example.loudalarm.Games.MathTrainerGame.MathTrainerActivity"
-84-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:70:13-70
-85            android:exported="true"
-85-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:71:13-36
-86            android:screenOrientation="portrait"
-86-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:72:13-49
-87            android:theme="@style/Background_light_3" />
-87-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:73:13-54
-88        <activity
-88-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:74:9-78:57
-89            android:name="com.example.loudalarm.Activities.MainActivity"
-89-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:75:13-52
-90            android:exported="true"
-90-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:76:13-36
-91            android:screenOrientation="portrait"
-91-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:77:13-49
-92            android:theme="@style/Background_light_3" />
-92-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:78:13-54
-93        <activity
-93-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:29:9-46:20
-94            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-94-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:30:13-80
-95            android:excludeFromRecents="true"
-95-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:31:13-46
-96            android:exported="true"
-96-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:32:13-36
-97            android:launchMode="singleTask"
-97-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:33:13-44
-98            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-98-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:34:13-72
-99            <intent-filter>
-99-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:35:13-45:29
-100                <action android:name="android.intent.action.VIEW" />
-100-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:36:17-69
-100-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:36:25-66
-101
-102                <category android:name="android.intent.category.DEFAULT" />
-102-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:38:17-76
-102-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:38:27-73
-103                <category android:name="android.intent.category.BROWSABLE" />
-103-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
-103-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
-104
-105                <data
-105-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
-106                    android:host="firebase.auth"
-106-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
-107                    android:path="/"
-107-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
-108                    android:scheme="genericidp" />
-108-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
-109            </intent-filter>
-110        </activity>
-111        <activity
-111-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:47:9-64:20
-112            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-112-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:48:13-79
-113            android:excludeFromRecents="true"
-113-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:49:13-46
-114            android:exported="true"
-114-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:50:13-36
-115            android:launchMode="singleTask"
-115-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:51:13-44
-116            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-116-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:52:13-72
-117            <intent-filter>
-117-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:53:13-63:29
-118                <action android:name="android.intent.action.VIEW" />
-118-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:36:17-69
-118-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:36:25-66
-119
-120                <category android:name="android.intent.category.DEFAULT" />
-120-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:38:17-76
-120-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:38:27-73
-121                <category android:name="android.intent.category.BROWSABLE" />
-121-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
-121-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
+30    <uses-permission android:name="com.example.loudalarm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+30-->[androidx.core:core:1.9.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\2a6b8d47231ddcb1817ffe241541665b\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+30-->[androidx.core:core:1.9.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\2a6b8d47231ddcb1817ffe241541665b\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+31
+32    <application
+32-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:20:5-80:19
+33        android:name="com.example.loudalarm.App"
+33-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:21:9-28
+34        android:allowBackup="true"
+34-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:22:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.9.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\2a6b8d47231ddcb1817ffe241541665b\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+36        android:dataExtractionRules="@xml/data_extraction_rules"
+36-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:23:9-65
+37        android:debuggable="true"
+38        android:extractNativeLibs="false"
+39        android:fullBackupContent="@xml/backup_rules"
+39-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:24:9-54
+40        android:icon="@mipmap/ic_launcher"
+40-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:25:9-43
+41        android:label="@string/app_name"
+41-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:26:9-41
+42        android:supportsRtl="true"
+42-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:27:9-35
+43        android:testOnly="true" >
+44        <activity
+44-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:29:9-33:57
+45            android:name="com.example.loudalarm.Activities.ProfileActivity"
+45-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:30:13-55
+46            android:exported="true"
+46-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:31:13-36
+47            android:screenOrientation="portrait"
+47-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:32:13-49
+48            android:theme="@style/Background_light_3" />
+48-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:33:13-54
+49        <activity
+49-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:34:9-38:57
+50            android:name="com.example.loudalarm.Activities.LoginActivity"
+50-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:35:13-53
+51            android:exported="true"
+51-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:36:13-36
+52            android:screenOrientation="portrait"
+52-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:37:13-49
+53            android:theme="@style/Background_light_3" />
+53-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:38:13-54
+54        <activity
+54-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:39:9-43:57
+55            android:name="com.example.loudalarm.Activities.ThemeActivity"
+55-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:40:13-53
+56            android:exported="false"
+56-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:41:13-37
+57            android:screenOrientation="portrait"
+57-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:42:13-49
+58            android:theme="@style/Background_light_3" />
+58-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:43:13-54
+59        <activity
+59-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:44:9-48:57
+60            android:name="com.example.loudalarm.Games.BotGame.BotGameActivity"
+60-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:45:13-58
+61            android:exported="true"
+61-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:46:13-36
+62            android:screenOrientation="portrait"
+62-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:47:13-49
+63            android:theme="@style/Background_light_3" />
+63-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:48:13-54
+64        <activity
+64-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:49:9-53:57
+65            android:name="com.example.loudalarm.Activities.InfoActivity"
+65-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:50:13-52
+66            android:exported="false"
+66-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:51:13-37
+67            android:screenOrientation="portrait"
+67-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:52:13-49
+68            android:theme="@style/Background_light_3" />
+68-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:53:13-54
+69        <activity
+69-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:54:9-64:20
+70            android:name="com.example.loudalarm.Activities.SplashActivity"
+70-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:55:13-54
+71            android:exported="true"
+71-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:56:13-36
+72            android:screenOrientation="portrait"
+72-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:57:13-49
+73            android:theme="@style/Null" >
+73-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:58:13-40
+74            <intent-filter>
+74-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:59:13-63:29
+75                <action android:name="android.intent.action.MAIN" />
+75-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:60:17-69
+75-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:60:25-66
+76
+77                <category android:name="android.intent.category.LAUNCHER" />
+77-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:62:17-77
+77-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:62:27-74
+78            </intent-filter>
+79        </activity>
+80        <activity
+80-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:65:9-69:57
+81            android:name="com.example.loudalarm.Activities.RingingActivity"
+81-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:66:13-55
+82            android:exported="true"
+82-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:67:13-36
+83            android:screenOrientation="portrait"
+83-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:68:13-49
+84            android:theme="@style/Background_light_3" />
+84-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:69:13-54
+85        <activity
+85-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:70:9-74:57
+86            android:name="com.example.loudalarm.Games.MathTrainerGame.MathTrainerActivity"
+86-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:71:13-70
+87            android:exported="true"
+87-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:72:13-36
+88            android:screenOrientation="portrait"
+88-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:73:13-49
+89            android:theme="@style/Background_light_3" />
+89-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:74:13-54
+90        <activity
+90-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:75:9-79:57
+91            android:name="com.example.loudalarm.Activities.MainActivity"
+91-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:76:13-52
+92            android:exported="true"
+92-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:77:13-36
+93            android:screenOrientation="portrait"
+93-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:78:13-49
+94            android:theme="@style/Background_light_3" />
+94-->C:\Projects\LoudAlarm\app\src\main\AndroidManifest.xml:79:13-54
+95
+96        <service
+96-->[com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\551a40e4bc32baf5b241f29b982503ff\transformed\firebase-auth-ktx-22.0.0\AndroidManifest.xml:8:9-14:19
+97            android:name="com.google.firebase.components.ComponentDiscoveryService"
+97-->[com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\551a40e4bc32baf5b241f29b982503ff\transformed\firebase-auth-ktx-22.0.0\AndroidManifest.xml:9:13-84
+98            android:directBootAware="true"
+98-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\d5e0b8bcedbc45e44d700028737512ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+99            android:exported="false" >
+99-->[com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\551a40e4bc32baf5b241f29b982503ff\transformed\firebase-auth-ktx-22.0.0\AndroidManifest.xml:10:13-37
+100            <meta-data
+100-->[com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\551a40e4bc32baf5b241f29b982503ff\transformed\firebase-auth-ktx-22.0.0\AndroidManifest.xml:11:13-13:85
+101                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+101-->[com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\551a40e4bc32baf5b241f29b982503ff\transformed\firebase-auth-ktx-22.0.0\AndroidManifest.xml:12:17-116
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\551a40e4bc32baf5b241f29b982503ff\transformed\firebase-auth-ktx-22.0.0\AndroidManifest.xml:13:17-82
+103            <meta-data
+103-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:69:13-71:85
+104                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+104-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:70:17-109
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:71:17-82
+106            <meta-data
+106-->[com.google.firebase:firebase-firestore:24.6.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\a1768108de4c4afb5c2510fbc7f9d042\transformed\firebase-firestore-24.6.0\AndroidManifest.xml:19:13-21:85
+107                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+107-->[com.google.firebase:firebase-firestore:24.6.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\a1768108de4c4afb5c2510fbc7f9d042\transformed\firebase-firestore-24.6.0\AndroidManifest.xml:20:17-111
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-firestore:24.6.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\a1768108de4c4afb5c2510fbc7f9d042\transformed\firebase-firestore-24.6.0\AndroidManifest.xml:21:17-82
+109            <meta-data
+109-->[com.google.firebase:firebase-database:20.2.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\dadc978769cfc1b09591ff22e64d98b5\transformed\firebase-database-20.2.1\AndroidManifest.xml:31:13-33:85
+110                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+110-->[com.google.firebase:firebase-database:20.2.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\dadc978769cfc1b09591ff22e64d98b5\transformed\firebase-database-20.2.1\AndroidManifest.xml:32:17-109
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.firebase:firebase-database:20.2.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\dadc978769cfc1b09591ff22e64d98b5\transformed\firebase-database-20.2.1\AndroidManifest.xml:33:17-82
+112            <meta-data
+112-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\7d9c9b15373b0d3dfe346a70fef8f60e\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:14:13-16:85
+113                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+113-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\7d9c9b15373b0d3dfe346a70fef8f60e\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:15:17-113
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\7d9c9b15373b0d3dfe346a70fef8f60e\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:16:17-82
+115            <meta-data
+115-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\f872c7949b173fb4013f95957079fad6\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:31:13-33:85
+116                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+116-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\f872c7949b173fb4013f95957079fad6\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:32:17-139
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\f872c7949b173fb4013f95957079fad6\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:33:17-82
+118            <meta-data
+118-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\Lyudmila\.gradle\caches\transforms-3\e3b18820c4fd34666c5e1d19cd95cb95\transformed\firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+119                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+119-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\Lyudmila\.gradle\caches\transforms-3\e3b18820c4fd34666c5e1d19cd95cb95\transformed\firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\Lyudmila\.gradle\caches\transforms-3\e3b18820c4fd34666c5e1d19cd95cb95\transformed\firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+121        </service>
 122
-123                <data
-123-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
-124                    android:host="firebase.auth"
-124-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
-125                    android:path="/"
-125-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
-126                    android:scheme="recaptcha" />
-126-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
-127            </intent-filter>
-128        </activity>
-129
-130        <service
-130-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:66:9-72:19
-131            android:name="com.google.firebase.components.ComponentDiscoveryService"
-131-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:67:13-84
-132            android:directBootAware="true"
-132-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\d5e0b8bcedbc45e44d700028737512ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:34:13-43
-133            android:exported="false" >
-133-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:68:13-37
-134            <meta-data
-134-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:69:13-71:85
-135                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-135-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:70:17-109
-136                android:value="com.google.firebase.components.ComponentRegistrar" />
-136-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:71:17-82
-137            <meta-data
-137-->[com.google.firebase:firebase-database:20.2.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\dadc978769cfc1b09591ff22e64d98b5\transformed\firebase-database-20.2.1\AndroidManifest.xml:31:13-33:85
-138                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-138-->[com.google.firebase:firebase-database:20.2.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\dadc978769cfc1b09591ff22e64d98b5\transformed\firebase-database-20.2.1\AndroidManifest.xml:32:17-109
-139                android:value="com.google.firebase.components.ComponentRegistrar" />
-139-->[com.google.firebase:firebase-database:20.2.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\dadc978769cfc1b09591ff22e64d98b5\transformed\firebase-database-20.2.1\AndroidManifest.xml:33:17-82
-140        </service>
-141        <service
-141-->[androidx.room:room-runtime:2.5.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\685738330117f449e74d4afef10e5941\transformed\room-runtime-2.5.1\AndroidManifest.xml:24:9-28:63
-142            android:name="androidx.room.MultiInstanceInvalidationService"
-142-->[androidx.room:room-runtime:2.5.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\685738330117f449e74d4afef10e5941\transformed\room-runtime-2.5.1\AndroidManifest.xml:25:13-74
-143            android:directBootAware="true"
-143-->[androidx.room:room-runtime:2.5.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\685738330117f449e74d4afef10e5941\transformed\room-runtime-2.5.1\AndroidManifest.xml:26:13-43
-144            android:exported="false" />
-144-->[androidx.room:room-runtime:2.5.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\685738330117f449e74d4afef10e5941\transformed\room-runtime-2.5.1\AndroidManifest.xml:27:13-37
-145
-146        <provider
-146-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\d5e0b8bcedbc45e44d700028737512ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
-147            android:name="com.google.firebase.provider.FirebaseInitProvider"
-147-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\d5e0b8bcedbc45e44d700028737512ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:26:13-77
-148            android:authorities="com.example.loudalarm.firebaseinitprovider"
-148-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\d5e0b8bcedbc45e44d700028737512ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:27:13-72
-149            android:directBootAware="true"
-149-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\d5e0b8bcedbc45e44d700028737512ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:28:13-43
-150            android:exported="false"
-150-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\d5e0b8bcedbc45e44d700028737512ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:29:13-37
-151            android:initOrder="100" />
-151-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\d5e0b8bcedbc45e44d700028737512ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+123        <activity
+123-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:29:9-46:20
+124            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+124-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:30:13-80
+125            android:excludeFromRecents="true"
+125-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:31:13-46
+126            android:exported="true"
+126-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:32:13-36
+127            android:launchMode="singleTask"
+127-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:33:13-44
+128            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+128-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:34:13-72
+129            <intent-filter>
+129-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:35:13-45:29
+130                <action android:name="android.intent.action.VIEW" />
+130-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:36:17-69
+130-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:36:25-66
+131
+132                <category android:name="android.intent.category.DEFAULT" />
+132-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:38:17-76
+132-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:38:27-73
+133                <category android:name="android.intent.category.BROWSABLE" />
+133-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
+133-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
+134
+135                <data
+135-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
+136                    android:host="firebase.auth"
+136-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
+137                    android:path="/"
+137-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
+138                    android:scheme="genericidp" />
+138-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
+139            </intent-filter>
+140        </activity>
+141        <activity
+141-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:47:9-64:20
+142            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+142-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:48:13-79
+143            android:excludeFromRecents="true"
+143-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:49:13-46
+144            android:exported="true"
+144-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:50:13-36
+145            android:launchMode="singleTask"
+145-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:51:13-44
+146            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+146-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:52:13-72
+147            <intent-filter>
+147-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:53:13-63:29
+148                <action android:name="android.intent.action.VIEW" />
+148-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:36:17-69
+148-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:36:25-66
+149
+150                <category android:name="android.intent.category.DEFAULT" />
+150-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:38:17-76
+150-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:38:27-73
+151                <category android:name="android.intent.category.BROWSABLE" />
+151-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
+151-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
 152
-153        <activity
-153-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9d8cf2c487b3a3a7e76c2e8e1e745f7c\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
-154            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-154-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9d8cf2c487b3a3a7e76c2e8e1e745f7c\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-155            android:exported="false"
-155-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9d8cf2c487b3a3a7e76c2e8e1e745f7c\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
-156            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-156-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9d8cf2c487b3a3a7e76c2e8e1e745f7c\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
-157
-158        <meta-data
-158-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\1fc68120dd3fdf196d75e6724d2fdc00\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-159            android:name="com.google.android.gms.version"
-159-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\1fc68120dd3fdf196d75e6724d2fdc00\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-160            android:value="@integer/google_play_services_version" />
-160-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\1fc68120dd3fdf196d75e6724d2fdc00\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
-161
-162        <uses-library
-162-->[androidx.window:window:1.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9e231cc669a98adc22f31757db979ac9\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-163            android:name="androidx.window.extensions"
-163-->[androidx.window:window:1.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9e231cc669a98adc22f31757db979ac9\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-164            android:required="false" />
-164-->[androidx.window:window:1.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9e231cc669a98adc22f31757db979ac9\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-165        <uses-library
-165-->[androidx.window:window:1.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9e231cc669a98adc22f31757db979ac9\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-166            android:name="androidx.window.sidecar"
-166-->[androidx.window:window:1.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9e231cc669a98adc22f31757db979ac9\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-167            android:required="false" />
-167-->[androidx.window:window:1.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9e231cc669a98adc22f31757db979ac9\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-168
-169        <provider
-169-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\4e0d57b59a48b0b47976dac5d8cbd717\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-170            android:name="androidx.startup.InitializationProvider"
-170-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\4e0d57b59a48b0b47976dac5d8cbd717\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-171            android:authorities="com.example.loudalarm.androidx-startup"
-171-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\4e0d57b59a48b0b47976dac5d8cbd717\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-172            android:exported="false" >
-172-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\4e0d57b59a48b0b47976dac5d8cbd717\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-173            <meta-data
-173-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\4e0d57b59a48b0b47976dac5d8cbd717\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-174                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-174-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\4e0d57b59a48b0b47976dac5d8cbd717\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-175                android:value="androidx.startup" />
-175-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\4e0d57b59a48b0b47976dac5d8cbd717\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-176            <meta-data
-176-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\7f99fec45baa6b482cb18a0f870840bf\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-177                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-177-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\7f99fec45baa6b482cb18a0f870840bf\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-178                android:value="androidx.startup" />
-178-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\7f99fec45baa6b482cb18a0f870840bf\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-179        </provider>
-180    </application>
-181
-182</manifest>
+153                <data
+153-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
+154                    android:host="firebase.auth"
+154-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
+155                    android:path="/"
+155-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
+156                    android:scheme="recaptcha" />
+156-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\b2fb92df670b2d424883f9ccab28f3bb\transformed\firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
+157            </intent-filter>
+158        </activity>
+159
+160        <service
+160-->[androidx.room:room-runtime:2.5.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\685738330117f449e74d4afef10e5941\transformed\room-runtime-2.5.1\AndroidManifest.xml:24:9-28:63
+161            android:name="androidx.room.MultiInstanceInvalidationService"
+161-->[androidx.room:room-runtime:2.5.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\685738330117f449e74d4afef10e5941\transformed\room-runtime-2.5.1\AndroidManifest.xml:25:13-74
+162            android:directBootAware="true"
+162-->[androidx.room:room-runtime:2.5.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\685738330117f449e74d4afef10e5941\transformed\room-runtime-2.5.1\AndroidManifest.xml:26:13-43
+163            android:exported="false" />
+163-->[androidx.room:room-runtime:2.5.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\685738330117f449e74d4afef10e5941\transformed\room-runtime-2.5.1\AndroidManifest.xml:27:13-37
+164
+165        <provider
+165-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\d5e0b8bcedbc45e44d700028737512ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+166            android:name="com.google.firebase.provider.FirebaseInitProvider"
+166-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\d5e0b8bcedbc45e44d700028737512ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+167            android:authorities="com.example.loudalarm.firebaseinitprovider"
+167-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\d5e0b8bcedbc45e44d700028737512ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+168            android:directBootAware="true"
+168-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\d5e0b8bcedbc45e44d700028737512ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+169            android:exported="false"
+169-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\d5e0b8bcedbc45e44d700028737512ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+170            android:initOrder="100" />
+170-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\d5e0b8bcedbc45e44d700028737512ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+171
+172        <activity
+172-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9d8cf2c487b3a3a7e76c2e8e1e745f7c\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+173            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+173-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9d8cf2c487b3a3a7e76c2e8e1e745f7c\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+174            android:exported="false"
+174-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9d8cf2c487b3a3a7e76c2e8e1e745f7c\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+175            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+175-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9d8cf2c487b3a3a7e76c2e8e1e745f7c\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+176
+177        <receiver
+177-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\210ed0131bb39c4f09cfa251811561e4\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:29:9-33:20
+178            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+178-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\210ed0131bb39c4f09cfa251811561e4\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:30:13-85
+179            android:enabled="true"
+179-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\210ed0131bb39c4f09cfa251811561e4\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:31:13-35
+180            android:exported="false" >
+180-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\210ed0131bb39c4f09cfa251811561e4\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:32:13-37
+181        </receiver>
+182
+183        <service
+183-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\210ed0131bb39c4f09cfa251811561e4\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:35:9-38:40
+184            android:name="com.google.android.gms.measurement.AppMeasurementService"
+184-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\210ed0131bb39c4f09cfa251811561e4\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:36:13-84
+185            android:enabled="true"
+185-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\210ed0131bb39c4f09cfa251811561e4\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:37:13-35
+186            android:exported="false" />
+186-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\210ed0131bb39c4f09cfa251811561e4\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:38:13-37
+187        <service
+187-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\210ed0131bb39c4f09cfa251811561e4\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:39:9-43:72
+188            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+188-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\210ed0131bb39c4f09cfa251811561e4\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:40:13-87
+189            android:enabled="true"
+189-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\210ed0131bb39c4f09cfa251811561e4\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:41:13-35
+190            android:exported="false"
+190-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\210ed0131bb39c4f09cfa251811561e4\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:42:13-37
+191            android:permission="android.permission.BIND_JOB_SERVICE" />
+191-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Lyudmila\.gradle\caches\transforms-3\210ed0131bb39c4f09cfa251811561e4\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:43:13-69
+192
+193        <meta-data
+193-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\1fc68120dd3fdf196d75e6724d2fdc00\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+194            android:name="com.google.android.gms.version"
+194-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\1fc68120dd3fdf196d75e6724d2fdc00\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+195            android:value="@integer/google_play_services_version" />
+195-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\1fc68120dd3fdf196d75e6724d2fdc00\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+196
+197        <uses-library
+197-->[androidx.window:window:1.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9e231cc669a98adc22f31757db979ac9\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+198            android:name="androidx.window.extensions"
+198-->[androidx.window:window:1.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9e231cc669a98adc22f31757db979ac9\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+199            android:required="false" />
+199-->[androidx.window:window:1.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9e231cc669a98adc22f31757db979ac9\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+200        <uses-library
+200-->[androidx.window:window:1.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9e231cc669a98adc22f31757db979ac9\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+201            android:name="androidx.window.sidecar"
+201-->[androidx.window:window:1.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9e231cc669a98adc22f31757db979ac9\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+202            android:required="false" />
+202-->[androidx.window:window:1.0.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\9e231cc669a98adc22f31757db979ac9\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+203
+204        <provider
+204-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\4e0d57b59a48b0b47976dac5d8cbd717\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+205            android:name="androidx.startup.InitializationProvider"
+205-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\4e0d57b59a48b0b47976dac5d8cbd717\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+206            android:authorities="com.example.loudalarm.androidx-startup"
+206-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\4e0d57b59a48b0b47976dac5d8cbd717\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+207            android:exported="false" >
+207-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\4e0d57b59a48b0b47976dac5d8cbd717\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+208            <meta-data
+208-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\4e0d57b59a48b0b47976dac5d8cbd717\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+209                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+209-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\4e0d57b59a48b0b47976dac5d8cbd717\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+210                android:value="androidx.startup" />
+210-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lyudmila\.gradle\caches\transforms-3\4e0d57b59a48b0b47976dac5d8cbd717\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+211            <meta-data
+211-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\7f99fec45baa6b482cb18a0f870840bf\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+212                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+212-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\7f99fec45baa6b482cb18a0f870840bf\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+213                android:value="androidx.startup" />
+213-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lyudmila\.gradle\caches\transforms-3\7f99fec45baa6b482cb18a0f870840bf\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+214        </provider>
+215    </application>
+216
+217</manifest>

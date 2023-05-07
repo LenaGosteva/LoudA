@@ -43,6 +43,7 @@ dimen label_height
 dimen label_padding_sides
 dimen label_text_size
 dimen sides
+dimen text_margin
 dimen up_bottom
 drawable account_circle
 drawable alarm
@@ -128,6 +129,8 @@ id date
 id days
 id delete_any
 id edit_name
+id email_of_profile
+id email_of_profile_desc
 id fl_content
 id friday
 id games
@@ -138,6 +141,7 @@ id info
 id info_bot
 id input
 id input_email
+id input_name
 id input_password
 id item_container
 id item_game
@@ -168,6 +172,7 @@ id monday
 id moreLoud
 id mtrl_calendar_days_of_week
 id my_grid
+id name
 id nameOfCheckedMusic
 id name_of_changed_theme
 id name_of_game
@@ -198,7 +203,6 @@ id rel_in_games000
 id rel_in_games_up
 id rel_in_games_up00
 id repeat
-id repeat_password
 id ringtone
 id saturday
 id setOnToday
@@ -281,6 +285,7 @@ string default_web_client_id
 string description_for_game_Bot
 string description_for_game_MathTrainer
 string exitLabel
+string firebase_database_url
 string first_fragment_label
 string gcm_defaultSenderId
 string google_api_key
@@ -293,6 +298,7 @@ string hello_second_fragment
 string info_for_game_Bot
 string invalid_password
 string invalid_username
+string large_text
 string login_failed
 string menuLabel
 string messages_header

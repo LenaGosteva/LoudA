@@ -1,10 +1,11 @@
 package com.example.loudalarm.Fragments;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -31,14 +32,45 @@ public class LoginFragment extends Fragment {
         binding.buttonEnter.setOnClickListener(enter->{
             String email = binding.inputEmail.getInputText();
             String password = binding.inputPassword.getInputText();
-            authController.enterUser(email, password, task->{
-                if(task.isSuccessful()){
+            authController.enterUser(email, password, task -> {
+                if (task.isSuccessful()) {
                     startActivity(new Intent(App.getInstance(), MainActivity.class));
-                }else{
-                    Toast.makeText(App.getInstance(), "...", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(App.getInstance(), "Что-то пошло не так...", Toast.LENGTH_SHORT).show();
                 }
 
             });
         });
+
+        binding.textForgotPassword.setOnClickListener(pass -> {
+
+
+            androidx.appcompat.app.AlertDialog.Builder alertDialog = new androidx.appcompat.app.AlertDialog.Builder(getContext());
+            alertDialog.setTitle("Изменение пароля").setMessage("Введите почту");
+
+            final EditText input = new EditText(getContext());
+            input.setLayoutParams(new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.MATCH_PARENT));
+            alertDialog.setView(input)
+                    .setPositiveButton("Изменить",
+                            (dialog, which) -> {
+                                authController.sendMailWithNewPassword(input.getText().toString(), task -> {
+                                    if (task.isSuccessful())
+                                        Toast.makeText(App.getInstance().getApplicationContext(), "Письмо успешно отправлено", Toast.LENGTH_LONG).show();
+                                    else if (task.isCanceled())
+                                        Toast.makeText(App.getInstance().getApplicationContext(), "Упс! Кажется, что-то пошло не так...", Toast.LENGTH_LONG).show();
+                                });
+                                dialog.dismiss();
+                            })
+                    .setNegativeButton("Закрыть",
+                            (dialog, which) -> dialog.cancel())
+                    .show();
+
+
+        });
+
+
     }
+
 }

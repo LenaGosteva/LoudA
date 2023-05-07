@@ -5,14 +5,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.loudalarm.Activities.MainActivity;
-import com.example.loudalarm.App;
 import com.example.loudalarm.AuthController.AuthController;
 import com.example.loudalarm.databinding.FragmentRegistrationBinding;
 
@@ -32,18 +30,18 @@ public class RegistrationFragment extends Fragment {
 
         super.onViewCreated(view, savedInstanceState);
         AuthController authController = new AuthController();
-        binding.buttonEnter.setOnClickListener(enter->{
+        binding.buttonEnter.setOnClickListener(enter -> {
             String email = binding.inputEmail.getInputText();
             String password = binding.inputPassword.getInputText();
-            authController.registerUser(email, password, task -> {
-                if (task.isSuccessful()) {
-                    startActivity(new Intent(App.getInstance(), MainActivity.class));
-                }
-                if (task.isComplete()) {
-                    Toast.makeText(App.getInstance(), " ", Toast.LENGTH_SHORT).show();
-                }
+            authController.registerUser(email, password, authResult -> {
+                authController.updateName(binding.inputName.getInputText());
+                authController.addUserToDb(email, binding.inputName.getInputText(), unused -> {
+                    startActivity(new Intent(getContext(), MainActivity.class));
+                });
+
             });
         });
+
     }
 
 }

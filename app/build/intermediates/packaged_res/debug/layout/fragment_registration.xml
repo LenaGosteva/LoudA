@@ -1,80 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.core.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp"
     tools:context="Fragments.RegistrationFragment">
-    <com.example.loudalarm.View.InputField
-        android:id="@+id/input_email"
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:inputType="textEmailAddress"
-        app:title="Email address" />
-
-    <com.example.loudalarm.View.InputField
-        android:id="@+id/input_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:inputType="textPassword"
-        app:title="Password" />
-
-    <com.example.loudalarm.View.InputField
-        android:id="@+id/repeat_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:inputType="textPassword"
-        app:title="Repeat Password" />
-
-
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="4"
-        android:clickable="true"
-        android:fontFamily="sans-serif"
-        android:gravity="center"
-        android:textColor="@color/main_text_and_icons_color"
-        android:textSize="18sp">
-
-        <View
-            android:id="@+id/line0"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/main_text_and_icons_color"
-            android:fontFamily="sans-serif" />
-
-        <Button
-            android:id="@+id/button_enter"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <com.example.loudalarm.View.InputField
+            android:id="@+id/input_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/line0"
-            android:layout_centerInParent="true"
-            android:background="@color/null_color"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            app:title="Почта*" />
+
+        <com.example.loudalarm.View.InputField
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:inputType="textPassword"
+            app:title="Пароль*" />
+
+<!--        <com.example.loudalarm.View.InputField-->
+<!--            android:id="@+id/repeat_password"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:inputType="textPassword"-->
+<!--            app:title="Повторите пароль" />-->
+
+        <com.example.loudalarm.View.InputField
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:inputType="textPersonName"
+            app:title="Имя" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:clickable="true"
             android:fontFamily="sans-serif"
             android:gravity="center"
             android:textColor="@color/main_text_and_icons_color"
-            android:text="Зарегистрироваться"
-            android:textAllCaps="true" />
+            android:textSize="18sp">
 
-        <View
-            android:id="@+id/line2"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@id/button_enter"
-            android:background="@color/main_text_and_icons_color"
-            android:fontFamily="sans-serif" />
-    </RelativeLayout>
-</LinearLayout>
+
+            <View
+                android:id="@+id/line0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/main_text_and_icons_color"
+                android:fontFamily="sans-serif" />
+
+            <Button
+                android:id="@+id/button_enter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line0"
+                android:layout_centerInParent="true"
+                android:background="@color/null_color"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:textColor="@color/main_text_and_icons_color"
+                android:text="Зарегистрироваться"
+                android:textAllCaps="true" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/button_enter"
+                android:background="@color/main_text_and_icons_color"
+                android:fontFamily="sans-serif" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

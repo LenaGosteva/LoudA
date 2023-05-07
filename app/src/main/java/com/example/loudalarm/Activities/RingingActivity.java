@@ -18,7 +18,6 @@ import com.example.loudalarm.Games.MathTrainerGame.MathTrainerActivity;
 import com.example.loudalarm.Room.AlarmEntity;
 import com.example.loudalarm.databinding.ActivityRingingBinding;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -35,11 +34,12 @@ public class RingingActivity extends AppCompatActivity  {
 
     // для запуска звуковых эффектов
     private MediaPlayer mediaPlayer;
-
+    Bundle savedInstanceState;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         this.setTheme(App.getThemes()[App.getDatabaseSP().getIndexOfTheme()]);
         setVolumeControlStream(AudioManager.STREAM_DTMF);
+        this.savedInstanceState = savedInstanceState;
         super.onCreate(savedInstanceState);
         binding = ActivityRingingBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -122,14 +122,17 @@ public class RingingActivity extends AppCompatActivity  {
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN)
-        {
+        if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {
             return false;
         }
-        if (keyCode == KeyEvent.KEYCODE_VOLUME_UP)
-        {
+        if (keyCode == KeyEvent.KEYCODE_VOLUME_UP) {
             return false;
         }
         return keyCode != KeyEvent.KEYCODE_HOME;
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
     }
 }

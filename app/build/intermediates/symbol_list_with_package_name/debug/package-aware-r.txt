@@ -2791,6 +2791,7 @@ dimen subtitle_corner_radius
 dimen subtitle_outline_width
 dimen subtitle_shadow_offset
 dimen subtitle_shadow_radius
+dimen text_margin
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -3267,6 +3268,8 @@ id east
 id edit_name
 id edit_query
 id elastic
+id email_of_profile
+id email_of_profile_desc
 id embed
 id end
 id endToStart
@@ -3328,6 +3331,7 @@ id info
 id info_bot
 id input
 id input_email
+id input_name
 id input_password
 id invisible
 id inward
@@ -3436,6 +3440,7 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id my_grid
+id name
 id nameOfCheckedMusic
 id name_of_changed_theme
 id name_of_game
@@ -3515,7 +3520,6 @@ id rel_in_games000
 id rel_in_games_up
 id rel_in_games_up00
 id repeat
-id repeat_password
 id reverseSawtooth
 id right
 id rightToLeft
@@ -4040,6 +4044,7 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string firebase_database_url
 string first_fragment_label
 string gcm_defaultSenderId
 string google_api_key
@@ -4055,6 +4060,7 @@ string info_for_game_Bot
 string invalid_password
 string invalid_username
 string item_view_role_description
+string large_text
 string login_failed
 string m3_sys_motion_easing_emphasized
 string m3_sys_motion_easing_emphasized_accelerate

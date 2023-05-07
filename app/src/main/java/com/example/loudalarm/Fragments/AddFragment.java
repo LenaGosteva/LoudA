@@ -20,6 +20,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.loudalarm.AlarmIntentsController.AlarmController;
 import com.example.loudalarm.App;
+import com.example.loudalarm.AuthController.AuthController;
 import com.example.loudalarm.R;
 import com.example.loudalarm.Room.AlarmDAO;
 import com.example.loudalarm.Room.AlarmEntity;
@@ -257,6 +258,8 @@ public class AddFragment extends Fragment {
                 alarms.sort(Comparator.comparingLong(o -> o.time));
                 alarmDAO.clear();
                 alarmDAO.saveAll(alarms);
+
+                new AuthController().addAlarmsToDb();
 
                 AlarmController controller = new AlarmController(alarm);
                 controller.setFull();

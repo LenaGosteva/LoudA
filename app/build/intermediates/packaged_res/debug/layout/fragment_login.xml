@@ -25,14 +25,16 @@
         android:inputType="textPassword"
         app:title="Password" />
 
-    <TextView
+    <Button
         android:id="@+id/text_forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="3dp"
         android:layout_marginTop="10dp"
         android:text="Забыл пароль?"
+        android:background="@color/null_color"
         android:fontFamily="sans-serif"
+        android:textAllCaps="false"
         android:textColor="@color/main_text_and_icons_color" />
 
     <Space

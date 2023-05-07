@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.loudalarm.App;
+import com.example.loudalarm.AuthController.AuthController;
 import com.example.loudalarm.Fragments.AddFragment;
 import com.example.loudalarm.Fragments.HomeFragment;
 import com.example.loudalarm.Fragments.SettingsFragment;
@@ -15,6 +16,7 @@ import com.example.loudalarm.R;
 import com.example.loudalarm.Room.AlarmDAO;
 import com.example.loudalarm.Room.AlarmEntity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.database.DataSnapshot;
 
 import java.util.List;
 
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     public AlarmDAO alarmDatabaseDAO;
     List<AlarmEntity> alarms;
 
+    AuthController authController;
 
     public BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener =
             item -> {
@@ -60,10 +63,30 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         this.setTheme(App.getThemes()[App.getDatabaseSP().getIndexOfTheme()]);
         super.onCreate(savedInstanceState);
-        
+
         setContentView(R.layout.activity_main);
+
+        authController = new AuthController();
         new Thread(() -> {
+
             alarmDatabaseDAO = App.getDatabase().alarmDAO();
+            if (authController.isAuth()) {
+                authController.getAlarmsFromDb(task -> {
+                    if (!task.isSuccessful()) {
+
+                    } else {
+                        for (DataSnapshot e :
+                                task.getResult().getChildren()) {
+                            alarmDatabaseDAO.clear();
+
+                            alarmDatabaseDAO.save(e.getValue(AlarmEntity.class));
+                        }
+
+                    }
+                });
+
+            }
+
             alarms = alarmDatabaseDAO.getAll();
             runOnUiThread(() -> {
                         loadFragment(HomeFragment.newInstance(alarms));

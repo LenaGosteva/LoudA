@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -32,6 +33,12 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final ImageButton editName;
 
   @NonNull
+  public final TextView emailOfProfile;
+
+  @NonNull
+  public final TextView emailOfProfileDesc;
+
+  @NonNull
   public final CircleImageView iconOfProfile;
 
   @NonNull
@@ -41,22 +48,29 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final View line2;
 
   @NonNull
+  public final LinearLayout name;
+
+  @NonNull
   public final TextView nameOfProfile;
 
   @NonNull
   public final Button outAuth;
 
   private ActivityProfileBinding(@NonNull FrameLayout rootView, @NonNull ImageButton buttonIcon,
-      @NonNull ImageButton cancel, @NonNull ImageButton editName,
-      @NonNull CircleImageView iconOfProfile, @NonNull View line0, @NonNull View line2,
+      @NonNull ImageButton cancel, @NonNull ImageButton editName, @NonNull TextView emailOfProfile,
+      @NonNull TextView emailOfProfileDesc, @NonNull CircleImageView iconOfProfile,
+      @NonNull View line0, @NonNull View line2, @NonNull LinearLayout name,
       @NonNull TextView nameOfProfile, @NonNull Button outAuth) {
     this.rootView = rootView;
     this.buttonIcon = buttonIcon;
     this.cancel = cancel;
     this.editName = editName;
+    this.emailOfProfile = emailOfProfile;
+    this.emailOfProfileDesc = emailOfProfileDesc;
     this.iconOfProfile = iconOfProfile;
     this.line0 = line0;
     this.line2 = line2;
+    this.name = name;
     this.nameOfProfile = nameOfProfile;
     this.outAuth = outAuth;
   }
@@ -106,6 +120,18 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.email_of_profile;
+      TextView emailOfProfile = ViewBindings.findChildViewById(rootView, id);
+      if (emailOfProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.email_of_profile_desc;
+      TextView emailOfProfileDesc = ViewBindings.findChildViewById(rootView, id);
+      if (emailOfProfileDesc == null) {
+        break missingId;
+      }
+
       id = R.id.icon_of_profile;
       CircleImageView iconOfProfile = ViewBindings.findChildViewById(rootView, id);
       if (iconOfProfile == null) {
@@ -124,6 +150,12 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.name;
+      LinearLayout name = ViewBindings.findChildViewById(rootView, id);
+      if (name == null) {
+        break missingId;
+      }
+
       id = R.id.name_of_profile;
       TextView nameOfProfile = ViewBindings.findChildViewById(rootView, id);
       if (nameOfProfile == null) {
@@ -137,7 +169,8 @@ public final class ActivityProfileBinding implements ViewBinding {
       }
 
       return new ActivityProfileBinding((FrameLayout) rootView, buttonIcon, cancel, editName,
-          iconOfProfile, line0, line2, nameOfProfile, outAuth);
+          emailOfProfile, emailOfProfileDesc, iconOfProfile, line0, line2, name, nameOfProfile,
+          outAuth);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

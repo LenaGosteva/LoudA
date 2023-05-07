@@ -11,6 +11,8 @@ import androidx.room.Room;
 
 import com.example.loudalarm.Room.Database;
 import com.example.loudalarm.Sp.DatabaseSP;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,9 +64,11 @@ public class App extends Application {
         return instance;
     }
 
+
     public static Database getDatabase() {
         return database;
     }
+
 
     public static DatabaseSP getDatabaseSP() {
         return databaseSP;
@@ -83,6 +87,7 @@ public class App extends Application {
         return indexOfTheme;
     }
 
+    private DatabaseReference users; // дл
 
     @Override
     public void onCreate() {
@@ -95,6 +100,11 @@ public class App extends Application {
         names_of_themes.add("Light theme №2");
         names_of_themes.add("Light theme №3");
         names_of_themes.add("Violet theme №1");
+
+        FirebaseDatabase db = FirebaseDatabase.getInstance();
+        users = db.getReference("Users");
+
+
         indexOfTheme = databaseSP.getIndexOfTheme();
         database = Room.databaseBuilder(this, Database.class, "database.db").fallbackToDestructiveMigration().build();
         alarmManager = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
@@ -111,4 +121,5 @@ public class App extends Application {
     public void onTerminate() {
         super.onTerminate();
     }
+
 }

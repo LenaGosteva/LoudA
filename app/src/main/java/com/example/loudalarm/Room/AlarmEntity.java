@@ -11,6 +11,7 @@ import java.util.Locale;
 @Entity
 public class AlarmEntity implements Serializable {
 
+
     @PrimaryKey(autoGenerate = true)
     public int id;
 
@@ -121,6 +122,24 @@ public class AlarmEntity implements Serializable {
         this.vol = 10;
         this.time = System.currentTimeMillis();
     }
-
+//    public AlarmEntity() {
+//        this.alarmCanPlay = false;
+//        this.hours = Calendar.getInstance().getTime().getHours();
+//        this.minutes = Calendar.getInstance().getTime().getMinutes();
+//        this.textMessage = " ";
+//        this.days = "";
+//        this.saturday = false;
+//        this.time_on_clock_in_hours_and_minutes = new SimpleDateFormat("HH:mm", Locale.getDefault()).format(Calendar.getInstance().getTime());
+//        this.thursday = false;
+//        this.monday = false;
+//        this.wednesday = false;
+//        this.sunday = false;
+//        this.friday = false;
+//        this.tuesday = false;
+//        this.on = true;
+//        this.music = App.getDefaultMusicUri().getPath();
+//        this.vol = 10;
+//        this.time = System.currentTimeMillis();
+//    }
 }
 
