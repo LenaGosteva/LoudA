@@ -45,11 +45,11 @@ public class AlarmAdapter extends RecyclerView.Adapter<AlarmAdapter.AlarmViewHol
     // todo fragmentHomeBinding
     private final FragmentHomeBinding binding;
 
-    public AlarmAdapter(FragmentManager fragmentManager, List<AlarmEntity> news, Activity activity, AlarmDAO alarmDAO, FragmentHomeBinding binding) {
+    public AlarmAdapter(FragmentManager fragmentManager, List<AlarmEntity> news, Activity activity, FragmentHomeBinding binding) {
         this.fragmentManager = fragmentManager;
         this.list = news;
         this.activity = activity;
-        this.alarmDAO= alarmDAO;
+        alarmDAO = App.getDatabase().alarmDAO();
         this.binding = binding;
     }
 
@@ -140,7 +140,7 @@ public class AlarmAdapter extends RecyclerView.Adapter<AlarmAdapter.AlarmViewHol
         AlarmController controller = new AlarmController(list.get(position));
         controller.deleteIntent();
         new Thread(() -> {
-            alarmDAO.clear();
+            alarmDAO.deleteAll(alarmDAO.getAll());
             alarmDAO.saveAll(list);
             authController.clearDb();
             authController.addAlarmsToDb();

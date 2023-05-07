@@ -16,6 +16,7 @@ import com.example.loudalarm.Activities.ProfileActivity;
 import com.example.loudalarm.Adapters.AlarmAdapter;
 import com.example.loudalarm.AlarmIntentsController.AlarmController;
 import com.example.loudalarm.App;
+import com.example.loudalarm.AuthController.AuthController;
 import com.example.loudalarm.Room.AlarmDAO;
 import com.example.loudalarm.Room.AlarmEntity;
 import com.example.loudalarm.TouchHelper.SimpleItemTouchHelperCallback;
@@ -33,7 +34,7 @@ public class HomeFragment extends Fragment {
     AlarmDAO alarmDatabaseDAO;
 
     List<AlarmEntity> alarms;
-
+    AuthController authController = new AuthController();
     public HomeFragment(List<AlarmEntity> alarms) {
         this.alarms = alarms;
     }
@@ -48,17 +49,17 @@ public class HomeFragment extends Fragment {
 
         Date date = new Date();
         binding.date.setText(date.toString().substring(4, 10) + ", " + date.toString().substring(0, 3));
-        new Thread(() -> {
-            alarmDatabaseDAO = App.getDatabase().alarmDAO();
-            if (alarms.size() <= alarmDatabaseDAO.getAll().size()) {
-                alarmDatabaseDAO.updateAll(alarms);
-
-            } else {
-                alarmDatabaseDAO.deleteAll(alarmDatabaseDAO.getAll());
-                alarmDatabaseDAO.saveAll(alarms);
-            }
-
-        }).start();
+//        new Thread(() -> {
+//            alarmDatabaseDAO = App.getDatabase().alarmDAO();
+//            if (alarms.size() <= alarmDatabaseDAO.getAll().size()) {
+//                alarmDatabaseDAO.updateAll(alarms);
+//
+//            } else {
+//                alarmDatabaseDAO.deleteAll(alarmDatabaseDAO.getAll());
+//                alarmDatabaseDAO.saveAll(alarms);
+//            }
+//
+//        }).start();
         return binding.getRoot();
 
     }
@@ -67,7 +68,7 @@ public class HomeFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        AlarmAdapter adapter = new AlarmAdapter(getActivity().getSupportFragmentManager(), alarms, getActivity(), alarmDatabaseDAO, binding);
+        AlarmAdapter adapter = new AlarmAdapter(getActivity().getSupportFragmentManager(), alarms, getActivity(), binding);
         binding.recyclerView.setAdapter(adapter);
         ItemTouchHelper.Callback callback = new SimpleItemTouchHelperCallback(adapter);
 
@@ -100,9 +101,12 @@ adapter.notifyDataSetChanged();
             Toast.makeText(getContext(), "Выбранные будильники включены", Toast.LENGTH_SHORT).show();
 
             new Thread(() -> {
+                alarmDatabaseDAO = App.getDatabase().alarmDAO();
                 alarmDatabaseDAO.updateAll(adapter.listOfDeleted);
                 alarms = alarmDatabaseDAO.getAll();
                 adapter.list = alarms;
+                authController.clearDb();
+                authController.addAlarmsToDb();
                 adapter.listOfDeleted.clear();
             }).start();
             adapter.notifyDataSetChanged();
@@ -119,8 +123,11 @@ adapter.notifyDataSetChanged();
                 controller.deleteIntent();
             }
             new Thread(() -> {
+                alarmDatabaseDAO = App.getDatabase().alarmDAO();
                 alarmDatabaseDAO.deleteAll(adapter.listOfDeleted);
                 alarms = alarmDatabaseDAO.getAll();
+                authController.clearDb();
+                authController.addAlarmsToDb();
             }).start();
             Toast.makeText(getContext(), "Выбранные будильники удалены", Toast.LENGTH_SHORT).show();
             adapter.list.removeAll(adapter.listOfDeleted);
