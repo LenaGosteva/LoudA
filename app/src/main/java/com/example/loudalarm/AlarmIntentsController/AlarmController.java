@@ -111,30 +111,33 @@ public class AlarmController implements AlarmIntentsControllable {
 
 
     public void setFull() {
+        if (alarm.on) {
+            if ((alarm.days.contains(", ") && alarm.time >= Calendar.getInstance().getTimeInMillis()))
+                this.setAlarm();
+            if (alarm.monday) {
+                this.setRepeatingAlarm(Calendar.MONDAY);
+            }
+            if (alarm.tuesday) {
+                this.setRepeatingAlarm(Calendar.TUESDAY);
+            }
+            if (alarm.wednesday) {
+                this.setRepeatingAlarm(Calendar.WEDNESDAY);
+            }
+            if (alarm.thursday) {
+                this.setRepeatingAlarm(Calendar.THURSDAY);
+            }
+            if (alarm.friday) {
+                this.setRepeatingAlarm(Calendar.FRIDAY);
+            }
+            if (alarm.saturday) {
+                this.setRepeatingAlarm(Calendar.SATURDAY);
+            }
+            if (alarm.sunday) {
+                this.setRepeatingAlarm(Calendar.SUNDAY);
 
-        if ((alarm.days.contains(", ") && alarm.time >= Calendar.getInstance().getTimeInMillis()))
-            this.setAlarm();
-        if (alarm.monday) {
-            this.setRepeatingAlarm(Calendar.MONDAY);
-        }
-        if (alarm.tuesday) {
-            this.setRepeatingAlarm(Calendar.TUESDAY);
-        }
-        if (alarm.wednesday) {
-            this.setRepeatingAlarm(Calendar.WEDNESDAY);
-        }
-        if (alarm.thursday) {
-            this.setRepeatingAlarm(Calendar.THURSDAY);
-        }
-        if (alarm.friday) {
-            this.setRepeatingAlarm(Calendar.FRIDAY);
-        }
-        if (alarm.saturday) {
-            this.setRepeatingAlarm(Calendar.SATURDAY);
-        }
-        if (alarm.sunday) {
-            this.setRepeatingAlarm(Calendar.SUNDAY);
-
+            }
         }
     }
+
+
 }

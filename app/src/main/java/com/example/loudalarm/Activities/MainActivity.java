@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 alarms = alarmDatabaseDAO.getAll();
                 runOnUiThread(() -> {
+
                     loadFragment(HomeFragment.newInstance(alarms));
                 });
             }

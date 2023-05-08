@@ -81,7 +81,7 @@ public class AlarmAdapter extends RecyclerView.Adapter<AlarmAdapter.AlarmViewHol
 
         if (holder.on_off.isChecked()) setUp(holder);
         else setDown(holder);
-
+        controller.setFull();
         if (listOfDeleted.contains(alarm)) ifChecked(holder);
         else ifNotChecked(holder);
 

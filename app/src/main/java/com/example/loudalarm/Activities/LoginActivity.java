@@ -1,11 +1,10 @@
 package com.example.loudalarm.Activities;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.loudalarm.Adapters.EnterPagerAdapter;
 import com.example.loudalarm.App;
@@ -22,16 +21,6 @@ public class LoginActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             binding = ActivityLoginBinding.inflate(getLayoutInflater());
             setContentView(binding.getRoot());
-            new Thread(() -> {
-                try {
-                    Thread.sleep(1500);
-                    runOnUiThread(() -> {
-                        binding.mainIcon.setVisibility(View.VISIBLE);
-                    });
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
-            }).start();
             binding.pager.setAdapter(new EnterPagerAdapter(getSupportFragmentManager()));
             binding.tabs.setupWithViewPager(binding.pager);
             binding.skipButton.setOnClickListener(v -> {
