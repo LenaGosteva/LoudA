@@ -32,7 +32,6 @@ public class HomeFragment extends Fragment {
     private FragmentHomeBinding binding;
     int click = 0;
     AlarmDAO alarmDatabaseDAO;
-
     List<AlarmEntity> alarms;
     DBController authController = new DBController();
     public HomeFragment(List<AlarmEntity> alarms) {
@@ -148,6 +147,5 @@ adapter.notifyDataSetChanged();
         super.onDestroyView();
         binding = null;
     }
-
 
 }

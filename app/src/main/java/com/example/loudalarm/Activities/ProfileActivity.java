@@ -74,10 +74,6 @@ public class ProfileActivity extends AppCompatActivity {
 
             });
 
-            binding.cancel.setOnClickListener(cancel -> {
-                startActivity(new Intent(this, MainActivity.class));
-                finish();
-            });
 
         } else {
             binding.outAuth.setText("Войти");
@@ -101,6 +97,10 @@ public class ProfileActivity extends AppCompatActivity {
                     break;
             }
 
+        });
+        binding.cancel.setOnClickListener(cancel -> {
+            startActivity(new Intent(this, MainActivity.class));
+            finish();
         });
 
     }

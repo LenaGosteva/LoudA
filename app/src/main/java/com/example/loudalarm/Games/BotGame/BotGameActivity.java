@@ -1,7 +1,11 @@
 package com.example.loudalarm.Games.BotGame;
 
+import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.ColorDrawable;
 import android.media.AudioManager;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
@@ -39,6 +43,7 @@ public class BotGameActivity extends AppCompatActivity
     private static final int MATRIX_SIZE = 6;// можете ставить от 2 до 20))
     private static int COUNT = 0;
     GridLayout mGridLayout;
+    Dialog dialog;
     //ui
     private TextView mUpText, mLowText;
     private ButtonClass[][] mButtons;
@@ -66,25 +71,16 @@ public class BotGameActivity extends AppCompatActivity
 
 
         if (App.getDatabaseSP().getBotFirstInfo()){
-            new AlertDialog.Builder(this).setTitle("Правила")
-                    .setIcon(this.getResources().getDrawable(R.drawable.info))
-                    .setMessage(this.getResources().getString(R.string.info_for_game_Bot))
-                    .setPositiveButton("Понятно", (dialog, id) -> {
-                        dialog.dismiss();
-                    }).create().show();
+            showDialogInfo(this, "Правила", this.getResources().getString(R.string.info_for_game_Bot));
             App.getDatabaseSP().saveBotFirstInfo(false);
         }
         mGridLayout = findViewById(R.id.my_grid);
 
         ImageButton info = findViewById(R.id.info_bot);
 
-        info.setOnClickListener(in ->{
-            new AlertDialog.Builder(this).setTitle("Правила")
-                    .setIcon(this.getResources().getDrawable(R.drawable.info))
-                    .setMessage(this.getResources().getString(R.string.info_for_game_Bot))
-                    .setPositiveButton("Понятно", (dialog, id) -> {
-                        dialog.dismiss();
-                    }).create().show();
+        info.setOnClickListener(in -> {
+            showDialogInfo(this, "Правила", this.getResources().getString(R.string.info_for_game_Bot));
+
         });
 
 
@@ -153,6 +149,8 @@ public class BotGameActivity extends AppCompatActivity
                         dialog.dismiss();
                     })
                     .create().show();
+
+
         }
 
         musicPlay = RingtoneManager.getRingtone(this, RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE));
@@ -300,15 +298,34 @@ public class BotGameActivity extends AppCompatActivity
     }
     @Override
     public boolean onKeyLongPress(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN)
-        {
+        if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {
             return false;
         }
-        if (keyCode == KeyEvent.KEYCODE_VOLUME_UP)
-        {
+        if (keyCode == KeyEvent.KEYCODE_VOLUME_UP) {
             return false;
         }
         return keyCode != KeyEvent.KEYCODE_HOME;
+    }
+
+    private void showDialogInfo(Context context, String title, String info) {
+
+        dialog = new Dialog(context);
+        dialog.setContentView(R.layout.alert_info);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        TextView textView = dialog.findViewById(R.id.info_text);
+        textView.setText(info);
+
+        TextView title_view = dialog.findViewById(R.id.alert_title);
+        title_view.setText(title);
+
+
+        dialog.findViewById(R.id.button_can).setOnClickListener(not_ -> {
+            dialog.dismiss();
+        });
+
+
+        dialog.show();
     }
 }
         

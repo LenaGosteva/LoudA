@@ -1,10 +1,14 @@
 package com.example.loudalarm.Activities;
 
-import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -54,6 +58,8 @@ public class ThemeActivity extends AppCompatActivity {
         }
     };
 
+    Dialog dialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         this.setTheme(App.getThemes()[App.getIndexOfTheme()]);
@@ -79,20 +85,7 @@ public class ThemeActivity extends AppCompatActivity {
         });
 
         binding.changeButton.setOnClickListener(v -> {
-            new AlertDialog.Builder(this).setIcon(R.drawable.icon_change_theme)
-                    .setTitle("Изменение темы")
-                    .setMessage("Перезапустить приложение для смены фона?")
-                    .setPositiveButton("ДА", (dialog, id) -> {
-                        App.getDatabaseSP().saveIndexOfTheme(binding.slideViewPager.getCurrentItem());
-                        dialog.dismiss();
-                        Intent i = new Intent(this, SplashActivity.class);
-                        startActivity(i);
-                        finish();
-                    })
-                    .setNegativeButton("НЕТ", (dialog, id) -> {
-                        dialog.dismiss();
-                    }).create().show();
-
+            showDialogInfo(this, "Изменение темы", "Перезапустить приложение для смены фона?");
 
         });
 
@@ -102,6 +95,38 @@ public class ThemeActivity extends AppCompatActivity {
 
         setUpIndicator(0);
         binding.slideViewPager.addOnPageChangeListener(viewListener);
+    }
+
+    private void showDialogInfo(Context context, String title, String info) {
+
+        dialog = new Dialog(context);
+        dialog.setContentView(R.layout.alert_info_two);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        TextView textView = dialog.findViewById(R.id.text);
+        textView.setText(info);
+
+        TextView title_view = dialog.findViewById(R.id.title);
+        title_view.setText(title);
+
+        Button ok = dialog.findViewById(R.id.button_ok), not = dialog.findViewById(R.id.button_not);
+
+
+        not.setOnClickListener(not_ -> {
+                    dialog.dismiss();
+                }
+        );
+        ok.setOnClickListener(not_ -> {
+                    App.getDatabaseSP().saveIndexOfTheme(binding.slideViewPager.getCurrentItem());
+                    dialog.dismiss();
+                    Intent i = new Intent(this, SplashActivity.class);
+                    startActivity(i);
+                    finish();
+                }
+        );
+
+
+        dialog.show();
     }
 
     public void setUpIndicator(int position) {

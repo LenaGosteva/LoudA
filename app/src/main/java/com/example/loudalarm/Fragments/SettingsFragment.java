@@ -5,10 +5,8 @@ import static com.example.loudalarm.App.SAVE_THEME;
 import static com.example.loudalarm.App.SAVE_URI;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,7 +22,6 @@ import com.example.loudalarm.Games.MainDescriptionGameClass;
 import com.example.loudalarm.R;
 import com.example.loudalarm.databinding.FragmentSettingsBinding;
 
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -80,7 +77,6 @@ public class SettingsFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent intent) {
