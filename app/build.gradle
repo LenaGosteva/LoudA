@@ -49,44 +49,43 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:multidex:1.0.3'
-    implementation 'com.squareup.picasso:picasso:2.5.2'
+
 //    implementation 'javax.mail:mail:1.5.0-b01'
     implementation 'com.sun.mail:jakarta.mail:1.6.4'
 
-    implementation 'com.google.firebase:firebase-auth:22.0.0'
-    implementation 'com.google.firebase:firebase-firestore:24.6.0'
-    implementation 'com.google.firebase:firebase-auth-ktx:22.0.0'
+
     annotationProcessor 'androidx.room:room-compiler:2.5.1'
     implementation 'androidx.room:room-common:2.5.1'
     implementation 'androidx.room:room-runtime:2.5.1'
 
+    implementation 'androidx.preference:preference:1.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'javazoom:jlayer:1.0.1'
+
+
+    implementation platform('com.google.firebase:firebase-bom:32.0.0')
+    implementation 'com.google.android.gms:play-services-basement'
+    implementation 'com.google.firebase:firebase-auth:22.0.0'
+    implementation 'com.google.firebase:firebase-firestore:24.6.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:22.0.0'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.firebaseui:firebase-ui-storage:7.2.0'
+
     implementation 'com.google.android.gms:play-services-tasks:18.0.2'
+
     implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
 
     implementation 'com.google.android.material:material:1.8.0'
 
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation platform('com.google.firebase:firebase-bom:32.0.0')
 
-    // Add the dependency for the Realtime Database library
-    // When using the BoM, you don't specify versions in Firebase library dependencies
-    implementation 'com.google.firebase:firebase-database'
-    implementation 'androidx.preference:preference:1.2.0'
-    implementation 'com.google.android.gms:play-services-basement'
-    implementation 'androidx.navigation:navigation-fragment:2.5.3'
-    implementation platform('com.google.firebase:firebase-bom:32.0.0')
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.13.2'
-    implementation 'javazoom:jlayer:1.0.1'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-
-    implementation 'com.google.firebase:firebase-analytics'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-
-    implementation 'androidx.navigation:navigation-ui:2.5.3'
-    implementation 'de.hdodenhof:circleimageview:2.1.0'
-
-
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }

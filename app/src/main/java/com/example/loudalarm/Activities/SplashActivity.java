@@ -8,7 +8,7 @@ import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.loudalarm.App;
-import com.example.loudalarm.AuthController.AuthController;
+import com.example.loudalarm.AuthController.DBController;
 import com.example.loudalarm.R;
 
 public class SplashActivity extends AppCompatActivity {
@@ -22,7 +22,7 @@ public class SplashActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
-        AuthController authController = new AuthController();
+        DBController authController = new DBController();
         new Handler().postDelayed(() -> {
             if (App.getDatabaseSP().getNumberOfInstance()) {
                 App.databaseSP.saveNumberOfInstance(false);

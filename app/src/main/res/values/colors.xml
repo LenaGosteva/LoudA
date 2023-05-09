@@ -8,7 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="main_text_and_icons_color">#D3CFCF</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="main_navigation_panel_color">#77509F9E</color>
+    <color name="main_navigation_panel_color">#809B88BC</color>
+    <color name="main_navigation_panel_color_full">#9B88BC</color>
+
     <color name="toggle_up_color">#9E509F9E</color>
     <color name="toggle_down_color">#AE285F5E</color>
     <color name="true_button">#8B527F54</color>

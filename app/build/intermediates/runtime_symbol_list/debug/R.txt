@@ -1845,6 +1845,7 @@ int color m3_timepicker_secondary_text_button_ripple_color 0x7f0601c5
 int color m3_timepicker_secondary_text_button_text_color 0x7f0601c6
 int color m3_tonal_button_ripple_color_selector 0x7f0601c7
 int color main_navigation_panel_color 0x7f0601c8
+int color main_navigation_panel_color_full 0x7f0602aa
 int color main_text_and_icons_color 0x7f0601c9
 int color material_blue_grey_800 0x7f0601ca
 int color material_blue_grey_900 0x7f0601cb
@@ -3182,6 +3183,8 @@ int id browser_actions_menu_view 0x7f0a0074
 int id buttonPanel 0x7f0a0075
 int id button_enter 0x7f0a0076
 int id button_icon 0x7f0a0077
+int id button_not 0x7f0a0284
+int id button_ok 0x7f0a0285
 int id cache_measures 0x7f0a0078
 int id callMeasure 0x7f0a0079
 int id cancel 0x7f0a007a
@@ -3266,6 +3269,7 @@ int id easeOut 0x7f0a00c8
 int id east 0x7f0a00c9
 int id edit_name 0x7f0a00ca
 int id edit_query 0x7f0a00cb
+int id edit_text 0x7f0a0286
 int id elastic 0x7f0a00cc
 int id email_of_profile 0x7f0a00cd
 int id email_of_profile_desc 0x7f0a00ce
@@ -3301,6 +3305,7 @@ int id games 0x7f0a00eb
 int id games_list 0x7f0a00ec
 int id ghost_view 0x7f0a00ed
 int id ghost_view_holder 0x7f0a00ee
+int id glide_custom_view_target_tag 0x7f0a0283
 int id gone 0x7f0a00ef
 int id graph 0x7f0a00f0
 int id graph_wrap 0x7f0a00f1
@@ -3343,6 +3348,7 @@ int id jumpToStart 0x7f0a0115
 int id labeled 0x7f0a0116
 int id layout 0x7f0a0117
 int id layoutTitle 0x7f0a0118
+int id layout_ok_not 0x7f0a0287
 int id layout_with_out 0x7f0a0119
 int id left 0x7f0a011a
 int id leftToRight 0x7f0a011b
@@ -3361,6 +3367,7 @@ int id line3 0x7f0a0127
 int id line4 0x7f0a0128
 int id line9090 0x7f0a0129
 int id linear 0x7f0a012a
+int id linear_edit 0x7f0a0288
 int id linear_in_0 0x7f0a012b
 int id linear_in_1 0x7f0a012c
 int id linear_in_1000 0x7f0a012d
@@ -3565,6 +3572,8 @@ int id search_view_toolbar_container 0x7f0a01f3
 int id search_voice_btn 0x7f0a01f4
 int id seekbar 0x7f0a01f5
 int id seekbar_value 0x7f0a01f6
+int id select_1 0x7f0a0281
+int id select_2 0x7f0a0282
 int id select_dialog_listview 0x7f0a01f7
 int id selected 0x7f0a01f8
 int id selection_type 0x7f0a01f9
@@ -3822,6 +3831,8 @@ int layout activity_profile 0x7f0d0021
 int layout activity_ringing 0x7f0d0022
 int layout activity_splash 0x7f0d0023
 int layout activity_theme 0x7f0d0024
+int layout alert_edit_smth 0x7f0d009d
+int layout alert_two_select 0x7f0d009c
 int layout browser_actions_context_menu_page 0x7f0d0025
 int layout browser_actions_context_menu_row 0x7f0d0026
 int layout custom_dialog 0x7f0d0027
@@ -3938,7 +3949,6 @@ int layout slider_layout 0x7f0d0095
 int layout support_simple_spinner_dropdown_item 0x7f0d0096
 int layout theme_slider_layout 0x7f0d0097
 int layout view_action_button 0x7f0d0098
-int layout view_alert_dialog 0x7f0d0099
 int layout view_input_field 0x7f0d009a
 int layout view_nickname 0x7f0d009b
 int menu bottom_nav_menu 0x7f0f0000

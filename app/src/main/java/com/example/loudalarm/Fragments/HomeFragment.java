@@ -16,7 +16,7 @@ import com.example.loudalarm.Activities.ProfileActivity;
 import com.example.loudalarm.Adapters.AlarmAdapter;
 import com.example.loudalarm.AlarmIntentsController.AlarmController;
 import com.example.loudalarm.App;
-import com.example.loudalarm.AuthController.AuthController;
+import com.example.loudalarm.AuthController.DBController;
 import com.example.loudalarm.Room.AlarmDAO;
 import com.example.loudalarm.Room.AlarmEntity;
 import com.example.loudalarm.TouchHelper.SimpleItemTouchHelperCallback;
@@ -34,7 +34,7 @@ public class HomeFragment extends Fragment {
     AlarmDAO alarmDatabaseDAO;
 
     List<AlarmEntity> alarms;
-    AuthController authController = new AuthController();
+    DBController authController = new DBController();
     public HomeFragment(List<AlarmEntity> alarms) {
         this.alarms = alarms;
     }
@@ -105,7 +105,7 @@ adapter.notifyDataSetChanged();
                 alarmDatabaseDAO.updateAll(adapter.listOfDeleted);
                 alarms = alarmDatabaseDAO.getAll();
                 adapter.list = alarms;
-                authController.clearDb();
+                authController.clearAlarmsDB();
                 authController.addAlarmsToDb();
                 adapter.listOfDeleted.clear();
             }).start();
@@ -126,7 +126,7 @@ adapter.notifyDataSetChanged();
                 alarmDatabaseDAO = App.getDatabase().alarmDAO();
                 alarmDatabaseDAO.deleteAll(adapter.listOfDeleted);
                 alarms = alarmDatabaseDAO.getAll();
-                authController.clearDb();
+                authController.clearAlarmsDB();
                 authController.addAlarmsToDb();
             }).start();
             Toast.makeText(getContext(), "Выбранные будильники удалены", Toast.LENGTH_SHORT).show();

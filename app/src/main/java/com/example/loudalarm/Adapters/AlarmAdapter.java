@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.loudalarm.AlarmIntentsController.AlarmController;
 import com.example.loudalarm.App;
-import com.example.loudalarm.AuthController.AuthController;
+import com.example.loudalarm.AuthController.DBController;
 import com.example.loudalarm.Fragments.AddFragment;
 import com.example.loudalarm.R;
 import com.example.loudalarm.Room.AlarmDAO;
@@ -37,7 +37,7 @@ public class AlarmAdapter extends RecyclerView.Adapter<AlarmAdapter.AlarmViewHol
     public List<AlarmEntity> listOfDeleted = new ArrayList<>();
 
     public final Activity activity;
-    AuthController authController = new AuthController();
+    DBController authController = new DBController();
     private final FragmentManager fragmentManager;
     private final AlarmDAO alarmDAO;
     public  AlarmViewHolder holderPB;
@@ -142,7 +142,7 @@ public class AlarmAdapter extends RecyclerView.Adapter<AlarmAdapter.AlarmViewHol
         new Thread(() -> {
             alarmDAO.deleteAll(alarmDAO.getAll());
             alarmDAO.saveAll(list);
-            authController.clearDb();
+            authController.clearAlarmsDB();
             authController.addAlarmsToDb();
 
         }).start();

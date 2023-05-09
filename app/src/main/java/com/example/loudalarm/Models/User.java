@@ -15,6 +15,7 @@ public class User {
     public User(String email, String nickname) {
         this.email = email;
         this.nickname = nickname;
+        this.url = "https://clck.ru/34MYj2";
         new Thread(() -> {
             this.alarmEntities = App.getDatabase().alarmDAO().getAll();
         }).start();
@@ -27,6 +28,7 @@ public class User {
         new Thread(() -> {
             this.alarmEntities = App.getDatabase().alarmDAO().getAll();
         }).start();
+        this.url = "https://clck.ru/34MYj2";
 
     }
 

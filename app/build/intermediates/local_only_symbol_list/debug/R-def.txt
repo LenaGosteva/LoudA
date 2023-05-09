@@ -21,6 +21,7 @@ color lightGreyBg
 color light_blue_400
 color light_blue_600
 color main_navigation_panel_color
+color main_navigation_panel_color_full
 color main_text_and_icons_color
 color null_color
 color primary_200
@@ -116,6 +117,8 @@ id all_info
 id backBtn
 id button_enter
 id button_icon
+id button_not
+id button_ok
 id cancel
 id center
 id changeButton
@@ -129,6 +132,7 @@ id date
 id days
 id delete_any
 id edit_name
+id edit_text
 id email_of_profile
 id email_of_profile_desc
 id fl_content
@@ -147,6 +151,7 @@ id item_container
 id item_game
 id layout
 id layoutTitle
+id layout_ok_not
 id layout_with_out
 id lin1
 id line0
@@ -158,6 +163,7 @@ id line4
 id line9090
 id line.....1
 id line.....1000
+id linear_edit
 id linear_in_0
 id linear_in_1
 id linear_in_1000
@@ -205,6 +211,8 @@ id rel_in_games_up00
 id repeat
 id ringtone
 id saturday
+id select_1
+id select_2
 id setOnToday
 id skipButton
 id slideViewPager
@@ -240,6 +248,8 @@ layout activity_profile
 layout activity_ringing
 layout activity_splash
 layout activity_theme
+layout alert_edit_smth
+layout alert_two_select
 layout fragment_add
 layout fragment_home
 layout fragment_login
@@ -250,7 +260,6 @@ layout item_for_list_of_games
 layout slider_layout
 layout theme_slider_layout
 layout view_action_button
-layout view_alert_dialog
 layout view_input_field
 layout view_nickname
 menu bottom_nav_menu

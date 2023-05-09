@@ -1846,6 +1846,7 @@ color m3_timepicker_secondary_text_button_ripple_color
 color m3_timepicker_secondary_text_button_text_color
 color m3_tonal_button_ripple_color_selector
 color main_navigation_panel_color
+color main_navigation_panel_color_full
 color main_text_and_icons_color
 color material_blue_grey_800
 color material_blue_grey_900
@@ -3183,6 +3184,8 @@ id browser_actions_menu_view
 id buttonPanel
 id button_enter
 id button_icon
+id button_not
+id button_ok
 id cache_measures
 id callMeasure
 id cancel
@@ -3267,6 +3270,7 @@ id easeOut
 id east
 id edit_name
 id edit_query
+id edit_text
 id elastic
 id email_of_profile
 id email_of_profile_desc
@@ -3302,6 +3306,7 @@ id games
 id games_list
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3344,6 +3349,7 @@ id jumpToStart
 id labeled
 id layout
 id layoutTitle
+id layout_ok_not
 id layout_with_out
 id left
 id leftToRight
@@ -3362,6 +3368,7 @@ id line3
 id line4
 id line9090
 id linear
+id linear_edit
 id linear_in_0
 id linear_in_1
 id linear_in_1000
@@ -3566,6 +3573,8 @@ id search_view_toolbar_container
 id search_voice_btn
 id seekbar
 id seekbar_value
+id select_1
+id select_2
 id select_dialog_listview
 id selected
 id selection_type
@@ -3823,6 +3832,8 @@ layout activity_profile
 layout activity_ringing
 layout activity_splash
 layout activity_theme
+layout alert_edit_smth
+layout alert_two_select
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -3939,7 +3950,6 @@ layout slider_layout
 layout support_simple_spinner_dropdown_item
 layout theme_slider_layout
 layout view_action_button
-layout view_alert_dialog
 layout view_input_field
 layout view_nickname
 menu bottom_nav_menu

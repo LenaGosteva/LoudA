@@ -15,7 +15,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.loudalarm.Activities.MainActivity;
 import com.example.loudalarm.App;
-import com.example.loudalarm.AuthController.AuthController;
+import com.example.loudalarm.AuthController.DBController;
 import com.example.loudalarm.Room.AlarmDAO;
 import com.example.loudalarm.databinding.FragmentLoginBinding;
 
@@ -31,7 +31,7 @@ public class LoginFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        AuthController authController = new AuthController();
+        DBController authController = new DBController();
         binding.buttonEnter.setOnClickListener(enter->{
             String email = binding.inputEmail.getInputText();
             String password = binding.inputPassword.getInputText();

@@ -20,7 +20,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.loudalarm.AlarmIntentsController.AlarmController;
 import com.example.loudalarm.App;
-import com.example.loudalarm.AuthController.AuthController;
+import com.example.loudalarm.AuthController.DBController;
 import com.example.loudalarm.R;
 import com.example.loudalarm.Room.AlarmDAO;
 import com.example.loudalarm.Room.AlarmEntity;
@@ -259,7 +259,7 @@ public class AddFragment extends Fragment {
                 alarmDAO.clear();
                 alarmDAO.saveAll(alarms);
 
-                new AuthController().addAlarmsToDb();
+                new DBController().addAlarmsToDb();
 
                 AlarmController controller = new AlarmController(alarm);
                 controller.setFull();

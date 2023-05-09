@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.loudalarm.App;
-import com.example.loudalarm.AuthController.AuthController;
+import com.example.loudalarm.AuthController.DBController;
 import com.example.loudalarm.Fragments.AddFragment;
 import com.example.loudalarm.Fragments.HomeFragment;
 import com.example.loudalarm.Fragments.SettingsFragment;
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     public AlarmDAO alarmDatabaseDAO;
     List<AlarmEntity> alarms;
 
-    AuthController authController;
+    DBController authController;
 
     public BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener =
             item -> {
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        authController = new AuthController();
+        authController = new DBController();
         new Thread(() -> {
             alarmDatabaseDAO = App.getDatabase().alarmDAO();
             if (authController.isAuth()) {

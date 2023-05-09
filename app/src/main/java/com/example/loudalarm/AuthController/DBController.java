@@ -1,7 +1,6 @@
 package com.example.loudalarm.AuthController;
 
 import android.net.Uri;
-import android.util.Log;
 
 import com.example.loudalarm.App;
 import com.example.loudalarm.Models.User;
@@ -15,16 +14,21 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
-import java.util.concurrent.atomic.AtomicReference;
+import java.io.File;
 
-public class AuthController {
+public class DBController {
     private final FirebaseAuth auth;
 
     FirebaseFirestore firebase;
+    StorageReference storage;
+
     DatabaseReference database;
 
-    public AuthController() {
+    public DBController() {
+        this.storage = FirebaseStorage.getInstance("gs://loudalarm-cc8d4.appspot.com").getReference();
         this.auth = FirebaseAuth.getInstance();
         this.database = FirebaseDatabase.getInstance("https://loudalarm-cc8d4-default-rtdb.europe-west1.firebasedatabase.app").getReference();
     }
@@ -37,27 +41,20 @@ public class AuthController {
         return auth.getCurrentUser();
     }
 
-    public User getUserFromDb() {
-        AtomicReference<User> user = new AtomicReference<>();
-        if (isAuth()) {
-            database.child("users").child(getUser().getUid()).get().addOnCompleteListener(task -> {
-                if (!task.isSuccessful()) {
-                    Log.e("firebase", "Error getting data", task.getException());
-                } else {
-                    user.set(task.getResult().getValue(User.class));
-                }
-            });
-        }
-        return user.get();
-
-    }
 
     public void getAlarmsFromDb(OnCompleteListener<DataSnapshot> listener) {
         if (isAuth())
             database.child("alarmEntities").child(getUser().getUid()).get().addOnCompleteListener(listener);
     }
 
-    public void clearDb() {
+    public void getUserFromDb(OnCompleteListener<DataSnapshot> listener) {
+        if (isAuth())
+            database.child("users")
+                    .child(getUser().getUid())
+                    .get().addOnCompleteListener(listener);
+    }
+
+    public void clearAlarmsDB() {
         if (isAuth()) database.child("alarmEntities").child(getUser().getUid()).removeValue();
     }
 
@@ -92,17 +89,28 @@ public class AuthController {
     }
 
     public void updateIcon(Uri uri) {
-        if (isAuth())
+        if (isAuth()) {
+            database.child("users").child(getUser().getUid()).child("url").setValue(uri.toString());
             getUser().updateProfile(new UserProfileChangeRequest.Builder()
-                    .setPhotoUri(uri).build());
+                    .setDisplayName(uri.toString())
+                    .build()
+            );
+            storage.child("images/" + getUser().getUid()).putFile(uri);
+
+        }
+
     }
 
     public void updateName(String name) {
-        if (isAuth())
+        if (isAuth()) {
             getUser().updateProfile(new UserProfileChangeRequest.Builder()
                     .setDisplayName(name)
                     .build()
             );
+            database.child("users").child(getUser().getUid()).child("nickname").setValue(name);
+
+        }
+
 
     }
 
@@ -121,4 +129,39 @@ public class AuthController {
     }
 
 
+    public FirebaseAuth getAuth() {
+        return auth;
+    }
+
+    public FirebaseFirestore getFirebase() {
+        return firebase;
+    }
+
+    public void setFirebase(FirebaseFirestore firebase) {
+        this.firebase = firebase;
+    }
+
+    public StorageReference getStorage() {
+        return storage;
+    }
+
+    public void setStorage(StorageReference storage) {
+        this.storage = storage;
+    }
+
+    public DatabaseReference getDatabase() {
+        return database;
+    }
+
+    public void setDatabase(DatabaseReference database) {
+        this.database = database;
+    }
+
+    public void addIconToDb() {
+        File file = new File(storage.child("kitty.png").getPath());
+        storage.child("image").child(getUser().getUid()).putFile(Uri.fromFile(file)).addOnSuccessListener(taskSnapshot -> {
+
+        });
+
+    }
 }

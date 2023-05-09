@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.loudalarm.Activities.MainActivity;
-import com.example.loudalarm.AuthController.AuthController;
+import com.example.loudalarm.AuthController.DBController;
 import com.example.loudalarm.databinding.FragmentRegistrationBinding;
 
 
@@ -29,7 +29,7 @@ public class RegistrationFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
         super.onViewCreated(view, savedInstanceState);
-        AuthController authController = new AuthController();
+        DBController authController = new DBController();
         binding.buttonEnter.setOnClickListener(enter -> {
             String email = binding.inputEmail.getInputText();
             String password = binding.inputPassword.getInputText();
@@ -38,6 +38,7 @@ public class RegistrationFragment extends Fragment {
                 authController.addUserToDb(email, binding.inputName.getInputText(), unused -> {
                     startActivity(new Intent(getContext(), MainActivity.class));
                 });
+                authController.addIconToDb();
             });
         });
 
