@@ -5,30 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Games.BotGame.BotGameActivity">
+
     <ImageButton
         android:layout_width="wrap_content"
         android:id="@+id/info_bot"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:src="@drawable/info"/>
-    <TextView
-        android:id="@+id/winns"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/info_bot"
-        android:textColor="@color/main_text_and_icons_color"
-        android:textSize="20dp"/>
+        android:src="@drawable/info" />
 
-    <TextView
-        android:id="@+id/games"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/info_bot"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/winns"
-        android:layout_marginHorizontal="20dp"
-        android:textColor="@color/main_text_and_icons_color"
-        android:textSize="20dp" />
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/winns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="@color/main_text_and_icons_color"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/games"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="@color/main_text_and_icons_color"
+            android:textSize="20dp" />
+    </LinearLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

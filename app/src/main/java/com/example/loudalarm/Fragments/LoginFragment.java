@@ -35,14 +35,18 @@ public class LoginFragment extends Fragment {
         binding.buttonEnter.setOnClickListener(enter->{
             String email = binding.inputEmail.getInputText();
             String password = binding.inputPassword.getInputText();
-            authController.enterUser(email, password, task -> {
-                if (task.isSuccessful()) {
-                    startActivity(new Intent(App.getInstance(), MainActivity.class));
-                } else {
-                    Toast.makeText(App.getInstance(), "Что-то пошло не так...", Toast.LENGTH_SHORT).show();
-                }
+            if (!email.isEmpty() && !password.isEmpty()) {
+                authController.enterUser(email, password, task -> {
+                    if (task.isSuccessful()) {
+                        startActivity(new Intent(App.getInstance(), MainActivity.class));
+                    } else {
+                        Toast.makeText(App.getInstance(), "Что-то пошло не так...", Toast.LENGTH_SHORT).show();
+                    }
 
-            });
+                });
+            } else {
+                Toast.makeText(this.getContext(), "Заполните обязательные поля!", Toast.LENGTH_SHORT).show();
+            }
 
         });
 

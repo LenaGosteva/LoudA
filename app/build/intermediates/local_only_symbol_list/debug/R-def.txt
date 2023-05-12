@@ -97,6 +97,7 @@ drawable icon_switch_track_up
 drawable icon_why
 drawable icon_why_2
 drawable info
+drawable info_black
 drawable kitty
 drawable next_plan
 drawable splash
@@ -113,8 +114,10 @@ id action
 id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
 id alarm_button
+id alert_title
 id all_info
 id backBtn
+id button_can
 id button_enter
 id button_icon
 id button_not
@@ -140,9 +143,11 @@ id friday
 id games
 id games_list
 id icon_of_profile
+id image_alert_info
 id indicator_layout
 id info
 id info_bot
+id info_text
 id input
 id input_email
 id input_name
@@ -151,6 +156,7 @@ id item_container
 id item_game
 id layout
 id layoutTitle
+id layout_head
 id layout_ok_not
 id layout_with_out
 id lin1
@@ -249,6 +255,8 @@ layout activity_ringing
 layout activity_splash
 layout activity_theme
 layout alert_edit_smth
+layout alert_info
+layout alert_info_two
 layout alert_two_select
 layout fragment_add
 layout fragment_home

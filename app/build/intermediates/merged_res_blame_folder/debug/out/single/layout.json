@@ -76,6 +76,10 @@
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\activity_bot_game.xml"
     },
     {
+        "merged": "com.example.loudalarm.app-mergeDebugResources-5:/layout/alert_info_two.xml",
+        "source": "com.example.loudalarm.app-main-8:/layout/alert_info_two.xml"
+    },
+    {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\alert_two_select.xml",
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\alert_two_select.xml"
     },
@@ -94,6 +98,14 @@
     {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\activity_ringing.xml",
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\activity_ringing.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\alert_info_two.xml",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\alert_info_two.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\alert_info.xml",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\alert_info.xml"
     },
     {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-mergeDebugResources-5:\\layout\\fragment_home.xml",

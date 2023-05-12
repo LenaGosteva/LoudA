@@ -34,12 +34,6 @@ public final class AlertEditSmthBinding implements ViewBinding {
   public final LinearLayout layoutOkNot;
 
   @NonNull
-  public final View line0;
-
-  @NonNull
-  public final View line2;
-
-  @NonNull
   public final LinearLayout linearEdit;
 
   @NonNull
@@ -47,15 +41,12 @@ public final class AlertEditSmthBinding implements ViewBinding {
 
   private AlertEditSmthBinding(@NonNull LinearLayout rootView, @NonNull Button buttonNot,
       @NonNull Button buttonOk, @NonNull EditText editText, @NonNull LinearLayout layoutOkNot,
-      @NonNull View line0, @NonNull View line2, @NonNull LinearLayout linearEdit,
-      @NonNull TextView title) {
+      @NonNull LinearLayout linearEdit, @NonNull TextView title) {
     this.rootView = rootView;
     this.buttonNot = buttonNot;
     this.buttonOk = buttonOk;
     this.editText = editText;
     this.layoutOkNot = layoutOkNot;
-    this.line0 = line0;
-    this.line2 = line2;
     this.linearEdit = linearEdit;
     this.title = title;
   }
@@ -111,18 +102,6 @@ public final class AlertEditSmthBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.line0;
-      View line0 = ViewBindings.findChildViewById(rootView, id);
-      if (line0 == null) {
-        break missingId;
-      }
-
-      id = R.id.line2;
-      View line2 = ViewBindings.findChildViewById(rootView, id);
-      if (line2 == null) {
-        break missingId;
-      }
-
       id = R.id.linear_edit;
       LinearLayout linearEdit = ViewBindings.findChildViewById(rootView, id);
       if (linearEdit == null) {
@@ -136,7 +115,7 @@ public final class AlertEditSmthBinding implements ViewBinding {
       }
 
       return new AlertEditSmthBinding((LinearLayout) rootView, buttonNot, buttonOk, editText,
-          layoutOkNot, line0, line2, linearEdit, title);
+          layoutOkNot, linearEdit, title);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -116,6 +116,10 @@
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\activity_theme.xml"
     },
     {
+        "merged": "com.example.loudalarm.app-merged_res-6:/layout_alert_info_two.xml.flat",
+        "source": "com.example.loudalarm.app-main-8:/layout/alert_info_two.xml"
+    },
+    {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-6:\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\drawable\\ic_launcher_foreground.xml"
     },
@@ -138,6 +142,14 @@
     {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-6:\\layout_activity_splash.xml.flat",
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-6:\\layout_alert_info.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\alert_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-6:\\layout_alert_info_two.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\layout\\alert_info_two.xml"
     },
     {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-6:\\layout_activity_login.xml.flat",
@@ -254,6 +266,10 @@
     {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-6:\\drawable_background_violet_dark.png.flat",
         "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\drawable\\background_violet_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-6:\\drawable_info_black.xml.flat",
+        "source": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-main-8:\\drawable\\info_black.xml"
     },
     {
         "merged": "C:\\Users\\Lyudmila\\.gradle\\daemon\\7.5\\com.example.loudalarm.app-merged_res-6:\\drawable_icon_main.xml.flat",

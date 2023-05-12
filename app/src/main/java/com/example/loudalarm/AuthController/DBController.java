@@ -58,15 +58,15 @@ public class DBController {
         if (isAuth()) database.child("alarmEntities").child(getUser().getUid()).removeValue();
     }
 
-    public void registerUser(String email, String password, OnSuccessListener<AuthResult> listener) {
-        auth.createUserWithEmailAndPassword(email, password).addOnSuccessListener(listener);
+    public void registerUser(String email, String password, OnCompleteListener listener) {
+        auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(listener);
 
     }
 
-    public void addUserToDb(String email, String name, OnSuccessListener<Void> listener) {
+    public void addUserToDb(String email, String name, OnCompleteListener listener) {
         User user = new User(email, name);
         if (isAuth()) {
-            database.child("users").child(getUser().getUid()).setValue(user).addOnSuccessListener(listener);
+            database.child("users").child(getUser().getUid()).setValue(user).addOnCompleteListener(listener);
         }
     }
 

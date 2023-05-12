@@ -2981,6 +2981,7 @@ drawable icon_switch_track_up
 drawable icon_why
 drawable icon_why_2
 drawable info
+drawable info_black
 drawable kitty
 drawable m3_appbar_background
 drawable m3_avd_hide_password
@@ -3147,6 +3148,7 @@ id adjust_height
 id adjust_width
 id alarm_button
 id alertTitle
+id alert_title
 id aligned
 id all
 id allStates
@@ -3182,6 +3184,7 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id buttonPanel
+id button_can
 id button_enter
 id button_icon
 id button_not
@@ -3328,12 +3331,14 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id image_alert_info
 id immediateStop
 id included
 id indeterminate
 id indicator_layout
 id info
 id info_bot
+id info_text
 id input
 id input_email
 id input_name
@@ -3349,6 +3354,7 @@ id jumpToStart
 id labeled
 id layout
 id layoutTitle
+id layout_head
 id layout_ok_not
 id layout_with_out
 id left
@@ -3833,6 +3839,8 @@ layout activity_ringing
 layout activity_splash
 layout activity_theme
 layout alert_edit_smth
+layout alert_info
+layout alert_info_two
 layout alert_two_select
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row

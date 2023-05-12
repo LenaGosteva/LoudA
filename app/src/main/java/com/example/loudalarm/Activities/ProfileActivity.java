@@ -12,7 +12,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -65,7 +64,7 @@ public class ProfileActivity extends AppCompatActivity {
                 }
             });
             binding.buttonIcon.setOnClickListener(icon -> {
-                showDialogEditIcon(this);
+                startDirectoryImages();
             });
 
             binding.editName.setOnClickListener(edit -> {
@@ -126,23 +125,6 @@ public class ProfileActivity extends AppCompatActivity {
 
     }
 
-
-    private void showDialogEditIcon(Context context) {
-
-        dialog = new Dialog(context);
-        dialog.setContentView(R.layout.alert_two_select);
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-
-        TextView select_1 = dialog.findViewById(R.id.select_1);
-        TextView select_2 = dialog.findViewById(R.id.select_2);
-
-        select_2.setOnClickListener(v -> {
-            dialog.dismiss();
-            startDirectoryImages();
-        });
-        select_1.setText(" ");
-        dialog.show();
-    }
 
     private void showDialogEditName(Context context) {
 
