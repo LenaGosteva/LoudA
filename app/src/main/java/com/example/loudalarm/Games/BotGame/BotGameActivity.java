@@ -40,7 +40,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class BotGameActivity extends AppCompatActivity
         implements Game.ResultsCallback, ButtonClass.MyOnClickListener, View.OnTouchListener {
-    private static final int MATRIX_SIZE = 6;// можете ставить от 2 до 20))
+    private static int MATRIX_SIZE = 6;// можете ставить от 2 до 20))
     private static int COUNT = 0;
     GridLayout mGridLayout;
     Dialog dialog;
@@ -56,6 +56,8 @@ public class BotGameActivity extends AppCompatActivity
     AtomicInteger howManyPassed = new AtomicInteger(0);
     AtomicBoolean isMusicPlay = new AtomicBoolean(false);
     AtomicBoolean d = new AtomicBoolean(true);
+    private int level;
+
     @Override
     public void onBackPressed() {
 
@@ -66,10 +68,8 @@ public class BotGameActivity extends AppCompatActivity
         this.setTheme(App.getThemes()[App.getDatabaseSP().getIndexOfTheme()]);
         setVolumeControlStream(AudioManager.STREAM_DTMF);
         super.onCreate(savedInstanceState);
+        showDialogInfo(this);
         setContentView(R.layout.activity_bot_game);
-
-
-
         if (App.getDatabaseSP().getBotFirstInfo()){
             showDialogInfo(this, "Правила", this.getResources().getString(R.string.info_for_game_Bot));
             App.getDatabaseSP().saveBotFirstInfo(false);
@@ -321,6 +321,25 @@ public class BotGameActivity extends AppCompatActivity
 
 
         dialog.findViewById(R.id.button_can).setOnClickListener(not_ -> {
+            dialog.dismiss();
+        });
+
+
+        dialog.show();
+    }
+    private void showDialogInfo(Context context) {
+
+        dialog = new Dialog(context);
+        dialog.setContentView(R.layout.alert_info_game_level);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+
+        dialog.findViewById(R.id.button_level1).setOnClickListener(not_ -> {
+            MATRIX_SIZE = 5;
+            dialog.dismiss();
+        });
+        dialog.findViewById(R.id.button_level2).setOnClickListener(not_ -> {
+            MATRIX_SIZE = 12;
             dialog.dismiss();
         });
 

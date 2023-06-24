@@ -208,6 +208,8 @@ public class AddFragment extends Fragment {
                 binding.mtrlCalendarDaysOfWeek.setVisibility(View.VISIBLE);
             }
         });
+
+
         binding.createNewAlarm.setOnClickListener(v -> {
             if (binding.monday.isChecked() && !days.contains("M ")) days += "M ";
             if (binding.tuesday.isChecked() && !days.contains("TU ")) days += "TU ";

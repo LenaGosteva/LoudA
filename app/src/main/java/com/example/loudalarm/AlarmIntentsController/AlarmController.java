@@ -20,6 +20,7 @@ public class AlarmController implements AlarmIntentsControllable {
     public long time;
     public long start_time;
     int id;
+    String message;
     Calendar calendar = new Calendar() {
         @Override
         protected void computeTime() {
@@ -68,6 +69,7 @@ public class AlarmController implements AlarmIntentsControllable {
         this.time = alarm.time;
         this.id = alarm.id;
         this.start_time = alarm.time;
+        this.message = alarm.textMessage;
     }
 
     @Override
@@ -76,6 +78,7 @@ public class AlarmController implements AlarmIntentsControllable {
 //        intent.putExtra(TIME_IDENTIFICATION, time);
 //        intent.putExtra(URI_IDENTIFICATION, alarm.music);
         intent.putExtra(ID_IDENTIFICATION, id);
+        intent.putExtra("message", message);
         Log.e("URI_IN_CONTROLLER", alarm.music);
         Log.d("ID_IN_PENDING", id + "");
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -90,7 +93,7 @@ public class AlarmController implements AlarmIntentsControllable {
         add_calendar.set(Calendar.MINUTE, alarm.minutes);
         add_calendar.set(Calendar.DAY_OF_WEEK, number_of_week);
         Date date = new Date(add_calendar.getTimeInMillis());
-        App.getAlarmManager().setInexactRepeating(AlarmManager.RTC_WAKEUP, add_calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY*7, getAlarmActionPendingIntent());
+        App.getAlarmManager().setInexactRepeating(AlarmManager.RTC_WAKEUP, add_calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY * 7, getAlarmActionPendingIntent());
 
     }
 

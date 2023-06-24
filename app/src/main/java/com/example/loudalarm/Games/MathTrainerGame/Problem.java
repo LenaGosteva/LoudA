@@ -4,24 +4,23 @@ import java.util.Random;
 
 public class Problem {
 
-    private float result;
+    private int result;
+    private int level = 1;
     private final Random random = new Random();
 
-    public int getRandom(int min, int max) {
+    public static int getRandom(int min, int max) {
         return (int) (Math.random() * (max - min)) + min;
     }
 
-    public float getResult() {
+    public int getResult() {
         return result;
     }
 
-    public float getNotResult() {
-        return result + getRandom(-9, -2);
+    public int getNotResult() {
+        return result + getRandom(-4, 3);
     }
 
-    public String getProblem() {
-        int a = getRandom(-50, 50);
-        int b = getRandom(-50, 50);
+    public String getProblem(int a, int b) {
         String sign;
         switch (getRandom(0, 2)) {
             case 1:
@@ -46,7 +45,7 @@ public class Problem {
                         b = getRandom(1, 50);
                     else b = getRandom(-50, -1);
                 }
-                result = (float) a / b;
+                result = (int) a / b;
                 break;
             case "*":
                 result = a * b;
@@ -54,6 +53,14 @@ public class Problem {
         }
         return a + " " + sign + " " + b + " =";
     }
+
+
+    public String getProblem(int a, int b, int c){
+        String first_str = getProblem(a, b);
+        int first_res = result;
+        return  getProblem(first_res, c);
+    }
+
 
     private String getRandomSign() {
         return random.nextBoolean() ? "-" : "+";

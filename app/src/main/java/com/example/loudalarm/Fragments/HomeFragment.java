@@ -22,6 +22,7 @@ import com.example.loudalarm.Room.AlarmEntity;
 import com.example.loudalarm.TouchHelper.SimpleItemTouchHelperCallback;
 import com.example.loudalarm.databinding.FragmentHomeBinding;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -76,15 +77,11 @@ public class HomeFragment extends Fragment {
 
 
         binding.checkAll.setOnClickListener(check_all -> {
+            adapter.listOfDeleted = new ArrayList<>();
             if (click % 2 == 0) {
-                adapter.listOfDeleted.clear();
                 adapter.listOfDeleted.addAll(adapter.list);
-                adapter.notifyDataSetChanged();
-
-            } else {
-                adapter.listOfDeleted.clear();
-                adapter.notifyDataSetChanged();
             }
+            adapter.notifyDataSetChanged();
             click += 1;
         });
 
@@ -95,7 +92,6 @@ public class HomeFragment extends Fragment {
                 }
                 alarm.setOn(true);
                 adapter.setUp(adapter.holderPB);
-adapter.notifyDataSetChanged();
             }
             Toast.makeText(getContext(), "Выбранные будильники включены", Toast.LENGTH_SHORT).show();
 
@@ -113,7 +109,6 @@ adapter.notifyDataSetChanged();
             binding.deleteAny.setVisibility(View.GONE);
             binding.putOn.setVisibility(View.GONE);
         });
-        LayoutInflater inflater = requireActivity().getLayoutInflater();
 
         binding.deleteAny.setOnClickListener(delete -> {
 

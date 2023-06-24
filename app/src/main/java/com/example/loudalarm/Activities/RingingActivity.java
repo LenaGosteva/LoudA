@@ -44,6 +44,9 @@ public class RingingActivity extends AppCompatActivity  {
         binding = ActivityRingingBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
+        binding.messageOfAlarm.setText(new Intent().getExtras().getString("message"));
+
         // достаем id будильника, чтобы достать все его настройки
         int id = getTaskId();
 
@@ -63,7 +66,7 @@ public class RingingActivity extends AppCompatActivity  {
             Log.e("LAST_ID_ADB", String.valueOf(App.getDatabase().alarmDAO().getAll().size()));
             Log.e("IS_NULL", String.valueOf(alarm == null));
             Log.e("ID_ALARM", alarm.id + "");
-            binding.messageOfAlarm.setText(alarm.getTextMessage()); // ставим текст будильника
+            binding.messageOfAlarm.setText(alarm.textMessage); // ставим текст будильника
             startPlayMusic(alarm); // будильник начинает звонить
         }).start();
 
