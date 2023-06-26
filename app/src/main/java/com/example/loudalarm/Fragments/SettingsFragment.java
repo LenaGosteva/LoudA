@@ -22,6 +22,7 @@ import com.example.loudalarm.Games.MainDescriptionGameClass;
 import com.example.loudalarm.R;
 import com.example.loudalarm.databinding.FragmentSettingsBinding;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
@@ -86,7 +87,8 @@ public class SettingsFragment extends Fragment {
 
             } else if (requestCode == SAVE_URI) {
                 uriOfMusic = intent.getData();
-                binding.nameOfCheckedMusic.setText(uriOfMusic + "");
+                File tempFile = new File(uriOfMusic.getPath().trim());
+                binding.nameOfCheckedMusic.setText(tempFile.getName() + "");
                 App.setDefaultMusicUri(uriOfMusic);
             }
         }

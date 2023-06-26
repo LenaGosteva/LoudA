@@ -28,6 +28,7 @@ import com.example.loudalarm.databinding.FragmentAddBinding;
 import com.google.android.material.timepicker.MaterialTimePicker;
 import com.google.android.material.timepicker.TimeFormat;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -311,7 +312,11 @@ public class AddFragment extends Fragment {
             if (requestCode == 1) {
                 Uri uri = intent.getData();
                 checkedMusicStringNameUri = uri.getPath();
-                binding.nameOfCheckedMusic.setText(checkedMusicStringNameUri);
+
+
+                File tempFile = new File(checkedMusicStringNameUri.trim());
+                String checkedMusicStringName = tempFile.getName();
+                binding.nameOfCheckedMusic.setText(checkedMusicStringName);
             }
         } else {
             binding.nameOfCheckedMusic.setText(checkedMusicStringNameUri);
